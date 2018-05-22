@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = "gson"
-  s.version          = '5.0.1.J2ObjC2.1.1'
+  s.version          = '2.3.1.J2ObjC2.1.1'
   s.author           = { "Ryan Salton" => "ryan.salton@laundrapp.com" }
-  s.source           = { :git => "https://github.com/laundrapp/gson.git", :tag => "5.0.1.J2ObjC2.1.1" }
+  s.source           = { :git => "https://github.com/laundrapp/gson.git", :tag => "2.3.1.J2ObjC2.1.1" }
   s.summary           = "Converted to Objective-C using J2ObjC."
   s.homepage         = "https://github.com/laundrapp/gson"
 
