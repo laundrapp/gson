@@ -18,8 +18,8 @@
 
 @implementation ComGoogleGsonMockExclusionStrategy
 
-- (instancetype)initWithBoolean:(jboolean)skipClass
-                    withBoolean:(jboolean)skipField {
+- (instancetype __nonnull)initWithBoolean:(jboolean)skipClass
+                              withBoolean:(jboolean)skipField {
   ComGoogleGsonMockExclusionStrategy_initWithBoolean_withBoolean_(self, skipClass, skipField);
   return self;
 }
@@ -40,6 +40,7 @@
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithBoolean:withBoolean:);
   methods[1].selector = @selector(shouldSkipFieldWithComGoogleGsonFieldAttributes:);
   methods[2].selector = @selector(shouldSkipClassWithIOSClass:);

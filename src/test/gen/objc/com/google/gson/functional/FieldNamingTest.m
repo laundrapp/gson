@@ -25,7 +25,7 @@
   jint annotated_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -44,7 +44,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalFieldNamingTest_TestNames)
 @implementation ComGoogleGsonFunctionalFieldNamingTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalFieldNamingTest_init(self);
   return self;
 }
@@ -86,6 +86,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testIdentity);
   methods[2].selector = @selector(testUpperCamelCase);
@@ -117,7 +118,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalFieldNamingTest)
 @implementation ComGoogleGsonFunctionalFieldNamingTest_TestNames
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalFieldNamingTest_TestNames_init(self);
   return self;
 }
@@ -129,6 +130,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

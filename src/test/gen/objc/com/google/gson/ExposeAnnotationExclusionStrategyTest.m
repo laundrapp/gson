@@ -28,7 +28,7 @@ __attribute__((unused)) static JavaLangReflectField *ComGoogleGsonExposeAnnotati
 
 @interface ComGoogleGsonExposeAnnotationExclusionStrategyTest_MockObject : NSObject
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -73,7 +73,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonExposeAnnotationExclusionStrategyTest_Mo
 @implementation ComGoogleGsonExposeAnnotationExclusionStrategyTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonExposeAnnotationExclusionStrategyTest_init(self);
   return self;
 }
@@ -136,6 +136,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testNeverSkipClasses);
   methods[2].selector = @selector(testSkipNonAnnotatedFields);
@@ -178,7 +179,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonExposeAnnotationExclusionStrategyT
 @implementation ComGoogleGsonExposeAnnotationExclusionStrategyTest_MockObject
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonExposeAnnotationExclusionStrategyTest_MockObject_init(self);
   return self;
 }
@@ -190,6 +191,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

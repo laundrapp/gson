@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalBindObjectTypeAdapter
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternalBindObjectTypeAdapter_) && (INCLUDE_ALL_ComGoogleGsonInternalBindObjectTypeAdapter || defined(INCLUDE_ComGoogleGsonInternalBindObjectTypeAdapter))
 #define ComGoogleGsonInternalBindObjectTypeAdapter_
 
@@ -39,7 +44,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -54,4 +59,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindObjectTypeAdapter)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalBindObjectTypeAdapter")

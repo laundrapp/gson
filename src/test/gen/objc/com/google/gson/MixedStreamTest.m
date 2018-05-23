@@ -44,7 +44,7 @@ J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonMixedStreamTest, CARS_JSON, NSString 
 
 @interface ComGoogleGsonMixedStreamTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -58,7 +58,7 @@ __attribute__((unused)) static ComGoogleGsonMixedStreamTest_1 *create_ComGoogleG
 
 @interface ComGoogleGsonMixedStreamTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -72,7 +72,7 @@ __attribute__((unused)) static ComGoogleGsonMixedStreamTest_2 *create_ComGoogleG
 
 @interface ComGoogleGsonMixedStreamTest_3 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -89,7 +89,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonMixedStreamTest)
 @implementation ComGoogleGsonMixedStreamTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMixedStreamTest_init(self);
   return self;
 }
@@ -271,6 +271,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testWriteMixedStreamed);
   methods[2].selector = @selector(testReadMixedStreamed);
@@ -324,7 +325,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonMixedStreamTest)
 @implementation ComGoogleGsonMixedStreamTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMixedStreamTest_1_init(self);
   return self;
 }
@@ -336,6 +337,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonMixedStreamTest;", "testReadClosed", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Lcom/google/gson/MixedStreamTest$Car;>;>;" };
@@ -360,7 +362,7 @@ ComGoogleGsonMixedStreamTest_1 *create_ComGoogleGsonMixedStreamTest_1_init() {
 @implementation ComGoogleGsonMixedStreamTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMixedStreamTest_2_init(self);
   return self;
 }
@@ -372,6 +374,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonMixedStreamTest;", "testWriteHtmlSafe", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Ljava/lang/String;>;>;" };
@@ -396,7 +399,7 @@ ComGoogleGsonMixedStreamTest_2 *create_ComGoogleGsonMixedStreamTest_2_init() {
 @implementation ComGoogleGsonMixedStreamTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMixedStreamTest_3_init(self);
   return self;
 }
@@ -408,6 +411,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonMixedStreamTest;", "testWriteLenient", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Ljava/lang/Double;>;>;" };
@@ -431,14 +435,14 @@ ComGoogleGsonMixedStreamTest_3 *create_ComGoogleGsonMixedStreamTest_3_init() {
 
 @implementation ComGoogleGsonMixedStreamTest_Car
 
-- (instancetype)initWithNSString:(NSString *)name
-                         withInt:(jint)color {
+- (instancetype __nonnull)initWithNSString:(NSString *)name
+                                   withInt:(jint)color {
   ComGoogleGsonMixedStreamTest_Car_initWithNSString_withInt_(self, name, color);
   return self;
 }
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMixedStreamTest_Car_init(self);
   return self;
 }
@@ -466,6 +470,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withInt:);
   methods[1].selector = @selector(init);
   methods[2].selector = @selector(hash);

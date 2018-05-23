@@ -55,7 +55,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTe
 
 @interface ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_Shape_JsonAdapterFactory : ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -76,7 +76,7 @@ __attribute__((unused)) static void ComGoogleGsonFunctionalRuntimeTypeAdapterFac
   jint radius_;
 }
 
-- (instancetype)initWithInt:(jint)radius;
+- (instancetype __nonnull)initWithInt:(jint)radius;
 
 @end
 
@@ -95,7 +95,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunct
   jint side_;
 }
 
-- (instancetype)initWithInt:(jint)side;
+- (instancetype __nonnull)initWithInt:(jint)side;
 
 @end
 
@@ -116,9 +116,9 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunct
   id<JavaUtilMap> val$subtypeToDelegate_;
 }
 
-- (instancetype)initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory:(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory *)outer$
-                                                                                                 withJavaUtilMap:(id<JavaUtilMap>)capture$0
-                                                                                                 withJavaUtilMap:(id<JavaUtilMap>)capture$1;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory:(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory *)outer$
+                                                                                                           withJavaUtilMap:(id<JavaUtilMap>)capture$0
+                                                                                                           withJavaUtilMap:(id<JavaUtilMap>)capture$1;
 
 - (id)readWithComGoogleGsonStreamJsonReader:(ComGoogleGsonStreamJsonReader *)inArg;
 
@@ -138,7 +138,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryF
 @implementation ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_init(self);
   return self;
 }
@@ -167,6 +167,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testSubclassesAutomaticallySerialzed);
   #pragma clang diagnostic pop
@@ -197,7 +198,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRuntimeTypeAdapterFactor
 
 @implementation ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_Shape
 
-- (instancetype)initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType:(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType *)type {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType:(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType *)type {
   ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_Shape_initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType_(self, type);
   return self;
 }
@@ -213,6 +214,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRuntimeTypeAdapterFactor
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -246,8 +248,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRuntimeTypeAdapterFactor
 
 @implementation ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory
 
-- (instancetype)initWithIOSClass:(IOSClass *)baseType
-                    withNSString:(NSString *)typeFieldName {
+- (instancetype __nonnull)initWithIOSClass:(IOSClass *)baseType
+                              withNSString:(NSString *)typeFieldName {
   ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory_initWithIOSClass_withNSString_(self, baseType, typeFieldName);
   return self;
 }
@@ -312,6 +314,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRuntimeTypeAdapterFactor
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithIOSClass:withNSString:);
   methods[1].selector = @selector(ofWithIOSClass:withNSString:);
   methods[2].selector = @selector(ofWithIOSClass:);
@@ -366,7 +369,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRuntimeTypeAdapterFactor
 @implementation ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_Shape_JsonAdapterFactory
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_Shape_JsonAdapterFactory_init(self);
   return self;
 }
@@ -378,6 +381,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_Shape;", "Lcom/google/gson/functional/RuntimeTypeAdapterFactoryFunctionalTest$RuntimeTypeAdapterFactory<Lcom/google/gson/functional/RuntimeTypeAdapterFactoryFunctionalTest$Shape;>;" };
@@ -424,6 +428,7 @@ ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType *ComGoo
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(values);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop
@@ -443,7 +448,7 @@ ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType *ComGoo
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
     for (jint i = 0; i < 2; i++) {
-      (ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType_values_[i] = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+      ((void)(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType_values_[i] = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
       ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType_initWithNSString_withInt_(e, JreEnumConstantName(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType_class_(), i), i);
     }
     J2OBJC_SET_INITIALIZED(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType)
@@ -485,7 +490,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRuntimeTypeAdapterFactor
 
 @implementation ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_Circle
 
-- (instancetype)initWithInt:(jint)radius {
+- (instancetype __nonnull)initWithInt:(jint)radius {
   ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_Circle_initWithInt_(self, radius);
   return self;
 }
@@ -496,6 +501,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRuntimeTypeAdapterFactor
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithInt:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -525,7 +531,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRuntimeTypeAdapterFactor
 
 @implementation ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_Square
 
-- (instancetype)initWithInt:(jint)side {
+- (instancetype __nonnull)initWithInt:(jint)side {
   ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_Square_initWithInt_(self, side);
   return self;
 }
@@ -536,6 +542,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRuntimeTypeAdapterFactor
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithInt:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -565,9 +572,9 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRuntimeTypeAdapterFactor
 
 @implementation ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory_1
 
-- (instancetype)initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory:(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory *)outer$
-                                                                                                 withJavaUtilMap:(id<JavaUtilMap>)capture$0
-                                                                                                 withJavaUtilMap:(id<JavaUtilMap>)capture$1 {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory:(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory *)outer$
+                                                                                                           withJavaUtilMap:(id<JavaUtilMap>)capture$0
+                                                                                                           withJavaUtilMap:(id<JavaUtilMap>)capture$1 {
   ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory_1_initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory_withJavaUtilMap_withJavaUtilMap_(self, outer$, capture$0, capture$1);
   return self;
 }
@@ -621,6 +628,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRuntimeTypeAdapterFactor
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_RuntimeTypeAdapterFactory:withJavaUtilMap:withJavaUtilMap:);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonFunctionalStringTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalStringTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalStringTest || defined(INCLUDE_ComGoogleGsonFunctionalStringTest))
 #define ComGoogleGsonFunctionalStringTest_
 
@@ -29,7 +34,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief Created in response to http://groups.google.com/group/google-gson/browse_thread/thread/2431d4a3d0d6cb23
@@ -79,7 +84,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -95,4 +100,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalStringTest)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalStringTest")

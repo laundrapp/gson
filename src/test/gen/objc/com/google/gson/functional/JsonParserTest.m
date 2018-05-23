@@ -39,7 +39,7 @@ __attribute__((unused)) static id<JavaUtilList> ComGoogleGsonFunctionalJsonParse
 
 @interface ComGoogleGsonFunctionalJsonParserTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -53,7 +53,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalJsonParserTest_1 *create_C
 
 @interface ComGoogleGsonFunctionalJsonParserTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -68,7 +68,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalJsonParserTest_2 *create_C
 @implementation ComGoogleGsonFunctionalJsonParserTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonParserTest_init(self);
   return self;
 }
@@ -196,6 +196,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testParseInvalidJson);
@@ -239,7 +240,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonParserTest)
 @implementation ComGoogleGsonFunctionalJsonParserTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonParserTest_1_init(self);
   return self;
 }
@@ -251,6 +252,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalJsonParserTest;", "testExtraCommasInArrays", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Ljava/lang/String;>;>;" };
@@ -275,7 +277,7 @@ ComGoogleGsonFunctionalJsonParserTest_1 *create_ComGoogleGsonFunctionalJsonParse
 @implementation ComGoogleGsonFunctionalJsonParserTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonParserTest_2_init(self);
   return self;
 }
@@ -287,6 +289,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalJsonParserTest;", "testExtraCommasInMaps", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;>;" };

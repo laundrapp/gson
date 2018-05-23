@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonFunctionalDefaultTypeAdaptersTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalDefaultTypeAdaptersTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalDefaultTypeAdaptersTest || defined(INCLUDE_ComGoogleGsonFunctionalDefaultTypeAdaptersTest))
 #define ComGoogleGsonFunctionalDefaultTypeAdaptersTest_
 
@@ -30,7 +35,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)testBadValueForBigDecimalDeserialization;
 
@@ -168,7 +173,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -214,11 +219,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalDefaultTypeAdaptersTest)
 
 #pragma mark Package-Private
 
-- (instancetype)initWithIOSClass:(IOSClass *)type;
+- (instancetype __nonnull)initWithIOSClass:(IOSClass *)type;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -234,4 +239,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalDefaultTypeAdaptersTest_Number
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalDefaultTypeAdaptersTest")

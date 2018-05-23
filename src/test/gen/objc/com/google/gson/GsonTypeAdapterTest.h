@@ -16,6 +16,11 @@
 #define INCLUDE_ComGoogleGsonGsonTypeAdapterTest_Abstract 1
 #endif
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonGsonTypeAdapterTest_) && (INCLUDE_ALL_ComGoogleGsonGsonTypeAdapterTest || defined(INCLUDE_ComGoogleGsonGsonTypeAdapterTest))
 #define ComGoogleGsonGsonTypeAdapterTest_
 
@@ -32,7 +37,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)testDefaultTypeAdapterThrowsParseException;
 
@@ -50,7 +55,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -76,7 +81,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonGsonTypeAdapterTest)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -100,7 +105,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonGsonTypeAdapterTest_Abstract)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -118,4 +123,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonGsonTypeAdapterTest_Concrete)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonGsonTypeAdapterTest")

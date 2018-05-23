@@ -45,7 +45,7 @@ __attribute__((unused)) static ComGoogleGsonTypeAdapter *ComGoogleGsonFunctional
   NSString *name_;
 }
 
-- (instancetype)initWithNSString:(NSString *)name;
+- (instancetype __nonnull)initWithNSString:(NSString *)name;
 
 @end
 
@@ -66,7 +66,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_Foo)
   NSString *val$name_;
 }
 
-- (instancetype)initWithNSString:(NSString *)capture$0;
+- (instancetype __nonnull)initWithNSString:(NSString *)capture$0;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_Foo *)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -87,7 +87,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_
   NSString *val$name_;
 }
 
-- (instancetype)initWithNSString:(NSString *)capture$0;
+- (instancetype __nonnull)initWithNSString:(NSString *)capture$0;
 
 - (ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_Foo *)deserializeWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)json
                                                                           withJavaLangReflectType:(id<JavaLangReflectType>)typeOfT
@@ -108,7 +108,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_
   NSString *val$name_;
 }
 
-- (instancetype)initWithNSString:(NSString *)capture$0;
+- (instancetype __nonnull)initWithNSString:(NSString *)capture$0;
 
 - (ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_Foo *)readWithComGoogleGsonStreamJsonReader:(ComGoogleGsonStreamJsonReader *)inArg;
 
@@ -134,7 +134,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_
 @implementation ComGoogleGsonFunctionalTypeAdapterPrecedenceTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_init(self);
   return self;
 }
@@ -217,6 +217,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testNonstreamingFollowedByNonstreaming);
   methods[2].selector = @selector(testStreamingFollowedByStreaming);
@@ -265,7 +266,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeAdapterPrecedenceTes
 
 @implementation ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_Foo
 
-- (instancetype)initWithNSString:(NSString *)name {
+- (instancetype __nonnull)initWithNSString:(NSString *)name {
   ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_Foo_initWithNSString_(self, name);
   return self;
 }
@@ -281,6 +282,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeAdapterPrecedenceTes
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -310,7 +312,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeAdapterPrecedenceTes
 
 @implementation ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_1
 
-- (instancetype)initWithNSString:(NSString *)capture$0 {
+- (instancetype __nonnull)initWithNSString:(NSString *)capture$0 {
   ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_1_initWithNSString_(self, capture$0);
   return self;
 }
@@ -333,6 +335,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeAdapterPrecedenceTes
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   #pragma clang diagnostic pop
@@ -361,7 +364,7 @@ ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_1 *create_ComGoogleGsonFunction
 
 @implementation ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_2
 
-- (instancetype)initWithNSString:(NSString *)capture$0 {
+- (instancetype __nonnull)initWithNSString:(NSString *)capture$0 {
   ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_2_initWithNSString_(self, capture$0);
   return self;
 }
@@ -384,6 +387,7 @@ ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_1 *create_ComGoogleGsonFunction
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(deserializeWithComGoogleGsonJsonElement:withJavaLangReflectType:withComGoogleGsonJsonDeserializationContext:);
   #pragma clang diagnostic pop
@@ -412,7 +416,7 @@ ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_2 *create_ComGoogleGsonFunction
 
 @implementation ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_3
 
-- (instancetype)initWithNSString:(NSString *)capture$0 {
+- (instancetype __nonnull)initWithNSString:(NSString *)capture$0 {
   ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_3_initWithNSString_(self, capture$0);
   return self;
 }
@@ -439,6 +443,7 @@ ComGoogleGsonFunctionalTypeAdapterPrecedenceTest_2 *create_ComGoogleGsonFunction
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternal$Gson$Types
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternal_Gson_Types_) && (INCLUDE_ALL_ComGoogleGsonInternal$Gson$Types || defined(INCLUDE_ComGoogleGsonInternal_Gson_Types))
 #define ComGoogleGsonInternal_Gson_Types_
 
@@ -181,4 +186,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternal_Gson_Types)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternal$Gson$Types")

@@ -59,7 +59,7 @@ __attribute__((unused)) static id<JavaUtilMap> ComGoogleGsonFunctionalMapTest_ne
 
 @interface ComGoogleGsonFunctionalMapTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -73,7 +73,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_1 *create_ComGoogl
 
 @interface ComGoogleGsonFunctionalMapTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -87,7 +87,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_2 *create_ComGoogl
 
 @interface ComGoogleGsonFunctionalMapTest_3 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -101,7 +101,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_3 *create_ComGoogl
 
 @interface ComGoogleGsonFunctionalMapTest_4 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -115,7 +115,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_4 *create_ComGoogl
 
 @interface ComGoogleGsonFunctionalMapTest_5 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -129,7 +129,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_5 *create_ComGoogl
 
 @interface ComGoogleGsonFunctionalMapTest_6 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -143,7 +143,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_6 *create_ComGoogl
 
 @interface ComGoogleGsonFunctionalMapTest_7 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -157,7 +157,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_7 *create_ComGoogl
 
 @interface ComGoogleGsonFunctionalMapTest_8 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -171,7 +171,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_8 *create_ComGoogl
 
 @interface ComGoogleGsonFunctionalMapTest_9 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -185,7 +185,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_9 *create_ComGoogl
 
 @interface ComGoogleGsonFunctionalMapTest_10 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -199,7 +199,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_10 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_11 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -213,7 +213,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_11 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_12 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -227,7 +227,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_12 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_13 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -241,7 +241,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_13 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_14 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -258,7 +258,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_14 *create_ComGoog
   jint foo_;
 }
 
-- (instancetype)initWithInt:(jint)foo;
+- (instancetype __nonnull)initWithInt:(jint)foo;
 
 @end
 
@@ -274,7 +274,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMapTest_MyParameterizedMap)
 
 @interface ComGoogleGsonFunctionalMapTest_15 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -288,7 +288,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_15 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_16 : NSObject < ComGoogleGsonInstanceCreator >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonFunctionalMapTest_MyMap *)createInstanceWithJavaLangReflectType:(id<JavaLangReflectType>)type;
 
@@ -304,7 +304,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_16 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_17 : NSObject < ComGoogleGsonJsonSerializer >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(id<JavaUtilMap>)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -329,7 +329,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_17 *create_ComGoog
   id<JavaUtilMap> map_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -347,7 +347,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMapTest_ClassWithAMap)
 
 @interface ComGoogleGsonFunctionalMapTest_18 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -361,7 +361,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_18 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_19 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -378,7 +378,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_19 *create_ComGoog
   jint foo_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (NSString *)computeIfAbsentWithId:(NSString *)arg0
        withJavaUtilFunctionFunction:(id<JavaUtilFunctionFunction>)arg1;
@@ -427,7 +427,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMapTest_MyMap)
 
 @interface ComGoogleGsonFunctionalMapTest_20 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -441,7 +441,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_20 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_21 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -458,7 +458,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_21 *create_ComGoog
   ComGoogleGsonJsonElement *val$baseTypeJsonElement_;
 }
 
-- (instancetype)initWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)capture$0;
+- (instancetype __nonnull)initWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)capture$0;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(ComGoogleGsonCommonTestTypes_Base *)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -476,7 +476,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_22 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_23 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -490,7 +490,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_23 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_24 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -504,7 +504,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_24 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_25 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -518,7 +518,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_25 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_26 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -532,7 +532,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_26 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_27 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -546,7 +546,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_27 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_28 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -560,7 +560,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_28 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_29 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -574,7 +574,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_29 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_30 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -588,7 +588,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalMapTest_30 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalMapTest_31 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -626,7 +626,7 @@ __attribute__((unused)) static void ComGoogleGsonFunctionalMapTest_MapClass_addS
 @implementation ComGoogleGsonFunctionalMapTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_init(self);
   return self;
 }
@@ -1062,6 +1062,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testMapSerialization);
@@ -1141,7 +1142,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMapTest)
 @implementation ComGoogleGsonFunctionalMapTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_1_init(self);
   return self;
 }
@@ -1153,6 +1154,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapSerialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -1177,7 +1179,7 @@ ComGoogleGsonFunctionalMapTest_1 *create_ComGoogleGsonFunctionalMapTest_1_init()
 @implementation ComGoogleGsonFunctionalMapTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_2_init(self);
   return self;
 }
@@ -1189,6 +1191,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -1213,7 +1216,7 @@ ComGoogleGsonFunctionalMapTest_2 *create_ComGoogleGsonFunctionalMapTest_2_init()
 @implementation ComGoogleGsonFunctionalMapTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_3_init(self);
   return self;
 }
@@ -1225,6 +1228,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapSerializationEmpty", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -1249,7 +1253,7 @@ ComGoogleGsonFunctionalMapTest_3 *create_ComGoogleGsonFunctionalMapTest_3_init()
 @implementation ComGoogleGsonFunctionalMapTest_4
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_4_init(self);
   return self;
 }
@@ -1261,6 +1265,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapDeserializationEmpty", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -1285,7 +1290,7 @@ ComGoogleGsonFunctionalMapTest_4 *create_ComGoogleGsonFunctionalMapTest_4_init()
 @implementation ComGoogleGsonFunctionalMapTest_5
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_5_init(self);
   return self;
 }
@@ -1297,6 +1302,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapSerializationWithNullValue", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -1321,7 +1327,7 @@ ComGoogleGsonFunctionalMapTest_5 *create_ComGoogleGsonFunctionalMapTest_5_init()
 @implementation ComGoogleGsonFunctionalMapTest_6
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_6_init(self);
   return self;
 }
@@ -1333,6 +1339,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapDeserializationWithNullValue", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -1357,7 +1364,7 @@ ComGoogleGsonFunctionalMapTest_6 *create_ComGoogleGsonFunctionalMapTest_6_init()
 @implementation ComGoogleGsonFunctionalMapTest_7
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_7_init(self);
   return self;
 }
@@ -1369,6 +1376,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapSerializationWithNullValueButSerializeNulls", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -1393,7 +1401,7 @@ ComGoogleGsonFunctionalMapTest_7 *create_ComGoogleGsonFunctionalMapTest_7_init()
 @implementation ComGoogleGsonFunctionalMapTest_8
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_8_init(self);
   return self;
 }
@@ -1405,6 +1413,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapSerializationWithNullKey", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -1429,7 +1438,7 @@ ComGoogleGsonFunctionalMapTest_8 *create_ComGoogleGsonFunctionalMapTest_8_init()
 @implementation ComGoogleGsonFunctionalMapTest_9
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_9_init(self);
   return self;
 }
@@ -1441,6 +1450,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapDeserializationWithNullKey", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -1465,7 +1475,7 @@ ComGoogleGsonFunctionalMapTest_9 *create_ComGoogleGsonFunctionalMapTest_9_init()
 @implementation ComGoogleGsonFunctionalMapTest_10
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_10_init(self);
   return self;
 }
@@ -1477,6 +1487,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapSerializationWithIntegerKeys", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/Integer;Ljava/lang/String;>;>;" };
@@ -1501,7 +1512,7 @@ ComGoogleGsonFunctionalMapTest_10 *create_ComGoogleGsonFunctionalMapTest_10_init
 @implementation ComGoogleGsonFunctionalMapTest_11
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_11_init(self);
   return self;
 }
@@ -1513,6 +1524,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapDeserializationWithIntegerKeys", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/Integer;Ljava/lang/String;>;>;" };
@@ -1537,7 +1549,7 @@ ComGoogleGsonFunctionalMapTest_11 *create_ComGoogleGsonFunctionalMapTest_11_init
 @implementation ComGoogleGsonFunctionalMapTest_12
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_12_init(self);
   return self;
 }
@@ -1549,6 +1561,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testHashMapDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/HashMap<Ljava/lang/Integer;Ljava/lang/String;>;>;" };
@@ -1573,7 +1586,7 @@ ComGoogleGsonFunctionalMapTest_12 *create_ComGoogleGsonFunctionalMapTest_12_init
 @implementation ComGoogleGsonFunctionalMapTest_13
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_13_init(self);
   return self;
 }
@@ -1585,6 +1598,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testSortedMap", "Lcom/google/gson/reflect/TypeToken<Ljava/util/SortedMap<Ljava/lang/Integer;Ljava/lang/String;>;>;" };
@@ -1609,7 +1623,7 @@ ComGoogleGsonFunctionalMapTest_13 *create_ComGoogleGsonFunctionalMapTest_13_init
 @implementation ComGoogleGsonFunctionalMapTest_14
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_14_init(self);
   return self;
 }
@@ -1621,6 +1635,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testParameterizedMapSubclassSerialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/MapTest$MyParameterizedMap<Ljava/lang/String;Ljava/lang/String;>;>;" };
@@ -1644,7 +1659,7 @@ ComGoogleGsonFunctionalMapTest_14 *create_ComGoogleGsonFunctionalMapTest_14_init
 
 @implementation ComGoogleGsonFunctionalMapTest_MyParameterizedMap
 
-- (instancetype)initWithInt:(jint)foo {
+- (instancetype __nonnull)initWithInt:(jint)foo {
   ComGoogleGsonFunctionalMapTest_MyParameterizedMap_initWithInt_(self, foo);
   return self;
 }
@@ -1655,6 +1670,7 @@ ComGoogleGsonFunctionalMapTest_14 *create_ComGoogleGsonFunctionalMapTest_14_init
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithInt:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1685,7 +1701,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMapTest_MyParameterizedM
 @implementation ComGoogleGsonFunctionalMapTest_15
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_15_init(self);
   return self;
 }
@@ -1697,6 +1713,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapStandardSubclassDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/LinkedHashMap<Ljava/lang/String;Ljava/lang/String;>;>;" };
@@ -1721,7 +1738,7 @@ ComGoogleGsonFunctionalMapTest_15 *create_ComGoogleGsonFunctionalMapTest_15_init
 @implementation ComGoogleGsonFunctionalMapTest_16
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_16_init(self);
   return self;
 }
@@ -1738,6 +1755,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createInstanceWithJavaLangReflectType:);
   #pragma clang diagnostic pop
@@ -1763,7 +1781,7 @@ ComGoogleGsonFunctionalMapTest_16 *create_ComGoogleGsonFunctionalMapTest_16_init
 @implementation ComGoogleGsonFunctionalMapTest_17
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_17_init(self);
   return self;
 }
@@ -1787,6 +1805,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   #pragma clang diagnostic pop
@@ -1812,7 +1831,7 @@ ComGoogleGsonFunctionalMapTest_17 *create_ComGoogleGsonFunctionalMapTest_17_init
 @implementation ComGoogleGsonFunctionalMapTest_ClassWithAMap
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_ClassWithAMap_init(self);
   return self;
 }
@@ -1829,6 +1848,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1859,7 +1879,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMapTest_ClassWithAMap)
 @implementation ComGoogleGsonFunctionalMapTest_18
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_18_init(self);
   return self;
 }
@@ -1871,6 +1891,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapSerializationWithWildcardValues", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;+Ljava/util/Collection<+Ljava/lang/Integer;>;>;>;" };
@@ -1895,7 +1916,7 @@ ComGoogleGsonFunctionalMapTest_18 *create_ComGoogleGsonFunctionalMapTest_18_init
 @implementation ComGoogleGsonFunctionalMapTest_19
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_19_init(self);
   return self;
 }
@@ -1907,6 +1928,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapDeserializationWithWildcardValues", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;+Ljava/lang/Long;>;>;" };
@@ -1931,7 +1953,7 @@ ComGoogleGsonFunctionalMapTest_19 *create_ComGoogleGsonFunctionalMapTest_19_init
 @implementation ComGoogleGsonFunctionalMapTest_MyMap
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_MyMap_init(self);
   return self;
 }
@@ -1943,6 +1965,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1974,7 +1997,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMapTest_MyMap)
 @implementation ComGoogleGsonFunctionalMapTest_20
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_20_init(self);
   return self;
 }
@@ -1986,6 +2009,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapOfMapDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;>;>;" };
@@ -2010,7 +2034,7 @@ ComGoogleGsonFunctionalMapTest_20 *create_ComGoogleGsonFunctionalMapTest_20_init
 @implementation ComGoogleGsonFunctionalMapTest_21
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_21_init(self);
   return self;
 }
@@ -2022,6 +2046,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testReadMapsWithEmptyStringKey", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Boolean;>;>;" };
@@ -2045,7 +2070,7 @@ ComGoogleGsonFunctionalMapTest_21 *create_ComGoogleGsonFunctionalMapTest_21_init
 
 @implementation ComGoogleGsonFunctionalMapTest_22
 
-- (instancetype)initWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)capture$0 {
+- (instancetype __nonnull)initWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)capture$0 {
   ComGoogleGsonFunctionalMapTest_22_initWithComGoogleGsonJsonElement_(self, capture$0);
   return self;
 }
@@ -2068,6 +2093,7 @@ ComGoogleGsonFunctionalMapTest_21 *create_ComGoogleGsonFunctionalMapTest_21_init
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonJsonElement:);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   #pragma clang diagnostic pop
@@ -2097,7 +2123,7 @@ ComGoogleGsonFunctionalMapTest_22 *create_ComGoogleGsonFunctionalMapTest_22_init
 @implementation ComGoogleGsonFunctionalMapTest_23
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_23_init(self);
   return self;
 }
@@ -2109,6 +2135,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testComplexKeysSerialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Lcom/google/gson/functional/MapTest$Point;Ljava/lang/String;>;>;" };
@@ -2133,7 +2160,7 @@ ComGoogleGsonFunctionalMapTest_23 *create_ComGoogleGsonFunctionalMapTest_23_init
 @implementation ComGoogleGsonFunctionalMapTest_24
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_24_init(self);
   return self;
 }
@@ -2145,6 +2172,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testComplexKeysDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Lcom/google/gson/functional/MapTest$Point;Ljava/lang/String;>;>;" };
@@ -2169,7 +2197,7 @@ ComGoogleGsonFunctionalMapTest_24 *create_ComGoogleGsonFunctionalMapTest_24_init
 @implementation ComGoogleGsonFunctionalMapTest_25
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_25_init(self);
   return self;
 }
@@ -2181,6 +2209,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testStringKeyDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;>;" };
@@ -2205,7 +2234,7 @@ ComGoogleGsonFunctionalMapTest_25 *create_ComGoogleGsonFunctionalMapTest_25_init
 @implementation ComGoogleGsonFunctionalMapTest_26
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_26_init(self);
   return self;
 }
@@ -2217,6 +2246,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testNumberKeyDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/Double;Ljava/lang/String;>;>;" };
@@ -2241,7 +2271,7 @@ ComGoogleGsonFunctionalMapTest_26 *create_ComGoogleGsonFunctionalMapTest_26_init
 @implementation ComGoogleGsonFunctionalMapTest_27
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_27_init(self);
   return self;
 }
@@ -2253,6 +2283,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testBooleanKeyDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/Boolean;Ljava/lang/String;>;>;" };
@@ -2277,7 +2308,7 @@ ComGoogleGsonFunctionalMapTest_27 *create_ComGoogleGsonFunctionalMapTest_27_init
 @implementation ComGoogleGsonFunctionalMapTest_28
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_28_init(self);
   return self;
 }
@@ -2289,6 +2320,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapDeserializationWithDuplicateKeys", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -2313,7 +2345,7 @@ ComGoogleGsonFunctionalMapTest_28 *create_ComGoogleGsonFunctionalMapTest_28_init
 @implementation ComGoogleGsonFunctionalMapTest_29
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_29_init(self);
   return self;
 }
@@ -2325,6 +2357,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testSerializeMapOfMaps", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;>;>;" };
@@ -2349,7 +2382,7 @@ ComGoogleGsonFunctionalMapTest_29 *create_ComGoogleGsonFunctionalMapTest_29_init
 @implementation ComGoogleGsonFunctionalMapTest_30
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_30_init(self);
   return self;
 }
@@ -2361,6 +2394,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testDeerializeMapOfMaps", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;>;>;" };
@@ -2385,7 +2419,7 @@ ComGoogleGsonFunctionalMapTest_30 *create_ComGoogleGsonFunctionalMapTest_30_init
 @implementation ComGoogleGsonFunctionalMapTest_31
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_31_init(self);
   return self;
 }
@@ -2397,6 +2431,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalMapTest;", "testMapNamePromotionWithJsonElementReader", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/Double;Ljava/lang/String;>;>;" };
@@ -2420,8 +2455,8 @@ ComGoogleGsonFunctionalMapTest_31 *create_ComGoogleGsonFunctionalMapTest_31_init
 
 @implementation ComGoogleGsonFunctionalMapTest_Point
 
-- (instancetype)initWithInt:(jint)x
-                    withInt:(jint)y {
+- (instancetype __nonnull)initWithInt:(jint)x
+                              withInt:(jint)y {
   ComGoogleGsonFunctionalMapTest_Point_initWithInt_withInt_(self, x, y);
   return self;
 }
@@ -2447,6 +2482,7 @@ ComGoogleGsonFunctionalMapTest_31 *create_ComGoogleGsonFunctionalMapTest_31_init
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithInt:withInt:);
   methods[1].selector = @selector(isEqual:);
   methods[2].selector = @selector(hash);
@@ -2482,7 +2518,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMapTest_Point)
 @implementation ComGoogleGsonFunctionalMapTest_MapClass
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_MapClass_init(self);
   return self;
 }
@@ -2512,6 +2548,7 @@ withComGoogleGsonCommonTestTypes_Sub:(ComGoogleGsonCommonTestTypes_Sub *)value {
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(addBaseWithNSString:withComGoogleGsonCommonTestTypes_Base:);
   methods[2].selector = @selector(addSubWithNSString:withComGoogleGsonCommonTestTypes_Sub:);
@@ -2554,7 +2591,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMapTest_MapClass)
 @implementation ComGoogleGsonFunctionalMapTest_MapWithGeneralMapParameters
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMapTest_MapWithGeneralMapParameters_init(self);
   return self;
 }
@@ -2571,6 +2608,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

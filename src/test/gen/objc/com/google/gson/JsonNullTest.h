@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonJsonNullTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonJsonNullTest_) && (INCLUDE_ALL_ComGoogleGsonJsonNullTest || defined(INCLUDE_ComGoogleGsonJsonNullTest))
 #define ComGoogleGsonJsonNullTest_
 
@@ -27,7 +32,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)testDeepCopy;
 
@@ -35,7 +40,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -51,4 +56,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonNullTest)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonJsonNullTest")

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalBindJsonTreeReader
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternalBindJsonTreeReader_) && (INCLUDE_ALL_ComGoogleGsonInternalBindJsonTreeReader || defined(INCLUDE_ComGoogleGsonInternalBindJsonTreeReader))
 #define ComGoogleGsonInternalBindJsonTreeReader_
 
@@ -33,7 +38,7 @@
 
 #pragma mark Public
 
-- (instancetype)initWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)element;
+- (instancetype __nonnull)initWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)element;
 
 - (void)beginArray;
 
@@ -71,7 +76,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithJavaIoReader:(JavaIoReader *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithJavaIoReader:(JavaIoReader *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -87,4 +92,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindJsonTreeReader)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalBindJsonTreeReader")

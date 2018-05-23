@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternal$Gson$Preconditions
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternal_Gson_Preconditions_) && (INCLUDE_ALL_ComGoogleGsonInternal$Gson$Preconditions || defined(INCLUDE_ComGoogleGsonInternal_Gson_Preconditions))
 #define ComGoogleGsonInternal_Gson_Preconditions_
 
@@ -33,7 +38,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 + (void)checkArgumentWithBoolean:(jboolean)condition;
 
@@ -59,4 +64,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternal_Gson_Preconditions)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternal$Gson$Preconditions")

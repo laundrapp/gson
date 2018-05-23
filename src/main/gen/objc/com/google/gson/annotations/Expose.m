@@ -36,6 +36,14 @@ __attribute__((unused)) static IOSObjectArray *ComGoogleGsonAnnotationsExpose__A
   return [NSString stringWithFormat:@"@com.google.gson.annotations.Expose(serialize=%d, deserialize=%d)", serialize_, deserialize_];
 }
 
+- (jboolean)isEqual:(id)obj {
+  return JreAnnotationEquals(self, obj);
+}
+
+- (NSUInteger)hash {
+  return JreAnnotationHashCode(self);
+}
+
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "Z", 0x401, -1, -1, -1, -1, -1, -1 },
@@ -43,6 +51,7 @@ __attribute__((unused)) static IOSObjectArray *ComGoogleGsonAnnotationsExpose__A
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(serialize);
   methods[1].selector = @selector(deserialize);
   #pragma clang diagnostic pop

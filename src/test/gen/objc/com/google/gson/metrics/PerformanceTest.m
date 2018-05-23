@@ -57,10 +57,10 @@ __attribute__((unused)) static NSString *ComGoogleGsonMetricsPerformanceTest_bui
   NSString *stackTrace_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSString:(NSString *)message
-                    withNSString:(NSString *)stackTrace;
+- (instancetype __nonnull)initWithNSString:(NSString *)message
+                              withNSString:(NSString *)stackTrace;
 
 @end
 
@@ -89,10 +89,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonMetricsPerformanceTest_ExceptionHolder)
   NSString *value_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSString:(NSString *)name
-                    withNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)name
+                              withNSString:(NSString *)value;
 
 @end
 
@@ -117,7 +117,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonMetricsPerformanceTest_CollectionEntry)
 
 @interface ComGoogleGsonMetricsPerformanceTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -131,7 +131,7 @@ __attribute__((unused)) static ComGoogleGsonMetricsPerformanceTest_1 *create_Com
 
 @interface ComGoogleGsonMetricsPerformanceTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -145,7 +145,7 @@ __attribute__((unused)) static ComGoogleGsonMetricsPerformanceTest_2 *create_Com
 
 @interface ComGoogleGsonMetricsPerformanceTest_3 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -163,9 +163,9 @@ __attribute__((unused)) static ComGoogleGsonMetricsPerformanceTest_3 *create_Com
   id<JavaUtilList> list_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSString:(NSString *)field;
+- (instancetype __nonnull)initWithNSString:(NSString *)field;
 
 @end
 
@@ -193,9 +193,9 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonMetricsPerformanceTest_ClassWithList)
   NSString *field_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSString:(NSString *)field;
+- (instancetype __nonnull)initWithNSString:(NSString *)field;
 
 @end
 
@@ -223,9 +223,9 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonMetricsPerformanceTest_ClassWithField)
   id<JavaUtilList> list_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSString:(NSString *)field;
+- (instancetype __nonnull)initWithNSString:(NSString *)field;
 
 @end
 
@@ -257,9 +257,9 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonMetricsPerformanceTest_ClassWithListOfOb
   NSString *field_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSString:(NSString *)field;
+- (instancetype __nonnull)initWithNSString:(NSString *)field;
 
 @end
 
@@ -286,7 +286,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonMetricsPerformanceTest_ClassWithExposedF
 @implementation ComGoogleGsonMetricsPerformanceTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMetricsPerformanceTest_init(self);
   return self;
 }
@@ -494,6 +494,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testDummy);
@@ -566,14 +567,14 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonMetricsPerformanceTest)
 @implementation ComGoogleGsonMetricsPerformanceTest_ExceptionHolder
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMetricsPerformanceTest_ExceptionHolder_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithNSString:(NSString *)message
-                    withNSString:(NSString *)stackTrace {
+- (instancetype __nonnull)initWithNSString:(NSString *)message
+                              withNSString:(NSString *)stackTrace {
   ComGoogleGsonMetricsPerformanceTest_ExceptionHolder_initWithNSString_withNSString_(self, message, stackTrace);
   return self;
 }
@@ -591,6 +592,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSString:withNSString:);
   #pragma clang diagnostic pop
@@ -636,14 +638,14 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonMetricsPerformanceTest_ExceptionHo
 @implementation ComGoogleGsonMetricsPerformanceTest_CollectionEntry
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMetricsPerformanceTest_CollectionEntry_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithNSString:(NSString *)name
-                    withNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)name
+                              withNSString:(NSString *)value {
   ComGoogleGsonMetricsPerformanceTest_CollectionEntry_initWithNSString_withNSString_(self, name, value);
   return self;
 }
@@ -661,6 +663,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSString:withNSString:);
   #pragma clang diagnostic pop
@@ -706,7 +709,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonMetricsPerformanceTest_CollectionE
 @implementation ComGoogleGsonMetricsPerformanceTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMetricsPerformanceTest_1_init(self);
   return self;
 }
@@ -718,6 +721,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonMetricsPerformanceTest;", "disabled_testLargeCollectionDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/ArrayList<Lcom/google/gson/metrics/PerformanceTest$CollectionEntry;>;>;" };
@@ -742,7 +746,7 @@ ComGoogleGsonMetricsPerformanceTest_1 *create_ComGoogleGsonMetricsPerformanceTes
 @implementation ComGoogleGsonMetricsPerformanceTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMetricsPerformanceTest_2_init(self);
   return self;
 }
@@ -754,6 +758,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonMetricsPerformanceTest;", "disable_testLargeObjectSerializationAndDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Long;>;>;" };
@@ -778,7 +783,7 @@ ComGoogleGsonMetricsPerformanceTest_2 *create_ComGoogleGsonMetricsPerformanceTes
 @implementation ComGoogleGsonMetricsPerformanceTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMetricsPerformanceTest_3_init(self);
   return self;
 }
@@ -790,6 +795,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonMetricsPerformanceTest;", "disabled_testLargeGsonMapRoundTrip", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/Long;Ljava/lang/Long;>;>;" };
@@ -814,13 +820,13 @@ ComGoogleGsonMetricsPerformanceTest_3 *create_ComGoogleGsonMetricsPerformanceTes
 @implementation ComGoogleGsonMetricsPerformanceTest_ClassWithList
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMetricsPerformanceTest_ClassWithList_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithNSString:(NSString *)field {
+- (instancetype __nonnull)initWithNSString:(NSString *)field {
   ComGoogleGsonMetricsPerformanceTest_ClassWithList_initWithNSString_(self, field);
   return self;
 }
@@ -838,6 +844,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop
@@ -883,13 +890,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonMetricsPerformanceTest_ClassWithLi
 @implementation ComGoogleGsonMetricsPerformanceTest_ClassWithField
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMetricsPerformanceTest_ClassWithField_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithNSString:(NSString *)field {
+- (instancetype __nonnull)initWithNSString:(NSString *)field {
   ComGoogleGsonMetricsPerformanceTest_ClassWithField_initWithNSString_(self, field);
   return self;
 }
@@ -906,6 +913,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop
@@ -949,13 +957,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonMetricsPerformanceTest_ClassWithFi
 @implementation ComGoogleGsonMetricsPerformanceTest_ClassWithListOfObjects
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMetricsPerformanceTest_ClassWithListOfObjects_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithNSString:(NSString *)field {
+- (instancetype __nonnull)initWithNSString:(NSString *)field {
   ComGoogleGsonMetricsPerformanceTest_ClassWithListOfObjects_initWithNSString_(self, field);
   return self;
 }
@@ -973,6 +981,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop
@@ -1026,13 +1035,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonMetricsPerformanceTest_ClassWithLi
 @implementation ComGoogleGsonMetricsPerformanceTest_ClassWithExposedField
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonMetricsPerformanceTest_ClassWithExposedField_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithNSString:(NSString *)field {
+- (instancetype __nonnull)initWithNSString:(NSString *)field {
   ComGoogleGsonMetricsPerformanceTest_ClassWithExposedField_initWithNSString_(self, field);
   return self;
 }
@@ -1049,6 +1058,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop

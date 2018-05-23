@@ -27,7 +27,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalRawSerializationTest, gson_, ComGoogl
 
 @interface ComGoogleGsonFunctionalRawSerializationTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -41,7 +41,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalRawSerializationTest_1 *cr
 
 @interface ComGoogleGsonFunctionalRawSerializationTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -55,7 +55,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalRawSerializationTest_2 *cr
 
 @interface ComGoogleGsonFunctionalRawSerializationTest_3 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -72,7 +72,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalRawSerializationTest_3 *cr
   jint b_;
 }
 
-- (instancetype)initWithInt:(jint)b;
+- (instancetype __nonnull)initWithInt:(jint)b;
 
 @end
 
@@ -91,7 +91,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalRawSerializationTest_Foo)
   id t_;
 }
 
-- (instancetype)initWithId:(id)t;
+- (instancetype __nonnull)initWithId:(id)t;
 
 @end
 
@@ -110,7 +110,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalRawSerializationTest_Bar)
 @implementation ComGoogleGsonFunctionalRawSerializationTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalRawSerializationTest_init(self);
   return self;
 }
@@ -177,6 +177,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testCollectionOfPrimitives);
@@ -212,7 +213,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRawSerializationTest)
 @implementation ComGoogleGsonFunctionalRawSerializationTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalRawSerializationTest_1_init(self);
   return self;
 }
@@ -224,6 +225,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalRawSerializationTest;", "testParameterizedObject", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/RawSerializationTest$Bar<Lcom/google/gson/functional/RawSerializationTest$Foo;>;>;" };
@@ -248,7 +250,7 @@ ComGoogleGsonFunctionalRawSerializationTest_1 *create_ComGoogleGsonFunctionalRaw
 @implementation ComGoogleGsonFunctionalRawSerializationTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalRawSerializationTest_2_init(self);
   return self;
 }
@@ -260,6 +262,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalRawSerializationTest;", "testTwoLevelParameterizedObject", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/RawSerializationTest$Bar<Lcom/google/gson/functional/RawSerializationTest$Bar<Lcom/google/gson/functional/RawSerializationTest$Foo;>;>;>;" };
@@ -284,7 +287,7 @@ ComGoogleGsonFunctionalRawSerializationTest_2 *create_ComGoogleGsonFunctionalRaw
 @implementation ComGoogleGsonFunctionalRawSerializationTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalRawSerializationTest_3_init(self);
   return self;
 }
@@ -296,6 +299,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalRawSerializationTest;", "testThreeLevelParameterizedObject", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/RawSerializationTest$Bar<Lcom/google/gson/functional/RawSerializationTest$Bar<Lcom/google/gson/functional/RawSerializationTest$Bar<Lcom/google/gson/functional/RawSerializationTest$Foo;>;>;>;>;" };
@@ -319,7 +323,7 @@ ComGoogleGsonFunctionalRawSerializationTest_3 *create_ComGoogleGsonFunctionalRaw
 
 @implementation ComGoogleGsonFunctionalRawSerializationTest_Foo
 
-- (instancetype)initWithInt:(jint)b {
+- (instancetype __nonnull)initWithInt:(jint)b {
   ComGoogleGsonFunctionalRawSerializationTest_Foo_initWithInt_(self, b);
   return self;
 }
@@ -330,6 +334,7 @@ ComGoogleGsonFunctionalRawSerializationTest_3 *create_ComGoogleGsonFunctionalRaw
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithInt:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -359,7 +364,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRawSerializationTest_Foo
 
 @implementation ComGoogleGsonFunctionalRawSerializationTest_Bar
 
-- (instancetype)initWithId:(id)t {
+- (instancetype __nonnull)initWithId:(id)t {
   ComGoogleGsonFunctionalRawSerializationTest_Bar_initWithId_(self, t);
   return self;
 }
@@ -375,6 +380,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalRawSerializationTest_Foo
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithId:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

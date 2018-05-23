@@ -35,14 +35,14 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalExposeFieldsTest, gson_, ComGoogleGso
   jchar e_;
 }
 
-- (instancetype)initWithJavaLangInteger:(JavaLangInteger *)a
-                    withJavaLangInteger:(JavaLangInteger *)b;
+- (instancetype __nonnull)initWithJavaLangInteger:(JavaLangInteger *)a
+                              withJavaLangInteger:(JavaLangInteger *)b;
 
-- (instancetype)initWithJavaLangInteger:(JavaLangInteger *)a
-                    withJavaLangInteger:(JavaLangInteger *)b
-                               withLong:(jlong)c
-                             withDouble:(jdouble)d
-                               withChar:(jchar)e;
+- (instancetype __nonnull)initWithJavaLangInteger:(JavaLangInteger *)a
+                              withJavaLangInteger:(JavaLangInteger *)b
+                                         withLong:(jlong)c
+                                       withDouble:(jdouble)d
+                                         withChar:(jchar)e;
 
 - (NSString *)getExpectedJson;
 
@@ -77,7 +77,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalExposeFieldsTest_ClassWithExpo
 
 @interface ComGoogleGsonFunctionalExposeFieldsTest_ClassWithNoExposedFields : NSObject
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -113,7 +113,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalExposeFieldsTest_SomeInterface
 
 @interface ComGoogleGsonFunctionalExposeFieldsTest_SomeObject : NSObject < ComGoogleGsonFunctionalExposeFieldsTest_SomeInterface >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -129,7 +129,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalExposeFieldsTest_SomeObject)
 
 @interface ComGoogleGsonFunctionalExposeFieldsTest_SomeInterfaceInstanceCreator : NSObject < ComGoogleGsonInstanceCreator >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (id<ComGoogleGsonFunctionalExposeFieldsTest_SomeInterface>)createInstanceWithJavaLangReflectType:(id<JavaLangReflectType>)type;
 
@@ -150,7 +150,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalExposeFieldsTest_SomeInterface
   id<ComGoogleGsonFunctionalExposeFieldsTest_SomeInterface> interfaceField_;
 }
 
-- (instancetype)initWithComGoogleGsonFunctionalExposeFieldsTest_SomeInterface:(id<ComGoogleGsonFunctionalExposeFieldsTest_SomeInterface>)interfaceField;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalExposeFieldsTest_SomeInterface:(id<ComGoogleGsonFunctionalExposeFieldsTest_SomeInterface>)interfaceField;
 
 @end
 
@@ -171,7 +171,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalExposeFieldsTest_ClassWithInte
 @implementation ComGoogleGsonFunctionalExposeFieldsTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalExposeFieldsTest_init(self);
   return self;
 }
@@ -257,6 +257,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testNullExposeFieldSerialization);
@@ -294,17 +295,17 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalExposeFieldsTest)
 
 @implementation ComGoogleGsonFunctionalExposeFieldsTest_ClassWithExposedFields
 
-- (instancetype)initWithJavaLangInteger:(JavaLangInteger *)a
-                    withJavaLangInteger:(JavaLangInteger *)b {
+- (instancetype __nonnull)initWithJavaLangInteger:(JavaLangInteger *)a
+                              withJavaLangInteger:(JavaLangInteger *)b {
   ComGoogleGsonFunctionalExposeFieldsTest_ClassWithExposedFields_initWithJavaLangInteger_withJavaLangInteger_(self, a, b);
   return self;
 }
 
-- (instancetype)initWithJavaLangInteger:(JavaLangInteger *)a
-                    withJavaLangInteger:(JavaLangInteger *)b
-                               withLong:(jlong)c
-                             withDouble:(jdouble)d
-                               withChar:(jchar)e {
+- (instancetype __nonnull)initWithJavaLangInteger:(JavaLangInteger *)a
+                              withJavaLangInteger:(JavaLangInteger *)b
+                                         withLong:(jlong)c
+                                       withDouble:(jdouble)d
+                                         withChar:(jchar)e {
   ComGoogleGsonFunctionalExposeFieldsTest_ClassWithExposedFields_initWithJavaLangInteger_withJavaLangInteger_withLong_withDouble_withChar_(self, a, b, c, d, e);
   return self;
 }
@@ -333,6 +334,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalExposeFieldsTest)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangInteger:withJavaLangInteger:);
   methods[1].selector = @selector(initWithJavaLangInteger:withJavaLangInteger:withLong:withDouble:withChar:);
   methods[2].selector = @selector(getExpectedJson);
@@ -401,7 +403,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalExposeFieldsTest_ClassWi
 @implementation ComGoogleGsonFunctionalExposeFieldsTest_ClassWithNoExposedFields
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalExposeFieldsTest_ClassWithNoExposedFields_init(self);
   return self;
 }
@@ -413,6 +415,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -455,7 +458,7 @@ J2OBJC_INTERFACE_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalExposeFieldsTest_Som
 @implementation ComGoogleGsonFunctionalExposeFieldsTest_SomeObject
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalExposeFieldsTest_SomeObject_init(self);
   return self;
 }
@@ -467,6 +470,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalExposeFieldsTest;" };
@@ -493,7 +497,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalExposeFieldsTest_SomeObj
 @implementation ComGoogleGsonFunctionalExposeFieldsTest_SomeInterfaceInstanceCreator
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalExposeFieldsTest_SomeInterfaceInstanceCreator_init(self);
   return self;
 }
@@ -510,6 +514,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createInstanceWithJavaLangReflectType:);
   #pragma clang diagnostic pop
@@ -536,7 +541,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalExposeFieldsTest_SomeInt
 
 @implementation ComGoogleGsonFunctionalExposeFieldsTest_ClassWithInterfaceField
 
-- (instancetype)initWithComGoogleGsonFunctionalExposeFieldsTest_SomeInterface:(id<ComGoogleGsonFunctionalExposeFieldsTest_SomeInterface>)interfaceField {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalExposeFieldsTest_SomeInterface:(id<ComGoogleGsonFunctionalExposeFieldsTest_SomeInterface>)interfaceField {
   ComGoogleGsonFunctionalExposeFieldsTest_ClassWithInterfaceField_initWithComGoogleGsonFunctionalExposeFieldsTest_SomeInterface_(self, interfaceField);
   return self;
 }
@@ -552,6 +557,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalExposeFieldsTest_SomeInt
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalExposeFieldsTest_SomeInterface:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

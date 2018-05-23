@@ -32,10 +32,10 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalConcurrencyTest, gson_, ComGoogleGson
   JavaUtilConcurrentCountDownLatch *val$finishedLatch_;
 }
 
-- (instancetype)initWithComGoogleGsonFunctionalConcurrencyTest:(ComGoogleGsonFunctionalConcurrencyTest *)outer$
-                          withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$0
-                     withJavaUtilConcurrentAtomicAtomicBoolean:(JavaUtilConcurrentAtomicAtomicBoolean *)capture$1
-                          withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$2;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalConcurrencyTest:(ComGoogleGsonFunctionalConcurrencyTest *)outer$
+                                    withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$0
+                               withJavaUtilConcurrentAtomicAtomicBoolean:(JavaUtilConcurrentAtomicAtomicBoolean *)capture$1
+                                    withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$2;
 
 - (void)run;
 
@@ -57,10 +57,10 @@ __attribute__((unused)) static ComGoogleGsonFunctionalConcurrencyTest_1 *create_
   JavaUtilConcurrentCountDownLatch *val$finishedLatch_;
 }
 
-- (instancetype)initWithComGoogleGsonFunctionalConcurrencyTest:(ComGoogleGsonFunctionalConcurrencyTest *)outer$
-                          withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$0
-                     withJavaUtilConcurrentAtomicAtomicBoolean:(JavaUtilConcurrentAtomicAtomicBoolean *)capture$1
-                          withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$2;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalConcurrencyTest:(ComGoogleGsonFunctionalConcurrencyTest *)outer$
+                                    withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$0
+                               withJavaUtilConcurrentAtomicAtomicBoolean:(JavaUtilConcurrentAtomicAtomicBoolean *)capture$1
+                                    withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$2;
 
 - (void)run;
 
@@ -81,11 +81,11 @@ __attribute__((unused)) static ComGoogleGsonFunctionalConcurrencyTest_2 *create_
   jint i_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSString:(NSString *)a
-                    withNSString:(NSString *)b
-                         withInt:(jint)i;
+- (instancetype __nonnull)initWithNSString:(NSString *)a
+                              withNSString:(NSString *)b
+                                   withInt:(jint)i;
 
 @end
 
@@ -111,7 +111,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalConcurrencyTest_MyObject)
 @implementation ComGoogleGsonFunctionalConcurrencyTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalConcurrencyTest_init(self);
   return self;
 }
@@ -177,6 +177,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testSingleThreadSerialization);
@@ -210,10 +211,10 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalConcurrencyTest)
 
 @implementation ComGoogleGsonFunctionalConcurrencyTest_1
 
-- (instancetype)initWithComGoogleGsonFunctionalConcurrencyTest:(ComGoogleGsonFunctionalConcurrencyTest *)outer$
-                          withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$0
-                     withJavaUtilConcurrentAtomicAtomicBoolean:(JavaUtilConcurrentAtomicAtomicBoolean *)capture$1
-                          withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$2 {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalConcurrencyTest:(ComGoogleGsonFunctionalConcurrencyTest *)outer$
+                                    withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$0
+                               withJavaUtilConcurrentAtomicAtomicBoolean:(JavaUtilConcurrentAtomicAtomicBoolean *)capture$1
+                                    withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$2 {
   ComGoogleGsonFunctionalConcurrencyTest_1_initWithComGoogleGsonFunctionalConcurrencyTest_withJavaUtilConcurrentCountDownLatch_withJavaUtilConcurrentAtomicAtomicBoolean_withJavaUtilConcurrentCountDownLatch_(self, outer$, capture$0, capture$1, capture$2);
   return self;
 }
@@ -249,6 +250,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalConcurrencyTest)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalConcurrencyTest:withJavaUtilConcurrentCountDownLatch:withJavaUtilConcurrentAtomicAtomicBoolean:withJavaUtilConcurrentCountDownLatch:);
   methods[1].selector = @selector(run);
   #pragma clang diagnostic pop
@@ -283,10 +285,10 @@ ComGoogleGsonFunctionalConcurrencyTest_1 *create_ComGoogleGsonFunctionalConcurre
 
 @implementation ComGoogleGsonFunctionalConcurrencyTest_2
 
-- (instancetype)initWithComGoogleGsonFunctionalConcurrencyTest:(ComGoogleGsonFunctionalConcurrencyTest *)outer$
-                          withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$0
-                     withJavaUtilConcurrentAtomicAtomicBoolean:(JavaUtilConcurrentAtomicAtomicBoolean *)capture$1
-                          withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$2 {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalConcurrencyTest:(ComGoogleGsonFunctionalConcurrencyTest *)outer$
+                                    withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$0
+                               withJavaUtilConcurrentAtomicAtomicBoolean:(JavaUtilConcurrentAtomicAtomicBoolean *)capture$1
+                                    withJavaUtilConcurrentCountDownLatch:(JavaUtilConcurrentCountDownLatch *)capture$2 {
   ComGoogleGsonFunctionalConcurrencyTest_2_initWithComGoogleGsonFunctionalConcurrencyTest_withJavaUtilConcurrentCountDownLatch_withJavaUtilConcurrentAtomicAtomicBoolean_withJavaUtilConcurrentCountDownLatch_(self, outer$, capture$0, capture$1, capture$2);
   return self;
 }
@@ -321,6 +323,7 @@ ComGoogleGsonFunctionalConcurrencyTest_1 *create_ComGoogleGsonFunctionalConcurre
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalConcurrencyTest:withJavaUtilConcurrentCountDownLatch:withJavaUtilConcurrentAtomicAtomicBoolean:withJavaUtilConcurrentCountDownLatch:);
   methods[1].selector = @selector(run);
   #pragma clang diagnostic pop
@@ -356,15 +359,15 @@ ComGoogleGsonFunctionalConcurrencyTest_2 *create_ComGoogleGsonFunctionalConcurre
 @implementation ComGoogleGsonFunctionalConcurrencyTest_MyObject
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalConcurrencyTest_MyObject_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithNSString:(NSString *)a
-                    withNSString:(NSString *)b
-                         withInt:(jint)i {
+- (instancetype __nonnull)initWithNSString:(NSString *)a
+                              withNSString:(NSString *)b
+                                   withInt:(jint)i {
   ComGoogleGsonFunctionalConcurrencyTest_MyObject_initWithNSString_withNSString_withInt_(self, a, b, i);
   return self;
 }
@@ -382,6 +385,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSString:withNSString:withInt:);
   #pragma clang diagnostic pop

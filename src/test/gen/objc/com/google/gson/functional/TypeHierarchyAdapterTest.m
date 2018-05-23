@@ -21,7 +21,7 @@
 @implementation ComGoogleGsonFunctionalTypeHierarchyAdapterTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeHierarchyAdapterTest_init(self);
   return self;
 }
@@ -76,6 +76,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testTypeHierarchy);
   methods[2].selector = @selector(testRegisterSuperTypeFirst);
@@ -105,7 +106,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeHierarchyAdapterTest
 @implementation ComGoogleGsonFunctionalTypeHierarchyAdapterTest_ManagerAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeHierarchyAdapterTest_ManagerAdapter_init(self);
   return self;
 }
@@ -133,6 +134,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(deserializeWithComGoogleGsonJsonElement:withJavaLangReflectType:withComGoogleGsonJsonDeserializationContext:);
   methods[2].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
@@ -161,7 +163,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeHierarchyAdapterTest
 @implementation ComGoogleGsonFunctionalTypeHierarchyAdapterTest_EmployeeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeHierarchyAdapterTest_EmployeeAdapter_init(self);
   return self;
 }
@@ -215,6 +217,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   methods[2].selector = @selector(deserializeWithComGoogleGsonJsonElement:withJavaLangReflectType:withComGoogleGsonJsonDeserializationContext:);
@@ -242,14 +245,14 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeHierarchyAdapterTest
 
 @implementation ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Employee
 
-- (instancetype)initWithNSString:(NSString *)userid
-                        withLong:(jlong)startDate {
+- (instancetype __nonnull)initWithNSString:(NSString *)userid
+                                  withLong:(jlong)startDate {
   ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Employee_initWithNSString_withLong_(self, userid, startDate);
   return self;
 }
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Employee_init(self);
   return self;
 }
@@ -267,6 +270,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withLong:);
   methods[1].selector = @selector(init);
   #pragma clang diagnostic pop
@@ -312,7 +316,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeHierarchyAdapterTest
 @implementation ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Manager
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Manager_init(self);
   return self;
 }
@@ -329,6 +333,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -358,7 +363,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeHierarchyAdapterTest
 @implementation ComGoogleGsonFunctionalTypeHierarchyAdapterTest_CEO
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeHierarchyAdapterTest_CEO_init(self);
   return self;
 }
@@ -375,6 +380,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -404,7 +410,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeHierarchyAdapterTest
 @implementation ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Company
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Company_init(self);
   return self;
 }
@@ -421,6 +427,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

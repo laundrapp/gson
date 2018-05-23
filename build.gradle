@@ -40,7 +40,7 @@ task translateJava(type:Exec) {
         }
     }.flatten())
 
-    executable "${J2OBJC_HOME_OLD}/j2objc"
+    executable "${J2OBJC_HOME_COMPILED}/j2objc"
     args '--doc-comments'
     args '--nullability'
 //    args '--strip-reflection' // Uncomment this line if the library does not use reflection, search the source for '.reflect'
@@ -59,13 +59,13 @@ task translateTestJava(type:Exec) {
         }
     }.flatten())
 
-    executable "${J2OBJC_HOME_OLD}/j2objc"
+    executable "${J2OBJC_HOME_COMPILED}/j2objc"
     args '--doc-comments'
     args '--nullability'
 //    args '--strip-reflection' // Uncomment this line if the library does not use reflection, search the source for '.reflect'
     args '-d', file('src/test/gen/objc').path
     args '-sourcepath', (sourceSets.test.allJava.srcDirs).join(':')
-    args '-classpath', "${J2OBJC_HOME_OLD}/lib/j2objc_junit.jar:" + sourceSets.test.runtimeClasspath.collect { it.absolutePath }.join(':')
+    args '-classpath', "${J2OBJC_HOME_COMPILED}/lib/j2objc_junit.jar:" + sourceSets.test.runtimeClasspath.collect { it.absolutePath }.join(':')
     args inputs.files
 }
 
@@ -78,7 +78,7 @@ task linkTestObjC(type:Exec) {
     }.flatten())
     outputs.files file('tests')
 
-    executable "${J2OBJC_HOME_OLD}/j2objcc"
+    executable "${J2OBJC_HOME_COMPILED}/j2objcc"
     args '-ObjC'
     args '-o', 'tests'
     args '-ljre_emul'

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonAnnotationsExpose
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonAnnotationsExpose_) && (INCLUDE_ALL_ComGoogleGsonAnnotationsExpose || defined(INCLUDE_ComGoogleGsonAnnotationsExpose))
 #define ComGoogleGsonAnnotationsExpose_
 
@@ -62,6 +67,10 @@
 @property (readonly) jboolean serialize;
 @property (readonly) jboolean deserialize;
 
+- (jboolean)isEqual:(id)obj;
+
+- (NSUInteger)hash;
+
 @end
 
 @interface ComGoogleGsonAnnotationsExpose : NSObject < ComGoogleGsonAnnotationsExpose > {
@@ -80,4 +89,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonAnnotationsExpose)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonAnnotationsExpose")

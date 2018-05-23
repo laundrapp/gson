@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonFunctionalObjectTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalObjectTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalObjectTest || defined(INCLUDE_ComGoogleGsonFunctionalObjectTest))
 #define ComGoogleGsonFunctionalObjectTest_
 
@@ -29,7 +34,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)testAnonymousLocalClassesCustomSerialization;
 
@@ -156,7 +161,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -185,11 +190,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalObjectTest)
 
 #pragma mark Public
 
-- (instancetype)initWithComGoogleGsonFunctionalObjectTest:(ComGoogleGsonFunctionalObjectTest *)outer$;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalObjectTest:(ComGoogleGsonFunctionalObjectTest *)outer$;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -218,7 +223,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalObjectTest_HasObjectMap)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -244,7 +249,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalObjectTest_Department)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -260,4 +265,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalObjectTest_Product)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalObjectTest")

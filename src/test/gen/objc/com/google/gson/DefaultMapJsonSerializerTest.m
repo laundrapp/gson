@@ -27,7 +27,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonDefaultMapJsonSerializerTest, gson_, ComGoogleG
 
 @interface ComGoogleGsonDefaultMapJsonSerializerTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -41,7 +41,7 @@ __attribute__((unused)) static ComGoogleGsonDefaultMapJsonSerializerTest_1 *crea
 
 @interface ComGoogleGsonDefaultMapJsonSerializerTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -56,7 +56,7 @@ __attribute__((unused)) static ComGoogleGsonDefaultMapJsonSerializerTest_2 *crea
 @implementation ComGoogleGsonDefaultMapJsonSerializerTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonDefaultMapJsonSerializerTest_init(self);
   return self;
 }
@@ -105,6 +105,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testEmptyMapNoTypeSerialization);
   methods[2].selector = @selector(testEmptyMapSerialization);
@@ -137,7 +138,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonDefaultMapJsonSerializerTest)
 @implementation ComGoogleGsonDefaultMapJsonSerializerTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonDefaultMapJsonSerializerTest_1_init(self);
   return self;
 }
@@ -149,6 +150,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonDefaultMapJsonSerializerTest;", "testEmptyMapSerialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;>;" };
@@ -173,7 +175,7 @@ ComGoogleGsonDefaultMapJsonSerializerTest_1 *create_ComGoogleGsonDefaultMapJsonS
 @implementation ComGoogleGsonDefaultMapJsonSerializerTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonDefaultMapJsonSerializerTest_2_init(self);
   return self;
 }
@@ -185,6 +187,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonDefaultMapJsonSerializerTest;", "testNonEmptyMapSerialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;>;" };

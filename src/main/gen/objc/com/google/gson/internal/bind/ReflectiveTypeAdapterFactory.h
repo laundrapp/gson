@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalBindReflectiveTypeAdapterFactory
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternalBindReflectiveTypeAdapterFactory_) && (INCLUDE_ALL_ComGoogleGsonInternalBindReflectiveTypeAdapterFactory || defined(INCLUDE_ComGoogleGsonInternalBindReflectiveTypeAdapterFactory))
 #define ComGoogleGsonInternalBindReflectiveTypeAdapterFactory_
 
@@ -35,9 +40,9 @@
 
 #pragma mark Public
 
-- (instancetype)initWithComGoogleGsonInternalConstructorConstructor:(ComGoogleGsonInternalConstructorConstructor *)constructorConstructor
-                               withComGoogleGsonFieldNamingStrategy:(id<ComGoogleGsonFieldNamingStrategy>)fieldNamingPolicy
-                                  withComGoogleGsonInternalExcluder:(ComGoogleGsonInternalExcluder *)excluder;
+- (instancetype __nonnull)initWithComGoogleGsonInternalConstructorConstructor:(ComGoogleGsonInternalConstructorConstructor *)constructorConstructor
+                                         withComGoogleGsonFieldNamingStrategy:(id<ComGoogleGsonFieldNamingStrategy>)fieldNamingPolicy
+                                            withComGoogleGsonInternalExcluder:(ComGoogleGsonInternalExcluder *)excluder;
 
 - (ComGoogleGsonTypeAdapter *)createWithComGoogleGsonGson:(ComGoogleGsonGson *)gson
                         withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)type;
@@ -56,7 +61,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -91,9 +96,9 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindReflectiveTypeAdapterFactory
 
 #pragma mark Protected
 
-- (instancetype)initWithNSString:(NSString *)name
-                     withBoolean:(jboolean)serialized
-                     withBoolean:(jboolean)deserialized;
+- (instancetype __nonnull)initWithNSString:(NSString *)name
+                               withBoolean:(jboolean)serialized
+                               withBoolean:(jboolean)deserialized;
 
 #pragma mark Package-Private
 
@@ -138,7 +143,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindReflectiveTypeAdapterFactory
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -148,4 +153,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindReflectiveTypeAdapterFactory
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalBindReflectiveTypeAdapterFactory")

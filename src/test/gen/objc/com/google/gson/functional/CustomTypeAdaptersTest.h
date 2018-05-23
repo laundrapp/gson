@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonFunctionalCustomTypeAdaptersTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalCustomTypeAdaptersTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalCustomTypeAdaptersTest || defined(INCLUDE_ComGoogleGsonFunctionalCustomTypeAdaptersTest))
 #define ComGoogleGsonFunctionalCustomTypeAdaptersTest_
 
@@ -29,7 +34,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)disable_testCustomDeserializersOfSelf;
 
@@ -79,7 +84,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -102,10 +107,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalCustomTypeAdaptersTest)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithInt:(jint)key
-                   withLong:(jlong)value;
+- (instancetype __nonnull)initWithInt:(jint)key
+                             withLong:(jlong)value;
 
 @end
 
@@ -148,7 +153,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalCustomTypeAdaptersTest_Foo)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonFunctionalCustomTypeAdaptersTest_Foo *)deserializeWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)json
                                                                        withJavaLangReflectType:(id<JavaLangReflectType>)typeOfT
@@ -172,4 +177,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalCustomTypeAdaptersTest_FooType
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalCustomTypeAdaptersTest")

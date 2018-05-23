@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonJsonObject
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonJsonObject_) && (INCLUDE_ALL_ComGoogleGsonJsonObject || defined(INCLUDE_ComGoogleGsonJsonObject))
 #define ComGoogleGsonJsonObject_
 
@@ -38,7 +43,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief Adds a member, which is a name-value pair, to self.The name must be a String, but the value
@@ -158,4 +163,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonObject)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonJsonObject")

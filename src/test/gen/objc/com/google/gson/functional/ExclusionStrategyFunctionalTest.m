@@ -45,7 +45,7 @@ __attribute__((unused)) static ComGoogleGsonGson *ComGoogleGsonFunctionalExclusi
 
 @interface ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_1 : NSObject < ComGoogleGsonExclusionStrategy >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jboolean)shouldSkipFieldWithComGoogleGsonFieldAttributes:(ComGoogleGsonFieldAttributes *)f;
 
@@ -62,6 +62,10 @@ __attribute__((unused)) static ComGoogleGsonFunctionalExclusionStrategyFunctiona
 __attribute__((unused)) static ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_1 *create_ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_1_init(void);
 
 @protocol ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_Foo < JavaLangAnnotationAnnotation >
+
+- (jboolean)isEqual:(id)obj;
+
+- (NSUInteger)hash;
 
 @end
 
@@ -84,11 +88,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalExclusionStrategyFunctionalTes
   jlong longField_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithInt:(jint)annotatedField
-               withNSString:(NSString *)stringField
-                   withLong:(jlong)longField;
+- (instancetype __nonnull)initWithInt:(jint)annotatedField
+                         withNSString:(NSString *)stringField
+                             withLong:(jlong)longField;
 
 @end
 
@@ -117,7 +121,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalExclusionStrategyFunctionalTes
   IOSClass *typeToSkip_;
 }
 
-- (instancetype)initWithIOSClass:(IOSClass *)typeToSkip;
+- (instancetype __nonnull)initWithIOSClass:(IOSClass *)typeToSkip;
 
 - (jboolean)shouldSkipClassWithIOSClass:(IOSClass *)clazz;
 
@@ -142,7 +146,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonFunctionalExclusionStrategyFunctionalTest)
 @implementation ComGoogleGsonFunctionalExclusionStrategyFunctionalTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_init(self);
   return self;
 }
@@ -259,6 +263,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testExclusionStrategySerialization);
@@ -319,7 +324,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalExclusionStrategyFunctio
 @implementation ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_1_init(self);
   return self;
 }
@@ -341,6 +346,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(shouldSkipFieldWithComGoogleGsonFieldAttributes:);
   methods[2].selector = @selector(shouldSkipClassWithIOSClass:);
@@ -374,6 +380,14 @@ ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_1 *create_ComGoogleGsonFu
   return @"@com.google.gson.functional.ExclusionStrategyFunctionalTest$Foo()";
 }
 
+- (jboolean)isEqual:(id)obj {
+  return JreAnnotationEquals(self, obj);
+}
+
+- (NSUInteger)hash {
+  return JreAnnotationHashCode(self);
+}
+
 + (const J2ObjcClassInfo *)__metadata {
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalExclusionStrategyFunctionalTest;", (void *)&ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_Foo__Annotations$0 };
   static const J2ObjcClassInfo _ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_Foo = { "Foo", "com.google.gson.functional", ptrTable, NULL, NULL, 7, 0x260a, 0, 0, 0, -1, -1, -1, 1 };
@@ -396,15 +410,15 @@ J2OBJC_INTERFACE_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalExclusionStrategyFun
 @implementation ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_SampleObjectForTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_SampleObjectForTest_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithInt:(jint)annotatedField
-               withNSString:(NSString *)stringField
-                   withLong:(jlong)longField {
+- (instancetype __nonnull)initWithInt:(jint)annotatedField
+                         withNSString:(NSString *)stringField
+                             withLong:(jlong)longField {
   ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_SampleObjectForTest_initWithInt_withNSString_withLong_(self, annotatedField, stringField, longField);
   return self;
 }
@@ -421,6 +435,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithInt:withNSString:withLong:);
   #pragma clang diagnostic pop
@@ -471,7 +486,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalExclusionStrategyFunctio
 
 @implementation ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_MyExclusionStrategy
 
-- (instancetype)initWithIOSClass:(IOSClass *)typeToSkip {
+- (instancetype __nonnull)initWithIOSClass:(IOSClass *)typeToSkip {
   ComGoogleGsonFunctionalExclusionStrategyFunctionalTest_MyExclusionStrategy_initWithIOSClass_(self, typeToSkip);
   return self;
 }
@@ -497,6 +512,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalExclusionStrategyFunctio
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithIOSClass:);
   methods[1].selector = @selector(shouldSkipClassWithIOSClass:);
   methods[2].selector = @selector(shouldSkipFieldWithComGoogleGsonFieldAttributes:);

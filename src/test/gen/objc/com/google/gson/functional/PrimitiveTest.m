@@ -49,7 +49,7 @@ __attribute__((unused)) static NSString *ComGoogleGsonFunctionalPrimitiveTest_ex
   JavaLangInteger *i_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -67,7 +67,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalPrimitiveTest_ClassWithInteger
 
 @interface ComGoogleGsonFunctionalPrimitiveTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -82,7 +82,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalPrimitiveTest_1 *create_Co
 @implementation ComGoogleGsonFunctionalPrimitiveTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalPrimitiveTest_init(self);
   return self;
 }
@@ -1005,6 +1005,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testPrimitiveIntegerAutoboxedSerialization);
@@ -1137,7 +1138,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalPrimitiveTest)
 @implementation ComGoogleGsonFunctionalPrimitiveTest_ClassWithIntegerField
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalPrimitiveTest_ClassWithIntegerField_init(self);
   return self;
 }
@@ -1154,6 +1155,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1183,7 +1185,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalPrimitiveTest_ClassWithI
 @implementation ComGoogleGsonFunctionalPrimitiveTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalPrimitiveTest_1_init(self);
   return self;
 }
@@ -1195,6 +1197,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalPrimitiveTest;", "testStringsAsBooleans", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Ljava/lang/Boolean;>;>;" };

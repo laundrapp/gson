@@ -130,7 +130,7 @@ __attribute__((unused)) static void ComGoogleGsonGson_assertFullConsumptionWithI
   ComGoogleGsonGson *this$0_;
 }
 
-- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$;
+- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$;
 
 - (id)deserializeWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)json
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfT;
@@ -150,7 +150,7 @@ __attribute__((unused)) static ComGoogleGsonGson_1 *create_ComGoogleGsonGson_1_i
   ComGoogleGsonGson *this$0_;
 }
 
-- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$;
+- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(id)src;
 
@@ -172,7 +172,7 @@ __attribute__((unused)) static ComGoogleGsonGson_2 *create_ComGoogleGsonGson_2_i
   ComGoogleGsonGson *this$0_;
 }
 
-- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$;
+- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$;
 
 - (JavaLangDouble *)readWithComGoogleGsonStreamJsonReader:(ComGoogleGsonStreamJsonReader *)inArg;
 
@@ -200,7 +200,7 @@ __attribute__((unused)) static ComGoogleGsonGson_3 *create_ComGoogleGsonGson_3_i
   ComGoogleGsonGson *this$0_;
 }
 
-- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$;
+- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$;
 
 - (JavaLangFloat *)readWithComGoogleGsonStreamJsonReader:(ComGoogleGsonStreamJsonReader *)inArg;
 
@@ -225,7 +225,7 @@ __attribute__((unused)) static ComGoogleGsonGson_4 *create_ComGoogleGsonGson_4_i
 
 @interface ComGoogleGsonGson_5 : ComGoogleGsonTypeAdapter
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (NSNumber *)readWithComGoogleGsonStreamJsonReader:(ComGoogleGsonStreamJsonReader *)inArg;
 
@@ -260,23 +260,23 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonGson_FutureTypeAdapter, delegate_, ComGoogleGso
 @implementation ComGoogleGsonGson
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGson_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithComGoogleGsonInternalExcluder:(ComGoogleGsonInternalExcluder *)excluder
-                 withComGoogleGsonFieldNamingStrategy:(id<ComGoogleGsonFieldNamingStrategy>)fieldNamingPolicy
-                                      withJavaUtilMap:(id<JavaUtilMap>)instanceCreators
-                                          withBoolean:(jboolean)serializeNulls
-                                          withBoolean:(jboolean)complexMapKeySerialization
-                                          withBoolean:(jboolean)generateNonExecutableGson
-                                          withBoolean:(jboolean)htmlSafe
-                                          withBoolean:(jboolean)prettyPrinting
-                                          withBoolean:(jboolean)serializeSpecialFloatingPointValues
-             withComGoogleGsonLongSerializationPolicy:(ComGoogleGsonLongSerializationPolicy *)longSerializationPolicy
-                                     withJavaUtilList:(id<JavaUtilList>)typeAdapterFactories {
+- (instancetype __nonnull)initWithComGoogleGsonInternalExcluder:(ComGoogleGsonInternalExcluder *)excluder
+                           withComGoogleGsonFieldNamingStrategy:(id<ComGoogleGsonFieldNamingStrategy>)fieldNamingPolicy
+                                                withJavaUtilMap:(id<JavaUtilMap>)instanceCreators
+                                                    withBoolean:(jboolean)serializeNulls
+                                                    withBoolean:(jboolean)complexMapKeySerialization
+                                                    withBoolean:(jboolean)generateNonExecutableGson
+                                                    withBoolean:(jboolean)htmlSafe
+                                                    withBoolean:(jboolean)prettyPrinting
+                                                    withBoolean:(jboolean)serializeSpecialFloatingPointValues
+                       withComGoogleGsonLongSerializationPolicy:(ComGoogleGsonLongSerializationPolicy *)longSerializationPolicy
+                                               withJavaUtilList:(id<JavaUtilList>)typeAdapterFactories {
   ComGoogleGsonGson_initWithComGoogleGsonInternalExcluder_withComGoogleGsonFieldNamingStrategy_withJavaUtilMap_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withComGoogleGsonLongSerializationPolicy_withJavaUtilList_(self, excluder, fieldNamingPolicy, instanceCreators, serializeNulls, complexMapKeySerialization, generateNonExecutableGson, htmlSafe, prettyPrinting, serializeSpecialFloatingPointValues, longSerializationPolicy, typeAdapterFactories);
   return self;
 }
@@ -601,6 +601,7 @@ withComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)writer {
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithComGoogleGsonInternalExcluder:withComGoogleGsonFieldNamingStrategy:withJavaUtilMap:withBoolean:withBoolean:withBoolean:withBoolean:withBoolean:withBoolean:withComGoogleGsonLongSerializationPolicy:withJavaUtilList:);
   methods[2].selector = @selector(doubleAdapterWithBoolean:);
@@ -781,7 +782,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonGson)
 
 @implementation ComGoogleGsonGson_1
 
-- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$ {
+- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$ {
   ComGoogleGsonGson_1_initWithComGoogleGsonGson_(self, outer$);
   return self;
 }
@@ -803,6 +804,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonGson)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonGson:);
   methods[1].selector = @selector(deserializeWithComGoogleGsonJsonElement:withJavaLangReflectType:);
   #pragma clang diagnostic pop
@@ -831,7 +833,7 @@ ComGoogleGsonGson_1 *create_ComGoogleGsonGson_1_initWithComGoogleGsonGson_(ComGo
 
 @implementation ComGoogleGsonGson_2
 
-- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$ {
+- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$ {
   ComGoogleGsonGson_2_initWithComGoogleGsonGson_(self, outer$);
   return self;
 }
@@ -858,6 +860,7 @@ ComGoogleGsonGson_1 *create_ComGoogleGsonGson_1_initWithComGoogleGsonGson_(ComGo
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonGson:);
   methods[1].selector = @selector(serializeWithId:);
   methods[2].selector = @selector(serializeWithId:withJavaLangReflectType:);
@@ -887,7 +890,7 @@ ComGoogleGsonGson_2 *create_ComGoogleGsonGson_2_initWithComGoogleGsonGson_(ComGo
 
 @implementation ComGoogleGsonGson_3
 
-- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$ {
+- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$ {
   ComGoogleGsonGson_3_initWithComGoogleGsonGson_(self, outer$);
   return self;
 }
@@ -924,6 +927,7 @@ ComGoogleGsonGson_2 *create_ComGoogleGsonGson_2_initWithComGoogleGsonGson_(ComGo
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonGson:);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
@@ -953,7 +957,7 @@ ComGoogleGsonGson_3 *create_ComGoogleGsonGson_3_initWithComGoogleGsonGson_(ComGo
 
 @implementation ComGoogleGsonGson_4
 
-- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$ {
+- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)outer$ {
   ComGoogleGsonGson_4_initWithComGoogleGsonGson_(self, outer$);
   return self;
 }
@@ -990,6 +994,7 @@ ComGoogleGsonGson_3 *create_ComGoogleGsonGson_3_initWithComGoogleGsonGson_(ComGo
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonGson:);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
@@ -1020,7 +1025,7 @@ ComGoogleGsonGson_4 *create_ComGoogleGsonGson_4_initWithComGoogleGsonGson_(ComGo
 @implementation ComGoogleGsonGson_5
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGson_5_init(self);
   return self;
 }
@@ -1051,6 +1056,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
@@ -1077,7 +1083,7 @@ ComGoogleGsonGson_5 *create_ComGoogleGsonGson_5_init() {
 @implementation ComGoogleGsonGson_FutureTypeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGson_FutureTypeAdapter_init(self);
   return self;
 }
@@ -1119,6 +1125,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setDelegateWithComGoogleGsonTypeAdapter:);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);

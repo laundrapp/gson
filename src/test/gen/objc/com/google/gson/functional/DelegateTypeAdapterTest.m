@@ -35,7 +35,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalDelegateTypeAdapterTest, gson_, ComGo
 
 @interface ComGoogleGsonFunctionalDelegateTypeAdapterTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -53,7 +53,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalDelegateTypeAdapterTest_1 
   jint numWrites_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonTypeAdapter *)createWithComGoogleGsonGson:(ComGoogleGsonGson *)gson
                         withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)type;
@@ -76,8 +76,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsT
   ComGoogleGsonTypeAdapter *val$delegate_;
 }
 
-- (instancetype)initWithComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory:(ComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory *)outer$
-                                                                  withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)capture$0;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory:(ComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory *)outer$
+                                                                            withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)capture$0;
 
 - (void)writeWithComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)outArg
                                         withId:(id)value;
@@ -97,7 +97,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalDelegateTypeAdapterTest_St
 @implementation ComGoogleGsonFunctionalDelegateTypeAdapterTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalDelegateTypeAdapterTest_init(self);
   return self;
 }
@@ -143,6 +143,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testDelegateInvoked);
@@ -176,7 +177,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalDelegateTypeAdapterTest)
 @implementation ComGoogleGsonFunctionalDelegateTypeAdapterTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalDelegateTypeAdapterTest_1_init(self);
   return self;
 }
@@ -188,6 +189,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalDelegateTypeAdapterTest;", "testDelegateInvoked", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Lcom/google/gson/common/TestTypes$BagOfPrimitives;>;>;" };
@@ -212,7 +214,7 @@ ComGoogleGsonFunctionalDelegateTypeAdapterTest_1 *create_ComGoogleGsonFunctional
 @implementation ComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory_init(self);
   return self;
 }
@@ -231,6 +233,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createWithComGoogleGsonGson:withComGoogleGsonReflectTypeToken:);
   #pragma clang diagnostic pop
@@ -263,8 +266,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalDelegateTypeAdapterTest_
 
 @implementation ComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory_1
 
-- (instancetype)initWithComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory:(ComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory *)outer$
-                                                                  withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)capture$0 {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory:(ComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory *)outer$
+                                                                            withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)capture$0 {
   ComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory_1_initWithComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory_withComGoogleGsonTypeAdapter_(self, outer$, capture$0);
   return self;
 }
@@ -294,6 +297,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalDelegateTypeAdapterTest_
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalDelegateTypeAdapterTest_StatsTypeAdapterFactory:withComGoogleGsonTypeAdapter:);
   methods[1].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);

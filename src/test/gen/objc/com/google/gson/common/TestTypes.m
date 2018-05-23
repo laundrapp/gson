@@ -90,7 +90,7 @@ __attribute__((unused)) static IOSObjectArray *ComGoogleGsonCommonTestTypes_Clas
 @implementation ComGoogleGsonCommonTestTypes
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_init(self);
   return self;
 }
@@ -102,6 +102,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonCommonTestTypes_Base;LComGoogleGsonCommonTestTypes_Sub;LComGoogleGsonCommonTestTypes_ClassWithBaseField;LComGoogleGsonCommonTestTypes_ClassWithBaseArrayField;LComGoogleGsonCommonTestTypes_ClassWithBaseCollectionField;LComGoogleGsonCommonTestTypes_BaseSerializer;LComGoogleGsonCommonTestTypes_SubSerializer;LComGoogleGsonCommonTestTypes_StringWrapper;LComGoogleGsonCommonTestTypes_BagOfPrimitives;LComGoogleGsonCommonTestTypes_BagOfPrimitiveWrappers;LComGoogleGsonCommonTestTypes_PrimitiveArray;LComGoogleGsonCommonTestTypes_ClassWithNoFields;LComGoogleGsonCommonTestTypes_Nested;LComGoogleGsonCommonTestTypes_ClassWithTransientFields;LComGoogleGsonCommonTestTypes_ClassWithCustomTypeConverter;LComGoogleGsonCommonTestTypes_ArrayOfObjects;LComGoogleGsonCommonTestTypes_ClassOverridingEquals;LComGoogleGsonCommonTestTypes_ClassWithArray;LComGoogleGsonCommonTestTypes_ClassWithObjects;LComGoogleGsonCommonTestTypes_ClassWithSerializedNameFields;LComGoogleGsonCommonTestTypes_CrazyLongTypeAdapter;" };
@@ -134,7 +135,7 @@ NSString *ComGoogleGsonCommonTestTypes_Base_SERIALIZER_KEY = @"serializerName";
 @implementation ComGoogleGsonCommonTestTypes_Base
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_Base_init(self);
   return self;
 }
@@ -152,6 +153,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -198,7 +200,7 @@ NSString *ComGoogleGsonCommonTestTypes_Sub_SUB_FIELD_KEY = @"subName";
 @implementation ComGoogleGsonCommonTestTypes_Sub
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_Sub_init(self);
   return self;
 }
@@ -215,6 +217,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -255,7 +258,7 @@ NSString *ComGoogleGsonCommonTestTypes_ClassWithBaseField_FIELD_KEY = @"base";
 
 @implementation ComGoogleGsonCommonTestTypes_ClassWithBaseField
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_Base:(ComGoogleGsonCommonTestTypes_Base *)base {
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_Base:(ComGoogleGsonCommonTestTypes_Base *)base {
   ComGoogleGsonCommonTestTypes_ClassWithBaseField_initWithComGoogleGsonCommonTestTypes_Base_(self, base);
   return self;
 }
@@ -271,6 +274,7 @@ NSString *ComGoogleGsonCommonTestTypes_ClassWithBaseField_FIELD_KEY = @"base";
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonCommonTestTypes_Base:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -303,7 +307,7 @@ NSString *ComGoogleGsonCommonTestTypes_ClassWithBaseArrayField_FIELD_KEY = @"bas
 
 @implementation ComGoogleGsonCommonTestTypes_ClassWithBaseArrayField
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_BaseArray:(IOSObjectArray *)base {
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_BaseArray:(IOSObjectArray *)base {
   ComGoogleGsonCommonTestTypes_ClassWithBaseArrayField_initWithComGoogleGsonCommonTestTypes_BaseArray_(self, base);
   return self;
 }
@@ -319,6 +323,7 @@ NSString *ComGoogleGsonCommonTestTypes_ClassWithBaseArrayField_FIELD_KEY = @"bas
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonCommonTestTypes_BaseArray:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -351,7 +356,7 @@ NSString *ComGoogleGsonCommonTestTypes_ClassWithBaseCollectionField_FIELD_KEY = 
 
 @implementation ComGoogleGsonCommonTestTypes_ClassWithBaseCollectionField
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)base {
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)base {
   ComGoogleGsonCommonTestTypes_ClassWithBaseCollectionField_initWithJavaUtilCollection_(self, base);
   return self;
 }
@@ -367,6 +372,7 @@ NSString *ComGoogleGsonCommonTestTypes_ClassWithBaseCollectionField_FIELD_KEY = 
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaUtilCollection:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -402,7 +408,7 @@ NSString *ComGoogleGsonCommonTestTypes_BaseSerializer_NAME;
 @implementation ComGoogleGsonCommonTestTypes_BaseSerializer
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_BaseSerializer_init(self);
   return self;
 }
@@ -423,6 +429,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   #pragma clang diagnostic pop
@@ -464,7 +471,7 @@ NSString *ComGoogleGsonCommonTestTypes_SubSerializer_NAME;
 @implementation ComGoogleGsonCommonTestTypes_SubSerializer
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_SubSerializer_init(self);
   return self;
 }
@@ -485,6 +492,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   #pragma clang diagnostic pop
@@ -521,7 +529,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_SubSerializer)
 
 @implementation ComGoogleGsonCommonTestTypes_StringWrapper
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   ComGoogleGsonCommonTestTypes_StringWrapper_initWithNSString_(self, value);
   return self;
 }
@@ -537,6 +545,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_SubSerializer)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -567,16 +576,16 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_StringWrapper)
 @implementation ComGoogleGsonCommonTestTypes_BagOfPrimitives
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_BagOfPrimitives_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithLong:(jlong)longValue
-                     withInt:(jint)intValue
-                 withBoolean:(jboolean)booleanValue
-                withNSString:(NSString *)stringValue {
+- (instancetype __nonnull)initWithLong:(jlong)longValue
+                               withInt:(jint)intValue
+                           withBoolean:(jboolean)booleanValue
+                          withNSString:(NSString *)stringValue {
   ComGoogleGsonCommonTestTypes_BagOfPrimitives_initWithLong_withInt_withBoolean_withNSString_(self, longValue, intValue, booleanValue, stringValue);
   return self;
 }
@@ -642,6 +651,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithLong:withInt:withBoolean:withNSString:);
   methods[2].selector = @selector(getIntValue);
@@ -696,9 +706,9 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_BagOfPrimitives)
 
 @implementation ComGoogleGsonCommonTestTypes_BagOfPrimitiveWrappers
 
-- (instancetype)initWithJavaLangLong:(JavaLangLong *)longValue
-                 withJavaLangInteger:(JavaLangInteger *)intValue
-                 withJavaLangBoolean:(JavaLangBoolean *)booleanValue {
+- (instancetype __nonnull)initWithJavaLangLong:(JavaLangLong *)longValue
+                           withJavaLangInteger:(JavaLangInteger *)intValue
+                           withJavaLangBoolean:(JavaLangBoolean *)booleanValue {
   ComGoogleGsonCommonTestTypes_BagOfPrimitiveWrappers_initWithJavaLangLong_withJavaLangInteger_withJavaLangBoolean_(self, longValue, intValue, booleanValue);
   return self;
 }
@@ -727,6 +737,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_BagOfPrimitives)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangLong:withJavaLangInteger:withJavaLangBoolean:);
   methods[1].selector = @selector(getExpectedJson);
   #pragma clang diagnostic pop
@@ -762,13 +773,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_BagOfPrimitiveWrap
 @implementation ComGoogleGsonCommonTestTypes_PrimitiveArray
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_PrimitiveArray_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithLongArray:(IOSLongArray *)longArray {
+- (instancetype __nonnull)initWithLongArray:(IOSLongArray *)longArray {
   ComGoogleGsonCommonTestTypes_PrimitiveArray_initWithLongArray_(self, longArray);
   return self;
 }
@@ -809,6 +820,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithLongArray:);
   methods[2].selector = @selector(getExpectedJson);
@@ -853,7 +865,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_PrimitiveArray)
 @implementation ComGoogleGsonCommonTestTypes_ClassWithNoFields
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_ClassWithNoFields_init(self);
   return self;
 }
@@ -870,6 +882,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(isEqual:);
   #pragma clang diagnostic pop
@@ -897,14 +910,14 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_ClassWithNoFields)
 @implementation ComGoogleGsonCommonTestTypes_Nested
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_Nested_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive1
-                    withComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive2 {
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive1
+                              withComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive2 {
   ComGoogleGsonCommonTestTypes_Nested_initWithComGoogleGsonCommonTestTypes_BagOfPrimitives_withComGoogleGsonCommonTestTypes_BagOfPrimitives_(self, primitive1, primitive2);
   return self;
 }
@@ -944,6 +957,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:withComGoogleGsonCommonTestTypes_BagOfPrimitives:);
   methods[2].selector = @selector(getExpectedJson);
@@ -991,13 +1005,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_Nested)
 @implementation ComGoogleGsonCommonTestTypes_ClassWithTransientFields
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_ClassWithTransientFields_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithLong:(jlong)value {
+- (instancetype __nonnull)initWithLong:(jlong)value {
   ComGoogleGsonCommonTestTypes_ClassWithTransientFields_initWithLong_(self, value);
   return self;
 }
@@ -1024,6 +1038,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithLong:);
   methods[2].selector = @selector(getExpectedJson);
@@ -1071,19 +1086,19 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_ClassWithTransient
 @implementation ComGoogleGsonCommonTestTypes_ClassWithCustomTypeConverter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_ClassWithCustomTypeConverter_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithInt:(jint)value {
+- (instancetype __nonnull)initWithInt:(jint)value {
   ComGoogleGsonCommonTestTypes_ClassWithCustomTypeConverter_initWithInt_(self, value);
   return self;
 }
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)bag
-                                                             withInt:(jint)value {
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)bag
+                                                                       withInt:(jint)value {
   ComGoogleGsonCommonTestTypes_ClassWithCustomTypeConverter_initWithComGoogleGsonCommonTestTypes_BagOfPrimitives_withInt_(self, bag, value);
   return self;
 }
@@ -1116,6 +1131,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithInt:);
   methods[2].selector = @selector(initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:withInt:);
@@ -1177,7 +1193,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_ClassWithCustomTyp
 @implementation ComGoogleGsonCommonTestTypes_ArrayOfObjects
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_ArrayOfObjects_init(self);
   return self;
 }
@@ -1217,6 +1233,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(getExpectedJson);
   #pragma clang diagnostic pop
@@ -1251,7 +1268,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_ArrayOfObjects)
 @implementation ComGoogleGsonCommonTestTypes_ClassOverridingEquals
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_ClassOverridingEquals_init(self);
   return self;
 }
@@ -1286,6 +1303,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(getExpectedJson);
   methods[2].selector = @selector(isEqual:);
@@ -1318,13 +1336,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_ClassOverridingEqu
 @implementation ComGoogleGsonCommonTestTypes_ClassWithArray
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_ClassWithArray_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithNSObjectArray:(IOSObjectArray *)array {
+- (instancetype __nonnull)initWithNSObjectArray:(IOSObjectArray *)array {
   ComGoogleGsonCommonTestTypes_ClassWithArray_initWithNSObjectArray_(self, array);
   return self;
 }
@@ -1341,6 +1359,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSObjectArray:);
   #pragma clang diagnostic pop
@@ -1385,13 +1404,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_ClassWithArray)
 @implementation ComGoogleGsonCommonTestTypes_ClassWithObjects
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_ClassWithObjects_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)bag {
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)bag {
   ComGoogleGsonCommonTestTypes_ClassWithObjects_initWithComGoogleGsonCommonTestTypes_BagOfPrimitives_(self, bag);
   return self;
 }
@@ -1408,6 +1427,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:);
   #pragma clang diagnostic pop
@@ -1451,14 +1471,14 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_ClassWithObjects)
 @implementation ComGoogleGsonCommonTestTypes_ClassWithSerializedNameFields
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_ClassWithSerializedNameFields_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithInt:(jint)f
-                    withInt:(jint)g {
+- (instancetype __nonnull)initWithInt:(jint)f
+                              withInt:(jint)g {
   ComGoogleGsonCommonTestTypes_ClassWithSerializedNameFields_initWithInt_withInt_(self, f, g);
   return self;
 }
@@ -1475,6 +1495,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithInt:withInt:);
   methods[2].selector = @selector(getExpectedJson);
@@ -1529,7 +1550,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommonTestTypes_ClassWithSerialize
 @implementation ComGoogleGsonCommonTestTypes_CrazyLongTypeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommonTestTypes_CrazyLongTypeAdapter_init(self);
   return self;
 }
@@ -1555,6 +1576,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   methods[2].selector = @selector(deserializeWithComGoogleGsonJsonElement:withJavaLangReflectType:withComGoogleGsonJsonDeserializationContext:);

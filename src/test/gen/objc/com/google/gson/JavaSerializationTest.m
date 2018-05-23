@@ -38,7 +38,7 @@ __attribute__((unused)) static id ComGoogleGsonJavaSerializationTest_serializedC
 
 @interface ComGoogleGsonJavaSerializationTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -52,7 +52,7 @@ __attribute__((unused)) static ComGoogleGsonJavaSerializationTest_1 *create_ComG
 
 @interface ComGoogleGsonJavaSerializationTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -66,7 +66,7 @@ __attribute__((unused)) static ComGoogleGsonJavaSerializationTest_2 *create_ComG
 
 @interface ComGoogleGsonJavaSerializationTest_3 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -81,7 +81,7 @@ __attribute__((unused)) static ComGoogleGsonJavaSerializationTest_3 *create_ComG
 @implementation ComGoogleGsonJavaSerializationTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonJavaSerializationTest_init(self);
   return self;
 }
@@ -130,6 +130,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testMapIsSerializable);
   methods[2].selector = @selector(testListIsSerializable);
@@ -174,7 +175,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonJavaSerializationTest)
 @implementation ComGoogleGsonJavaSerializationTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonJavaSerializationTest_1_init(self);
   return self;
 }
@@ -186,6 +187,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonJavaSerializationTest;", "testMapIsSerializable", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -210,7 +212,7 @@ ComGoogleGsonJavaSerializationTest_1 *create_ComGoogleGsonJavaSerializationTest_
 @implementation ComGoogleGsonJavaSerializationTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonJavaSerializationTest_2_init(self);
   return self;
 }
@@ -222,6 +224,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonJavaSerializationTest;", "testListIsSerializable", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Ljava/lang/String;>;>;" };
@@ -246,7 +249,7 @@ ComGoogleGsonJavaSerializationTest_2 *create_ComGoogleGsonJavaSerializationTest_
 @implementation ComGoogleGsonJavaSerializationTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonJavaSerializationTest_3_init(self);
   return self;
 }
@@ -258,6 +261,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonJavaSerializationTest;", "testNumberIsSerializable", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Ljava/lang/Number;>;>;" };

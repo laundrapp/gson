@@ -32,7 +32,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalThrowableFunctionalTest, gson_, ComGo
   NSString *myCustomMessage_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -53,7 +53,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalThrowableFunctionalTest_MyExce
 @implementation ComGoogleGsonFunctionalThrowableFunctionalTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalThrowableFunctionalTest_init(self);
   return self;
 }
@@ -118,6 +118,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testExceptionWithoutCause);
   methods[2].selector = @selector(testExceptionWithCause);
@@ -153,7 +154,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalThrowableFunctionalTest)
 @implementation ComGoogleGsonFunctionalThrowableFunctionalTest_MyException
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalThrowableFunctionalTest_MyException_init(self);
   return self;
 }
@@ -170,6 +171,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

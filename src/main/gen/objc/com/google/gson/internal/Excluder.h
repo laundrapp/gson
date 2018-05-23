@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalExcluder
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternalExcluder_) && (INCLUDE_ALL_ComGoogleGsonInternalExcluder || defined(INCLUDE_ComGoogleGsonInternalExcluder))
 #define ComGoogleGsonInternalExcluder_
 
@@ -43,7 +48,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonTypeAdapter *)createWithComGoogleGsonGson:(ComGoogleGsonGson *)gson
                         withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)type;
@@ -89,4 +94,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalExcluder)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalExcluder")

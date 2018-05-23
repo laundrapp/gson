@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonFunctionalJsonAdapterAnnotationOnFieldsTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalJsonAdapterAnnotationOnFieldsTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalJsonAdapterAnnotationOnFieldsTest || defined(INCLUDE_ComGoogleGsonFunctionalJsonAdapterAnnotationOnFieldsTest))
 #define ComGoogleGsonFunctionalJsonAdapterAnnotationOnFieldsTest_
 
@@ -27,7 +32,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)testClassAnnotationAdapterFactoryTakesPrecedenceOverDefault;
 
@@ -43,7 +48,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -59,4 +64,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalJsonAdapterAnnotationOnFieldsT
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalJsonAdapterAnnotationOnFieldsTest")

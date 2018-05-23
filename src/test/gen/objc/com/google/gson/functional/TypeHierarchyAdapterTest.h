@@ -19,6 +19,11 @@
 #define INCLUDE_ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Employee 1
 #endif
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalTypeHierarchyAdapterTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalTypeHierarchyAdapterTest || defined(INCLUDE_ComGoogleGsonFunctionalTypeHierarchyAdapterTest))
 #define ComGoogleGsonFunctionalTypeHierarchyAdapterTest_
 
@@ -33,7 +38,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief This behaviour changed in Gson 2.1; it used to throw.
@@ -46,7 +51,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -93,7 +98,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeHierarchyAdapterTest)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -140,7 +145,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Manag
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -167,10 +172,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Emplo
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSString:(NSString *)userid
-                        withLong:(jlong)startDate;
+- (instancetype __nonnull)initWithNSString:(NSString *)userid
+                                  withLong:(jlong)startDate;
 
 @end
 
@@ -206,12 +211,12 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Emplo
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0
-                        withLong:(jlong)arg1 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0
+                                  withLong:(jlong)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -241,7 +246,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Manag
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -271,7 +276,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeHierarchyAdapterTest_CEO)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -289,4 +294,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeHierarchyAdapterTest_Compa
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalTypeHierarchyAdapterTest")

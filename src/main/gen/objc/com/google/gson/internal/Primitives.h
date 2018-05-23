@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalPrimitives
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternalPrimitives_) && (INCLUDE_ALL_ComGoogleGsonInternalPrimitives || defined(INCLUDE_ComGoogleGsonInternalPrimitives))
 #define ComGoogleGsonInternalPrimitives_
 
@@ -82,4 +87,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalPrimitives)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalPrimitives")

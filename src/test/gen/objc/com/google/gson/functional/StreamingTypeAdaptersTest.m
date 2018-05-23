@@ -65,7 +65,7 @@ __attribute__((unused)) static id ComGoogleGsonFunctionalStreamingTypeAdaptersTe
 
 @interface ComGoogleGsonFunctionalStreamingTypeAdaptersTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -79,7 +79,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalStreamingTypeAdaptersTest_
 
 @interface ComGoogleGsonFunctionalStreamingTypeAdaptersTest_2 : ComGoogleGsonTypeAdapter
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonFunctionalStreamingTypeAdaptersTest_Person *)readWithComGoogleGsonStreamJsonReader:(ComGoogleGsonStreamJsonReader *)inArg;
 
@@ -104,7 +104,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalStreamingTypeAdaptersTest_
 
 @interface ComGoogleGsonFunctionalStreamingTypeAdaptersTest_3 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -118,7 +118,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalStreamingTypeAdaptersTest_
 
 @interface ComGoogleGsonFunctionalStreamingTypeAdaptersTest_4 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -132,7 +132,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalStreamingTypeAdaptersTest_
 
 @interface ComGoogleGsonFunctionalStreamingTypeAdaptersTest_5 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -146,7 +146,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalStreamingTypeAdaptersTest_
 
 @interface ComGoogleGsonFunctionalStreamingTypeAdaptersTest_6 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -160,7 +160,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalStreamingTypeAdaptersTest_
 
 @interface ComGoogleGsonFunctionalStreamingTypeAdaptersTest_7 : ComGoogleGsonTypeAdapter
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonFunctionalStreamingTypeAdaptersTest_Person *)readWithComGoogleGsonStreamJsonReader:(ComGoogleGsonStreamJsonReader *)inArg;
 
@@ -186,7 +186,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalStreamingTypeAdaptersTest_
 @implementation ComGoogleGsonFunctionalStreamingTypeAdaptersTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalStreamingTypeAdaptersTest_init(self);
   return self;
 }
@@ -377,6 +377,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testSerialize);
   methods[2].selector = @selector(testDeserialize);
@@ -451,7 +452,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalStreamingTypeAdaptersTes
 @implementation ComGoogleGsonFunctionalStreamingTypeAdaptersTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalStreamingTypeAdaptersTest_1_init(self);
   return self;
 }
@@ -463,6 +464,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalStreamingTypeAdaptersTest;", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Double;>;>;" };
@@ -487,7 +489,7 @@ ComGoogleGsonFunctionalStreamingTypeAdaptersTest_1 *create_ComGoogleGsonFunction
 @implementation ComGoogleGsonFunctionalStreamingTypeAdaptersTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalStreamingTypeAdaptersTest_2_init(self);
   return self;
 }
@@ -511,6 +513,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
@@ -537,7 +540,7 @@ ComGoogleGsonFunctionalStreamingTypeAdaptersTest_2 *create_ComGoogleGsonFunction
 @implementation ComGoogleGsonFunctionalStreamingTypeAdaptersTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalStreamingTypeAdaptersTest_3_init(self);
   return self;
 }
@@ -549,6 +552,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalStreamingTypeAdaptersTest;", "testSerialize1dArray", "Lcom/google/gson/reflect/TypeToken<[D>;" };
@@ -573,7 +577,7 @@ ComGoogleGsonFunctionalStreamingTypeAdaptersTest_3 *create_ComGoogleGsonFunction
 @implementation ComGoogleGsonFunctionalStreamingTypeAdaptersTest_4
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalStreamingTypeAdaptersTest_4_init(self);
   return self;
 }
@@ -585,6 +589,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalStreamingTypeAdaptersTest;", "testDeserialize1dArray", "Lcom/google/gson/reflect/TypeToken<[D>;" };
@@ -609,7 +614,7 @@ ComGoogleGsonFunctionalStreamingTypeAdaptersTest_4 *create_ComGoogleGsonFunction
 @implementation ComGoogleGsonFunctionalStreamingTypeAdaptersTest_5
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalStreamingTypeAdaptersTest_5_init(self);
   return self;
 }
@@ -621,6 +626,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalStreamingTypeAdaptersTest;", "testSerialize2dArray", "Lcom/google/gson/reflect/TypeToken<[[D>;" };
@@ -645,7 +651,7 @@ ComGoogleGsonFunctionalStreamingTypeAdaptersTest_5 *create_ComGoogleGsonFunction
 @implementation ComGoogleGsonFunctionalStreamingTypeAdaptersTest_6
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalStreamingTypeAdaptersTest_6_init(self);
   return self;
 }
@@ -657,6 +663,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalStreamingTypeAdaptersTest;", "testDeserialize2dArray", "Lcom/google/gson/reflect/TypeToken<[[D>;" };
@@ -681,7 +688,7 @@ ComGoogleGsonFunctionalStreamingTypeAdaptersTest_6 *create_ComGoogleGsonFunction
 @implementation ComGoogleGsonFunctionalStreamingTypeAdaptersTest_7
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalStreamingTypeAdaptersTest_7_init(self);
   return self;
 }
@@ -705,6 +712,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
@@ -731,7 +739,7 @@ ComGoogleGsonFunctionalStreamingTypeAdaptersTest_7 *create_ComGoogleGsonFunction
 @implementation ComGoogleGsonFunctionalStreamingTypeAdaptersTest_Truck
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalStreamingTypeAdaptersTest_Truck_init(self);
   return self;
 }
@@ -748,6 +756,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -778,8 +787,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalStreamingTypeAdaptersTes
 
 @implementation ComGoogleGsonFunctionalStreamingTypeAdaptersTest_Person
 
-- (instancetype)initWithNSString:(NSString *)name
-                         withInt:(jint)age {
+- (instancetype __nonnull)initWithNSString:(NSString *)name
+                                   withInt:(jint)age {
   ComGoogleGsonFunctionalStreamingTypeAdaptersTest_Person_initWithNSString_withInt_(self, name, age);
   return self;
 }
@@ -805,6 +814,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalStreamingTypeAdaptersTes
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withInt:);
   methods[1].selector = @selector(isEqual:);
   methods[2].selector = @selector(hash);
@@ -838,7 +848,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalStreamingTypeAdaptersTes
 
 @implementation ComGoogleGsonFunctionalStreamingTypeAdaptersTest_Node
 
-- (instancetype)initWithNSString:(NSString *)label {
+- (instancetype __nonnull)initWithNSString:(NSString *)label {
   ComGoogleGsonFunctionalStreamingTypeAdaptersTest_Node_initWithNSString_(self, label);
   return self;
 }
@@ -856,6 +866,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalStreamingTypeAdaptersTes
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

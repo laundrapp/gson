@@ -16,6 +16,11 @@
 #define INCLUDE_ComGoogleGsonCommonTestTypes_Base 1
 #endif
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonCommonTestTypes_) && (INCLUDE_ALL_ComGoogleGsonCommonTestTypes || defined(INCLUDE_ComGoogleGsonCommonTestTypes))
 #define ComGoogleGsonCommonTestTypes_
 
@@ -28,7 +33,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -55,7 +60,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -99,7 +104,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_Base)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -139,11 +144,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_Sub)
 
 #pragma mark Public
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_Base:(ComGoogleGsonCommonTestTypes_Base *)base;
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_Base:(ComGoogleGsonCommonTestTypes_Base *)base;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -178,11 +183,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_ClassWithBaseField)
 
 #pragma mark Public
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_BaseArray:(IOSObjectArray *)base;
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_BaseArray:(IOSObjectArray *)base;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -217,11 +222,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_ClassWithBaseArrayField)
 
 #pragma mark Public
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)base;
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)base;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -260,7 +265,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_ClassWithBaseCollectionF
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(ComGoogleGsonCommonTestTypes_Base *)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -301,7 +306,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_BaseSerializer)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(ComGoogleGsonCommonTestTypes_Sub *)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -336,11 +341,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_SubSerializer)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -371,12 +376,12 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_StringWrapper)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithLong:(jlong)longValue
-                     withInt:(jint)intValue
-                 withBoolean:(jboolean)booleanValue
-                withNSString:(NSString *)stringValue;
+- (instancetype __nonnull)initWithLong:(jlong)longValue
+                               withInt:(jint)intValue
+                           withBoolean:(jboolean)booleanValue
+                          withNSString:(NSString *)stringValue;
 
 - (jboolean)isEqual:(id)obj;
 
@@ -425,15 +430,15 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_BagOfPrimitives)
 
 #pragma mark Public
 
-- (instancetype)initWithJavaLangLong:(JavaLangLong *)longValue
-                 withJavaLangInteger:(JavaLangInteger *)intValue
-                 withJavaLangBoolean:(JavaLangBoolean *)booleanValue;
+- (instancetype __nonnull)initWithJavaLangLong:(JavaLangLong *)longValue
+                           withJavaLangInteger:(JavaLangInteger *)intValue
+                           withJavaLangBoolean:(JavaLangBoolean *)booleanValue;
 
 - (NSString *)getExpectedJson;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -458,9 +463,9 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_BagOfPrimitiveWrappers)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithLongArray:(IOSLongArray *)longArray;
+- (instancetype __nonnull)initWithLongArray:(IOSLongArray *)longArray;
 
 - (NSString *)getExpectedJson;
 
@@ -491,7 +496,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_PrimitiveArray)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jboolean)isEqual:(id)other;
 
@@ -519,10 +524,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_ClassWithNoFields)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive1
-                    withComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive2;
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive1
+                              withComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive2;
 
 - (void)appendFieldsWithJavaLangStringBuilder:(JavaLangStringBuilder *)sb;
 
@@ -559,9 +564,9 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_Nested)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithLong:(jlong)value;
+- (instancetype __nonnull)initWithLong:(jlong)value;
 
 - (NSString *)getExpectedJson;
 
@@ -596,12 +601,12 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_ClassWithTransientFields
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)bag
-                                                             withInt:(jint)value;
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)bag
+                                                                       withInt:(jint)value;
 
-- (instancetype)initWithInt:(jint)value;
+- (instancetype __nonnull)initWithInt:(jint)value;
 
 - (ComGoogleGsonCommonTestTypes_BagOfPrimitives *)getBag;
 
@@ -642,7 +647,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_ClassWithCustomTypeConve
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (NSString *)getExpectedJson;
 
@@ -670,7 +675,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_ArrayOfObjects)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jboolean)isEqual:(id)obj;
 
@@ -706,9 +711,9 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_ClassOverridingEquals)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSObjectArray:(IOSObjectArray *)array;
+- (instancetype __nonnull)initWithNSObjectArray:(IOSObjectArray *)array;
 
 @end
 
@@ -744,9 +749,9 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_ClassWithArray)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)bag;
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)bag;
 
 @end
 
@@ -781,10 +786,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_ClassWithObjects)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithInt:(jint)f
-                    withInt:(jint)g;
+- (instancetype __nonnull)initWithInt:(jint)f
+                              withInt:(jint)g;
 
 - (NSString *)getExpectedJson;
 
@@ -829,7 +834,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_ClassWithSerializedNameF
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (JavaLangLong *)deserializeWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)json
                                   withJavaLangReflectType:(id<JavaLangReflectType>)typeOfT
@@ -857,4 +862,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonTestTypes_CrazyLongTypeAdapter)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonCommonTestTypes")

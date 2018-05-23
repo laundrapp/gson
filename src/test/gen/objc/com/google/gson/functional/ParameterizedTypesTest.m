@@ -38,7 +38,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalParameterizedTypesTest, gson_, ComGoo
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -52,7 +52,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_1 *
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -66,7 +66,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_2 *
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_3 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -80,7 +80,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_3 *
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_4 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -94,7 +94,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_4 *
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_5 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -108,7 +108,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_5 *
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_6 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -122,7 +122,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_6 *
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_7 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -136,7 +136,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_7 *
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_8 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -150,7 +150,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_8 *
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_9 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -164,7 +164,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_9 *
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_10 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -178,7 +178,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_10 
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_11 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -192,7 +192,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_11 
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_12 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -206,7 +206,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_12 
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_13 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -220,7 +220,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_13 
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_14 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -234,7 +234,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_14 
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_15 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -248,7 +248,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_15 
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_16 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -262,7 +262,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_16 
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_17 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -287,14 +287,14 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_17 
   IOSObjectArray *arrayOfListOfWildcardTypeParameters_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSNumber:(NSNumber *)obj
-               withNSNumberArray:(IOSObjectArray *)array
-                withJavaUtilList:(id<JavaUtilList>)list
-           withJavaUtilListArray:(IOSObjectArray *)arrayOfList
-                withJavaUtilList:(id<JavaUtilList>)wildcardList
-           withJavaUtilListArray:(IOSObjectArray *)arrayOfWildcardList;
+- (instancetype __nonnull)initWithNSNumber:(NSNumber *)obj
+                         withNSNumberArray:(IOSObjectArray *)array
+                          withJavaUtilList:(id<JavaUtilList>)list
+                     withJavaUtilListArray:(IOSObjectArray *)arrayOfList
+                          withJavaUtilList:(id<JavaUtilList>)wildcardList
+                     withJavaUtilListArray:(IOSObjectArray *)arrayOfWildcardList;
 
 - (NSString *)getExpectedJson;
 
@@ -344,13 +344,13 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalParameterizedTypesTest_ObjectW
   id e_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithId:(id)a
-                    withId:(id)b
-                    withId:(id)c
-                    withId:(id)d
-                    withId:(id)e;
+- (instancetype __nonnull)initWithId:(id)a
+                              withId:(id)b
+                              withId:(id)c
+                              withId:(id)d
+                              withId:(id)e;
 
 - (NSUInteger)hash;
 
@@ -385,7 +385,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalParameterizedTypesTest_MultiPa
   jint q_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -404,7 +404,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalParameterizedTypesTest_Quantit
   jint q2_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -436,7 +436,7 @@ J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonFunctionalParameterizedTypesTest_Amoun
 
 @interface ComGoogleGsonFunctionalParameterizedTypesTest_18 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -451,7 +451,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalParameterizedTypesTest_18 
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_init(self);
   return self;
 }
@@ -662,6 +662,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testParameterizedTypesSerialization);
@@ -709,7 +710,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalParameterizedTypesTest)
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_1_init(self);
   return self;
 }
@@ -721,6 +722,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testParameterizedTypesSerialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/ParameterizedTypeFixtures$MyParameterizedType<Ljava/lang/Integer;>;>;" };
@@ -745,7 +747,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_1 *create_ComGoogleGsonFunctionalP
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_2_init(self);
   return self;
 }
@@ -757,6 +759,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testParameterizedTypeDeserialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/ParameterizedTypeFixtures$MyParameterizedType<Lcom/google/gson/common/TestTypes$BagOfPrimitives;>;>;" };
@@ -781,7 +784,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_2 *create_ComGoogleGsonFunctionalP
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_3_init(self);
   return self;
 }
@@ -793,6 +796,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testTypesWithMultipleParametersSerialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/ParameterizedTypesTest$MultiParameters<Ljava/lang/Integer;Ljava/lang/Float;Ljava/lang/Double;Ljava/lang/String;Lcom/google/gson/common/TestTypes$BagOfPrimitives;>;>;" };
@@ -817,7 +821,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_3 *create_ComGoogleGsonFunctionalP
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_4
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_4_init(self);
   return self;
 }
@@ -829,6 +833,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testTypesWithMultipleParametersDeserialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/ParameterizedTypesTest$MultiParameters<Ljava/lang/Integer;Ljava/lang/Float;Ljava/lang/Double;Ljava/lang/String;Lcom/google/gson/common/TestTypes$BagOfPrimitives;>;>;" };
@@ -853,7 +858,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_4 *create_ComGoogleGsonFunctionalP
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_5
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_5_init(self);
   return self;
 }
@@ -865,6 +870,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testParameterizedTypeWithCustomSerializer", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/ParameterizedTypeFixtures$MyParameterizedType<Ljava/lang/Integer;>;>;" };
@@ -889,7 +895,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_5 *create_ComGoogleGsonFunctionalP
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_6
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_6_init(self);
   return self;
 }
@@ -901,6 +907,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testParameterizedTypeWithCustomSerializer", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/ParameterizedTypeFixtures$MyParameterizedType<Ljava/lang/String;>;>;" };
@@ -925,7 +932,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_6 *create_ComGoogleGsonFunctionalP
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_7
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_7_init(self);
   return self;
 }
@@ -937,6 +944,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testParameterizedTypesWithCustomDeserializer", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/ParameterizedTypeFixtures$MyParameterizedType<Ljava/lang/Integer;>;>;" };
@@ -961,7 +969,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_7 *create_ComGoogleGsonFunctionalP
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_8
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_8_init(self);
   return self;
 }
@@ -973,6 +981,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testParameterizedTypesWithCustomDeserializer", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/ParameterizedTypeFixtures$MyParameterizedType<Ljava/lang/String;>;>;" };
@@ -997,7 +1006,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_8 *create_ComGoogleGsonFunctionalP
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_9
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_9_init(self);
   return self;
 }
@@ -1009,6 +1018,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testParameterizedTypesWithWriterSerialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/ParameterizedTypeFixtures$MyParameterizedType<Ljava/lang/Integer;>;>;" };
@@ -1033,7 +1043,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_9 *create_ComGoogleGsonFunctionalP
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_10
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_10_init(self);
   return self;
 }
@@ -1045,6 +1055,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testParameterizedTypeWithReaderDeserialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/ParameterizedTypeFixtures$MyParameterizedType<Lcom/google/gson/common/TestTypes$BagOfPrimitives;>;>;" };
@@ -1069,7 +1080,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_10 *create_ComGoogleGsonFunctional
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_11
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_11_init(self);
   return self;
 }
@@ -1081,6 +1092,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testVariableTypeFieldsAndGenericArraysSerialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/ParameterizedTypesTest$ObjectWithTypeVariables<Ljava/lang/Integer;>;>;" };
@@ -1105,7 +1117,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_11 *create_ComGoogleGsonFunctional
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_12
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_12_init(self);
   return self;
 }
@@ -1117,6 +1129,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testVariableTypeFieldsAndGenericArraysDeserialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/ParameterizedTypesTest$ObjectWithTypeVariables<Ljava/lang/Integer;>;>;" };
@@ -1141,7 +1154,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_12 *create_ComGoogleGsonFunctional
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_13
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_13_init(self);
   return self;
 }
@@ -1153,6 +1166,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testVariableTypeDeserialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/ParameterizedTypesTest$ObjectWithTypeVariables<Ljava/lang/Integer;>;>;" };
@@ -1177,7 +1191,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_13 *create_ComGoogleGsonFunctional
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_14
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_14_init(self);
   return self;
 }
@@ -1189,6 +1203,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testVariableTypeArrayDeserialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/ParameterizedTypesTest$ObjectWithTypeVariables<Ljava/lang/Integer;>;>;" };
@@ -1213,7 +1228,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_14 *create_ComGoogleGsonFunctional
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_15
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_15_init(self);
   return self;
 }
@@ -1225,6 +1240,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testParameterizedTypeWithVariableTypeDeserialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/ParameterizedTypesTest$ObjectWithTypeVariables<Ljava/lang/Integer;>;>;" };
@@ -1249,7 +1265,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_15 *create_ComGoogleGsonFunctional
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_16
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_16_init(self);
   return self;
 }
@@ -1261,6 +1277,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testParameterizedTypeGenericArraysSerialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/ParameterizedTypesTest$ObjectWithTypeVariables<Ljava/lang/Integer;>;>;" };
@@ -1285,7 +1302,7 @@ ComGoogleGsonFunctionalParameterizedTypesTest_16 *create_ComGoogleGsonFunctional
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_17
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_17_init(self);
   return self;
 }
@@ -1297,6 +1314,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testParameterizedTypeGenericArraysDeserialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/ParameterizedTypesTest$ObjectWithTypeVariables<Ljava/lang/Integer;>;>;" };
@@ -1321,18 +1339,18 @@ ComGoogleGsonFunctionalParameterizedTypesTest_17 *create_ComGoogleGsonFunctional
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_ObjectWithTypeVariables
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_ObjectWithTypeVariables_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithNSNumber:(NSNumber *)obj
-               withNSNumberArray:(IOSObjectArray *)array
-                withJavaUtilList:(id<JavaUtilList>)list
-           withJavaUtilListArray:(IOSObjectArray *)arrayOfList
-                withJavaUtilList:(id<JavaUtilList>)wildcardList
-           withJavaUtilListArray:(IOSObjectArray *)arrayOfWildcardList {
+- (instancetype __nonnull)initWithNSNumber:(NSNumber *)obj
+                         withNSNumberArray:(IOSObjectArray *)array
+                          withJavaUtilList:(id<JavaUtilList>)list
+                     withJavaUtilListArray:(IOSObjectArray *)arrayOfList
+                          withJavaUtilList:(id<JavaUtilList>)wildcardList
+                     withJavaUtilListArray:(IOSObjectArray *)arrayOfWildcardList {
   ComGoogleGsonFunctionalParameterizedTypesTest_ObjectWithTypeVariables_initWithNSNumber_withNSNumberArray_withJavaUtilList_withJavaUtilListArray_withJavaUtilList_withJavaUtilListArray_(self, obj, array, list, arrayOfList, wildcardList, arrayOfWildcardList);
   return self;
 }
@@ -1428,6 +1446,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSNumber:withNSNumberArray:withJavaUtilList:withJavaUtilListArray:withJavaUtilList:withJavaUtilListArray:);
   methods[2].selector = @selector(getExpectedJson);
@@ -1520,17 +1539,17 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalParameterizedTypesTest_O
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_MultiParameters
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_MultiParameters_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithId:(id)a
-                    withId:(id)b
-                    withId:(id)c
-                    withId:(id)d
-                    withId:(id)e {
+- (instancetype __nonnull)initWithId:(id)a
+                              withId:(id)b
+                              withId:(id)c
+                              withId:(id)d
+                              withId:(id)e {
   ComGoogleGsonFunctionalParameterizedTypesTest_MultiParameters_initWithId_withId_withId_withId_withId_(self, a, b, c, d, e);
   return self;
 }
@@ -1618,6 +1637,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithId:withId:withId:withId:withId:);
   methods[2].selector = @selector(hash);
@@ -1671,7 +1691,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalParameterizedTypesTest_M
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_Quantity
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_Quantity_init(self);
   return self;
 }
@@ -1683,6 +1703,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1713,7 +1734,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalParameterizedTypesTest_Q
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_MyQuantity
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_MyQuantity_init(self);
   return self;
 }
@@ -1725,6 +1746,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1791,7 +1813,7 @@ J2OBJC_INTERFACE_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalParameterizedTypesTe
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_Amount
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_Amount_init(self);
   return self;
 }
@@ -1803,6 +1825,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1834,7 +1857,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalParameterizedTypesTest_A
 @implementation ComGoogleGsonFunctionalParameterizedTypesTest_18
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalParameterizedTypesTest_18_init(self);
   return self;
 }
@@ -1846,6 +1869,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalParameterizedTypesTest;", "testDeepParameterizedTypeDeserialization", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/ParameterizedTypesTest$Amount<Lcom/google/gson/functional/ParameterizedTypesTest$MyQuantity;>;>;" };

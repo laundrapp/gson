@@ -16,7 +16,7 @@
 
 @interface ComGoogleGsonCommentsTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -31,7 +31,7 @@ __attribute__((unused)) static ComGoogleGsonCommentsTest_1 *create_ComGoogleGson
 @implementation ComGoogleGsonCommentsTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommentsTest_init(self);
   return self;
 }
@@ -50,6 +50,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testParseComments);
   #pragma clang diagnostic pop
@@ -76,7 +77,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonCommentsTest)
 @implementation ComGoogleGsonCommentsTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonCommentsTest_1_init(self);
   return self;
 }
@@ -88,6 +89,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonCommentsTest;", "testParseComments", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Ljava/lang/String;>;>;" };

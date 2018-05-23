@@ -30,7 +30,7 @@ J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonOverrideCoreTypeAdaptersTest, swapCas
 
 @interface ComGoogleGsonOverrideCoreTypeAdaptersTest_1 : ComGoogleGsonTypeAdapter
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)writeWithComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)outArg
                                         withId:(JavaLangBoolean *)value;
@@ -55,7 +55,7 @@ __attribute__((unused)) static ComGoogleGsonOverrideCoreTypeAdaptersTest_1 *crea
 
 @interface ComGoogleGsonOverrideCoreTypeAdaptersTest_2 : ComGoogleGsonTypeAdapter
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)writeWithComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)outArg
                                         withId:(NSString *)value;
@@ -83,7 +83,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonOverrideCoreTypeAdaptersTest)
 @implementation ComGoogleGsonOverrideCoreTypeAdaptersTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonOverrideCoreTypeAdaptersTest_init(self);
   return self;
 }
@@ -122,6 +122,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testOverrideWrapperBooleanAdapter);
   methods[2].selector = @selector(testOverridePrimitiveBooleanAdapter);
@@ -163,7 +164,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonOverrideCoreTypeAdaptersTest)
 @implementation ComGoogleGsonOverrideCoreTypeAdaptersTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonOverrideCoreTypeAdaptersTest_1_init(self);
   return self;
 }
@@ -187,6 +188,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
@@ -213,7 +215,7 @@ ComGoogleGsonOverrideCoreTypeAdaptersTest_1 *create_ComGoogleGsonOverrideCoreTyp
 @implementation ComGoogleGsonOverrideCoreTypeAdaptersTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonOverrideCoreTypeAdaptersTest_2_init(self);
   return self;
 }
@@ -236,6 +238,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);

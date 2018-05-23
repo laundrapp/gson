@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonJsonElement
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonJsonElement_) && (INCLUDE_ALL_ComGoogleGsonJsonElement || defined(INCLUDE_ComGoogleGsonJsonElement))
 #define ComGoogleGsonJsonElement_
 
@@ -34,7 +39,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief convenience method to get this element as a <code>BigDecimal</code>.
@@ -263,4 +268,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonElement)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonJsonElement")

@@ -33,7 +33,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalCircularReferenceTest, gson_, ComGoog
 
 @interface ComGoogleGsonFunctionalCircularReferenceTest_1 : NSObject < ComGoogleGsonJsonSerializer >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(ComGoogleGsonFunctionalCircularReferenceTest_ClassWithSelfReference *)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -54,7 +54,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalCircularReferenceTest_1 *c
   id<JavaUtilCollection> children_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -75,7 +75,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalCircularReferenceTest_Contains
   ComGoogleGsonFunctionalCircularReferenceTest_ClassWithSelfReference *child_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -96,7 +96,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalCircularReferenceTest_ClassWit
   IOSObjectArray *children_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -115,7 +115,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalCircularReferenceTest_ClassWit
 @implementation ComGoogleGsonFunctionalCircularReferenceTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalCircularReferenceTest_init(self);
   return self;
 }
@@ -204,6 +204,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testCircularSerialization);
@@ -240,7 +241,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalCircularReferenceTest)
 @implementation ComGoogleGsonFunctionalCircularReferenceTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalCircularReferenceTest_1_init(self);
   return self;
 }
@@ -262,6 +263,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   #pragma clang diagnostic pop
@@ -287,7 +289,7 @@ ComGoogleGsonFunctionalCircularReferenceTest_1 *create_ComGoogleGsonFunctionalCi
 @implementation ComGoogleGsonFunctionalCircularReferenceTest_ContainsReferenceToSelfType
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalCircularReferenceTest_ContainsReferenceToSelfType_init(self);
   return self;
 }
@@ -304,6 +306,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -334,7 +337,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalCircularReferenceTest_Co
 @implementation ComGoogleGsonFunctionalCircularReferenceTest_ClassWithSelfReference
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalCircularReferenceTest_ClassWithSelfReference_init(self);
   return self;
 }
@@ -351,6 +354,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -380,7 +384,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalCircularReferenceTest_Cl
 @implementation ComGoogleGsonFunctionalCircularReferenceTest_ClassWithSelfReferenceArray
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalCircularReferenceTest_ClassWithSelfReferenceArray_init(self);
   return self;
 }
@@ -397,6 +401,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalBindTimeTypeAdapter
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternalBindTimeTypeAdapter_) && (INCLUDE_ALL_ComGoogleGsonInternalBindTimeTypeAdapter || defined(INCLUDE_ComGoogleGsonInternalBindTimeTypeAdapter))
 #define ComGoogleGsonInternalBindTimeTypeAdapter_
 
@@ -37,7 +42,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (JavaSqlTime *)fromJsonTreeWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)arg0;
 
@@ -69,4 +74,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindTimeTypeAdapter)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalBindTimeTypeAdapter")

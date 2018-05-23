@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalConstructorConstructor
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternalConstructorConstructor_) && (INCLUDE_ALL_ComGoogleGsonInternalConstructorConstructor || defined(INCLUDE_ComGoogleGsonInternalConstructorConstructor))
 #define ComGoogleGsonInternalConstructorConstructor_
 
@@ -27,7 +32,7 @@
 
 #pragma mark Public
 
-- (instancetype)initWithJavaUtilMap:(id<JavaUtilMap>)instanceCreators;
+- (instancetype __nonnull)initWithJavaUtilMap:(id<JavaUtilMap>)instanceCreators;
 
 - (id<ComGoogleGsonInternalObjectConstructor>)getWithComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)typeToken;
 
@@ -35,7 +40,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -51,4 +56,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalConstructorConstructor)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalConstructorConstructor")

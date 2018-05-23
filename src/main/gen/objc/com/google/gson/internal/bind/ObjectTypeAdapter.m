@@ -26,7 +26,7 @@
   ComGoogleGsonGson *gson_;
 }
 
-- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)gson;
+- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)gson;
 
 @end
 
@@ -40,7 +40,7 @@ __attribute__((unused)) static ComGoogleGsonInternalBindObjectTypeAdapter *creat
 
 @interface ComGoogleGsonInternalBindObjectTypeAdapter_1 : NSObject < ComGoogleGsonTypeAdapterFactory >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonTypeAdapter *)createWithComGoogleGsonGson:(ComGoogleGsonGson *)gson
                         withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)type;
@@ -61,7 +61,7 @@ id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindObjectTypeAdapter_F
 
 @implementation ComGoogleGsonInternalBindObjectTypeAdapter
 
-- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)gson {
+- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)gson {
   ComGoogleGsonInternalBindObjectTypeAdapter_initWithComGoogleGsonGson_(self, gson);
   return self;
 }
@@ -131,6 +131,7 @@ id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindObjectTypeAdapter_F
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonGson:);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
@@ -171,7 +172,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalBindObjectTypeAdapter)
 @implementation ComGoogleGsonInternalBindObjectTypeAdapter_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInternalBindObjectTypeAdapter_1_init(self);
   return self;
 }
@@ -192,6 +193,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createWithComGoogleGsonGson:withComGoogleGsonReflectTypeToken:);
   #pragma clang diagnostic pop

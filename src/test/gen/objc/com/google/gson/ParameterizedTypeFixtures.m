@@ -46,7 +46,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonParameterizedTypeFixtures_MyParameterizedTypeIn
 @implementation ComGoogleGsonParameterizedTypeFixtures
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonParameterizedTypeFixtures_init(self);
   return self;
 }
@@ -58,6 +58,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonParameterizedTypeFixtures_MyParameterizedType;LComGoogleGsonParameterizedTypeFixtures_MyParameterizedTypeInstanceCreator;LComGoogleGsonParameterizedTypeFixtures_MyParameterizedTypeAdapter;" };
@@ -83,7 +84,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonParameterizedTypeFixtures)
 
 @implementation ComGoogleGsonParameterizedTypeFixtures_MyParameterizedType
 
-- (instancetype)initWithId:(id)value {
+- (instancetype __nonnull)initWithId:(id)value {
   ComGoogleGsonParameterizedTypeFixtures_MyParameterizedType_initWithId_(self, value);
   return self;
 }
@@ -143,6 +144,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonParameterizedTypeFixtures)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithId:);
   methods[1].selector = @selector(getValue);
   methods[2].selector = @selector(getExpectedJson);
@@ -209,7 +211,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonParameterizedTypeFixtures_MyParame
 
 @implementation ComGoogleGsonParameterizedTypeFixtures_MyParameterizedTypeInstanceCreator
 
-- (instancetype)initWithId:(id)instanceOfT {
+- (instancetype __nonnull)initWithId:(id)instanceOfT {
   ComGoogleGsonParameterizedTypeFixtures_MyParameterizedTypeInstanceCreator_initWithId_(self, instanceOfT);
   return self;
 }
@@ -230,6 +232,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonParameterizedTypeFixtures_MyParame
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithId:);
   methods[1].selector = @selector(createInstanceWithJavaLangReflectType:);
   #pragma clang diagnostic pop
@@ -261,7 +264,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonParameterizedTypeFixtures_MyParame
 @implementation ComGoogleGsonParameterizedTypeFixtures_MyParameterizedTypeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonParameterizedTypeFixtures_MyParameterizedTypeAdapter_init(self);
   return self;
 }
@@ -313,6 +316,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(getExpectedJsonWithComGoogleGsonParameterizedTypeFixtures_MyParameterizedType:);
   methods[2].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalBindTypeAdapterRuntimeTypeWrapper
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternalBindTypeAdapterRuntimeTypeWrapper_) && (INCLUDE_ALL_ComGoogleGsonInternalBindTypeAdapterRuntimeTypeWrapper || defined(INCLUDE_ComGoogleGsonInternalBindTypeAdapterRuntimeTypeWrapper))
 #define ComGoogleGsonInternalBindTypeAdapterRuntimeTypeWrapper_
 
@@ -36,13 +41,13 @@
 
 #pragma mark Package-Private
 
-- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)context
-             withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)delegate
-                  withJavaLangReflectType:(id<JavaLangReflectType>)type;
+- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)context
+                       withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)delegate
+                            withJavaLangReflectType:(id<JavaLangReflectType>)type;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -58,4 +63,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindTypeAdapterRuntimeTypeWrappe
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalBindTypeAdapterRuntimeTypeWrapper")

@@ -70,7 +70,7 @@ __attribute__((unused)) static id<JavaUtilList> ComGoogleGsonFunctionalTreeTypeA
 
 @interface ComGoogleGsonFunctionalTreeTypeAdaptersTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -88,8 +88,8 @@ __attribute__((unused)) static ComGoogleGsonFunctionalTreeTypeAdaptersTest_1 *cr
   id<JavaLangReflectType> typeOfId_;
 }
 
-- (instancetype)initWithNSString:(NSString *)value
-         withJavaLangReflectType:(id<JavaLangReflectType>)typeOfId;
+- (instancetype __nonnull)initWithNSString:(NSString *)value
+                   withJavaLangReflectType:(id<JavaLangReflectType>)typeOfId;
 
 - (NSString *)getValue;
 
@@ -110,7 +110,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id)
 
 @interface ComGoogleGsonFunctionalTreeTypeAdaptersTest_IdTreeTypeAdapter : NSObject < ComGoogleGsonJsonSerializer, ComGoogleGsonJsonDeserializer >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)deserializeWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)json
                                                                     withJavaLangReflectType:(id<JavaLangReflectType>)typeOfT
@@ -138,10 +138,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTreeTypeAdaptersTest_IdTreeTyp
   NSString *name_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)id_
-                                                          withNSString:(NSString *)name;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)id_
+                                                                    withNSString:(NSString *)name;
 
 @end
 
@@ -172,12 +172,12 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Student)
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment *assignment_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)courseId
-                                                               withInt:(jint)numAssignments
-            withComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment *)assignment
-                                                      withJavaUtilList:(id<JavaUtilList>)players;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)courseId
+                                                                         withInt:(jint)numAssignments
+                      withComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment *)assignment
+                                                                withJavaUtilList:(id<JavaUtilList>)players;
 
 - (ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)getId;
 
@@ -211,10 +211,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Course)
   id data_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)id_
-                                                                withId:(id)data;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)id_
+                                                                          withId:(id)data;
 
 @end
 
@@ -242,7 +242,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignmen
   jint numClasses_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -261,7 +261,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonFunctionalTreeTypeAdaptersTest)
 @implementation ComGoogleGsonFunctionalTreeTypeAdaptersTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_init(self);
   return self;
 }
@@ -307,6 +307,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testSerializeId);
@@ -364,7 +365,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTreeTypeAdaptersTest)
 @implementation ComGoogleGsonFunctionalTreeTypeAdaptersTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_1_init(self);
   return self;
 }
@@ -376,6 +377,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalTreeTypeAdaptersTest;", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/TreeTypeAdaptersTest$Course<Lcom/google/gson/functional/TreeTypeAdaptersTest$HistoryCourse;>;>;" };
@@ -399,8 +401,8 @@ ComGoogleGsonFunctionalTreeTypeAdaptersTest_1 *create_ComGoogleGsonFunctionalTre
 
 @implementation ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id
 
-- (instancetype)initWithNSString:(NSString *)value
-         withJavaLangReflectType:(id<JavaLangReflectType>)typeOfId {
+- (instancetype __nonnull)initWithNSString:(NSString *)value
+                   withJavaLangReflectType:(id<JavaLangReflectType>)typeOfId {
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id_initWithNSString_withJavaLangReflectType_(self, value, typeOfId);
   return self;
 }
@@ -422,6 +424,7 @@ ComGoogleGsonFunctionalTreeTypeAdaptersTest_1 *create_ComGoogleGsonFunctionalTre
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withJavaLangReflectType:);
   methods[1].selector = @selector(getValue);
   #pragma clang diagnostic pop
@@ -455,7 +458,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id)
 @implementation ComGoogleGsonFunctionalTreeTypeAdaptersTest_IdTreeTypeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_IdTreeTypeAdapter_init(self);
   return self;
 }
@@ -486,6 +489,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(deserializeWithComGoogleGsonJsonElement:withJavaLangReflectType:withComGoogleGsonJsonDeserializationContext:);
   methods[2].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
@@ -514,14 +518,14 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTreeTypeAdaptersTest_IdT
 @implementation ComGoogleGsonFunctionalTreeTypeAdaptersTest_Student
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_Student_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)id_
-                                                          withNSString:(NSString *)name {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)id_
+                                                                    withNSString:(NSString *)name {
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_Student_initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id_withNSString_(self, id_, name);
   return self;
 }
@@ -539,6 +543,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:withNSString:);
   #pragma clang diagnostic pop
@@ -584,16 +589,16 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Stu
 @implementation ComGoogleGsonFunctionalTreeTypeAdaptersTest_Course
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_Course_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)courseId
-                                                               withInt:(jint)numAssignments
-            withComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment *)assignment
-                                                      withJavaUtilList:(id<JavaUtilList>)players {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)courseId
+                                                                         withInt:(jint)numAssignments
+                      withComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment *)assignment
+                                                                withJavaUtilList:(id<JavaUtilList>)players {
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_Course_initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id_withInt_withComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment_withJavaUtilList_(self, courseId, numAssignments, assignment, players);
   return self;
 }
@@ -622,6 +627,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:withInt:withComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment:withJavaUtilList:);
   methods[2].selector = @selector(getId);
@@ -673,14 +679,14 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Cou
 @implementation ComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)id_
-                                                                withId:(id)data {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Id *)id_
+                                                                          withId:(id)data {
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_Assignment_initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id_withId_(self, id_, data);
   return self;
 }
@@ -698,6 +704,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithComGoogleGsonFunctionalTreeTypeAdaptersTest_Id:withId:);
   #pragma clang diagnostic pop
@@ -743,7 +750,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTreeTypeAdaptersTest_Ass
 @implementation ComGoogleGsonFunctionalTreeTypeAdaptersTest_HistoryCourse
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTreeTypeAdaptersTest_HistoryCourse_init(self);
   return self;
 }
@@ -755,6 +762,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

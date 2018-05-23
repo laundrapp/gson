@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalLazilyParsedNumber
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternalLazilyParsedNumber_) && (INCLUDE_ALL_ComGoogleGsonInternalLazilyParsedNumber || defined(INCLUDE_ComGoogleGsonInternalLazilyParsedNumber))
 #define ComGoogleGsonInternalLazilyParsedNumber_
 
@@ -24,7 +29,7 @@
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 - (jdouble)doubleValue;
 
@@ -42,7 +47,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -58,4 +63,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLazilyParsedNumber)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalLazilyParsedNumber")

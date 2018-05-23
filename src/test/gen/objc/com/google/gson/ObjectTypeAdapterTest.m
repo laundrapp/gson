@@ -36,7 +36,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonObjectTypeAdapterTest, adapter_, ComGoogleGsonT
   id b_;
 }
 
-- (instancetype)initWithComGoogleGsonObjectTypeAdapterTest:(ComGoogleGsonObjectTypeAdapterTest *)outer$;
+- (instancetype __nonnull)initWithComGoogleGsonObjectTypeAdapterTest:(ComGoogleGsonObjectTypeAdapterTest *)outer$;
 
 @end
 
@@ -56,7 +56,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonObjectTypeAdapterTest_RuntimeType)
 @implementation ComGoogleGsonObjectTypeAdapterTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonObjectTypeAdapterTest_init(self);
   return self;
 }
@@ -108,6 +108,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testDeserialize);
   methods[2].selector = @selector(testSerialize);
@@ -144,7 +145,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonObjectTypeAdapterTest)
 
 @implementation ComGoogleGsonObjectTypeAdapterTest_RuntimeType
 
-- (instancetype)initWithComGoogleGsonObjectTypeAdapterTest:(ComGoogleGsonObjectTypeAdapterTest *)outer$ {
+- (instancetype __nonnull)initWithComGoogleGsonObjectTypeAdapterTest:(ComGoogleGsonObjectTypeAdapterTest *)outer$ {
   ComGoogleGsonObjectTypeAdapterTest_RuntimeType_initWithComGoogleGsonObjectTypeAdapterTest_(self, outer$);
   return self;
 }
@@ -161,6 +162,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonObjectTypeAdapterTest)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonObjectTypeAdapterTest:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

@@ -46,7 +46,7 @@ __attribute__((unused)) static JavaUtilDate *ComGoogleGsonInternalBindDateTypeAd
 
 @interface ComGoogleGsonInternalBindDateTypeAdapter_1 : NSObject < ComGoogleGsonTypeAdapterFactory >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonTypeAdapter *)createWithComGoogleGsonGson:(ComGoogleGsonGson *)gson
                         withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)typeToken;
@@ -68,7 +68,7 @@ id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindDateTypeAdapter_FAC
 @implementation ComGoogleGsonInternalBindDateTypeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInternalBindDateTypeAdapter_init(self);
   return self;
 }
@@ -119,6 +119,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(buildIso8601Format);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
@@ -193,7 +194,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalBindDateTypeAdapter)
 @implementation ComGoogleGsonInternalBindDateTypeAdapter_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInternalBindDateTypeAdapter_1_init(self);
   return self;
 }
@@ -211,6 +212,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createWithComGoogleGsonGson:withComGoogleGsonReflectTypeToken:);
   #pragma clang diagnostic pop

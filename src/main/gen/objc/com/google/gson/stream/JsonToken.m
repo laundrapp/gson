@@ -32,6 +32,7 @@ ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_values_[10];
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(values);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop
@@ -59,7 +60,7 @@ ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_values_[10];
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
     for (jint i = 0; i < 10; i++) {
-      (ComGoogleGsonStreamJsonToken_values_[i] = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+      ((void)(ComGoogleGsonStreamJsonToken_values_[i] = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
       ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(e, JreEnumConstantName(ComGoogleGsonStreamJsonToken_class_(), i), i);
     }
     J2OBJC_SET_INITIALIZED(ComGoogleGsonStreamJsonToken)

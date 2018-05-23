@@ -36,7 +36,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalArrayTest, gson_, ComGoogleGsonGson *
 
 @interface ComGoogleGsonFunctionalArrayTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -50,7 +50,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalArrayTest_1 *create_ComGoo
 
 @interface ComGoogleGsonFunctionalArrayTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -65,7 +65,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalArrayTest_2 *create_ComGoo
 @implementation ComGoogleGsonFunctionalArrayTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalArrayTest_init(self);
   return self;
 }
@@ -309,6 +309,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testTopLevelArrayOfIntsSerialization);
@@ -365,7 +366,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalArrayTest)
 @implementation ComGoogleGsonFunctionalArrayTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalArrayTest_1_init(self);
   return self;
 }
@@ -377,6 +378,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalArrayTest;", "testArrayOfCollectionSerialization", "Lcom/google/gson/reflect/TypeToken<[Ljava/util/Collection<Ljava/lang/Integer;>;>;" };
@@ -401,7 +403,7 @@ ComGoogleGsonFunctionalArrayTest_1 *create_ComGoogleGsonFunctionalArrayTest_1_in
 @implementation ComGoogleGsonFunctionalArrayTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalArrayTest_2_init(self);
   return self;
 }
@@ -413,6 +415,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalArrayTest;", "testArrayOfCollectionDeserialization", "Lcom/google/gson/reflect/TypeToken<[Ljava/util/Collection<Ljava/lang/Integer;>;>;" };

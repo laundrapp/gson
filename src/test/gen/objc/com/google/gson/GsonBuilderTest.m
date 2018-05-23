@@ -26,7 +26,7 @@ J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonGsonBuilderTest, NULL_TYPE_ADAPTER, C
 
 @interface ComGoogleGsonGsonBuilderTest_1 : ComGoogleGsonTypeAdapter
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)writeWithComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)outArg
                                         withId:(id)value;
@@ -59,7 +59,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonGsonBuilderTest)
 @implementation ComGoogleGsonGsonBuilderTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGsonBuilderTest_init(self);
   return self;
 }
@@ -104,6 +104,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testCreatingMoreThanOnce);
   methods[2].selector = @selector(testExcludeFieldsWithModifiers);
@@ -144,7 +145,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonGsonBuilderTest)
 @implementation ComGoogleGsonGsonBuilderTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGsonBuilderTest_1_init(self);
   return self;
 }
@@ -167,6 +168,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
@@ -193,7 +195,7 @@ ComGoogleGsonGsonBuilderTest_1 *create_ComGoogleGsonGsonBuilderTest_1_init() {
 @implementation ComGoogleGsonGsonBuilderTest_HasModifiers
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGsonBuilderTest_HasModifiers_init(self);
   return self;
 }
@@ -219,6 +221,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -255,7 +258,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonGsonBuilderTest_HasModifiers)
 @implementation ComGoogleGsonGsonBuilderTest_HasTransients
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGsonBuilderTest_HasTransients_init(self);
   return self;
 }
@@ -272,6 +275,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

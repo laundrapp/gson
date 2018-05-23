@@ -33,7 +33,7 @@ __attribute__((unused)) static IOSObjectArray *ComGoogleGsonFunctionalNamingPoli
 
 @interface ComGoogleGsonFunctionalNamingPolicyTest_UpperCaseNamingStrategy : NSObject < ComGoogleGsonFieldNamingStrategy >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (NSString *)translateNameWithJavaLangReflectField:(JavaLangReflectField *)f;
 
@@ -55,12 +55,12 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalNamingPolicyTest_UpperCaseNami
   JavaLangDouble *b_;
 }
 
-- (instancetype)initWithJavaLangInteger:(JavaLangInteger *)a;
+- (instancetype __nonnull)initWithJavaLangInteger:(JavaLangInteger *)a;
 
-- (instancetype)initWithJavaLangDouble:(JavaLangDouble *)b;
+- (instancetype __nonnull)initWithJavaLangDouble:(JavaLangDouble *)b;
 
-- (instancetype)initWithJavaLangInteger:(JavaLangInteger *)a
-                     withJavaLangDouble:(JavaLangDouble *)b;
+- (instancetype __nonnull)initWithJavaLangInteger:(JavaLangInteger *)a
+                               withJavaLangDouble:(JavaLangDouble *)b;
 
 @end
 
@@ -96,7 +96,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalNamingPolicyTest_ClassWithDupl
   jlong value_;
 }
 
-- (instancetype)initWithLong:(jlong)value;
+- (instancetype __nonnull)initWithLong:(jlong)value;
 
 @end
 
@@ -115,7 +115,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalNamingPolicyTest_ClassWithComp
 @implementation ComGoogleGsonFunctionalNamingPolicyTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalNamingPolicyTest_init(self);
   return self;
 }
@@ -249,6 +249,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testGsonWithNonDefaultFieldNamingPolicySerialization);
@@ -293,7 +294,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalNamingPolicyTest)
 @implementation ComGoogleGsonFunctionalNamingPolicyTest_AtName
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalNamingPolicyTest_AtName_init(self);
   return self;
 }
@@ -310,6 +311,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -344,7 +346,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalNamingPolicyTest_AtName)
 @implementation ComGoogleGsonFunctionalNamingPolicyTest_UpperCaseNamingStrategy
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalNamingPolicyTest_UpperCaseNamingStrategy_init(self);
   return self;
 }
@@ -361,6 +363,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(translateNameWithJavaLangReflectField:);
   #pragma clang diagnostic pop
@@ -387,18 +390,18 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalNamingPolicyTest_UpperCa
 
 @implementation ComGoogleGsonFunctionalNamingPolicyTest_ClassWithDuplicateFields
 
-- (instancetype)initWithJavaLangInteger:(JavaLangInteger *)a {
+- (instancetype __nonnull)initWithJavaLangInteger:(JavaLangInteger *)a {
   ComGoogleGsonFunctionalNamingPolicyTest_ClassWithDuplicateFields_initWithJavaLangInteger_(self, a);
   return self;
 }
 
-- (instancetype)initWithJavaLangDouble:(JavaLangDouble *)b {
+- (instancetype __nonnull)initWithJavaLangDouble:(JavaLangDouble *)b {
   ComGoogleGsonFunctionalNamingPolicyTest_ClassWithDuplicateFields_initWithJavaLangDouble_(self, b);
   return self;
 }
 
-- (instancetype)initWithJavaLangInteger:(JavaLangInteger *)a
-                     withJavaLangDouble:(JavaLangDouble *)b {
+- (instancetype __nonnull)initWithJavaLangInteger:(JavaLangInteger *)a
+                               withJavaLangDouble:(JavaLangDouble *)b {
   ComGoogleGsonFunctionalNamingPolicyTest_ClassWithDuplicateFields_initWithJavaLangInteger_withJavaLangDouble_(self, a, b);
   return self;
 }
@@ -417,6 +420,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalNamingPolicyTest_UpperCa
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangInteger:);
   methods[1].selector = @selector(initWithJavaLangDouble:);
   methods[2].selector = @selector(initWithJavaLangInteger:withJavaLangDouble:);
@@ -478,7 +482,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalNamingPolicyTest_ClassWi
 
 @implementation ComGoogleGsonFunctionalNamingPolicyTest_ClassWithComplexFieldName
 
-- (instancetype)initWithLong:(jlong)value {
+- (instancetype __nonnull)initWithLong:(jlong)value {
   ComGoogleGsonFunctionalNamingPolicyTest_ClassWithComplexFieldName_initWithLong_(self, value);
   return self;
 }
@@ -489,6 +493,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalNamingPolicyTest_ClassWi
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithLong:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

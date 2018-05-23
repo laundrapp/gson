@@ -50,27 +50,27 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonJsonPrimitive)
 
 @implementation ComGoogleGsonJsonPrimitive
 
-- (instancetype)initWithJavaLangBoolean:(JavaLangBoolean *)bool_ {
+- (instancetype __nonnull)initWithJavaLangBoolean:(JavaLangBoolean *)bool_ {
   ComGoogleGsonJsonPrimitive_initWithJavaLangBoolean_(self, bool_);
   return self;
 }
 
-- (instancetype)initWithNSNumber:(NSNumber *)number {
+- (instancetype __nonnull)initWithNSNumber:(NSNumber *)number {
   ComGoogleGsonJsonPrimitive_initWithNSNumber_(self, number);
   return self;
 }
 
-- (instancetype)initWithNSString:(NSString *)string {
+- (instancetype __nonnull)initWithNSString:(NSString *)string {
   ComGoogleGsonJsonPrimitive_initWithNSString_(self, string);
   return self;
 }
 
-- (instancetype)initWithJavaLangCharacter:(JavaLangCharacter *)c {
+- (instancetype __nonnull)initWithJavaLangCharacter:(JavaLangCharacter *)c {
   ComGoogleGsonJsonPrimitive_initWithJavaLangCharacter_(self, c);
   return self;
 }
 
-- (instancetype)initWithId:(id)primitive {
+- (instancetype __nonnull)initWithId:(id)primitive {
   ComGoogleGsonJsonPrimitive_initWithId_(self, primitive);
   return self;
 }
@@ -249,6 +249,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonJsonPrimitive)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangBoolean:);
   methods[1].selector = @selector(initWithNSNumber:);
   methods[2].selector = @selector(initWithNSString:);

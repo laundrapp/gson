@@ -21,8 +21,8 @@
   id val$unsafe_;
 }
 
-- (instancetype)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0
-                                       withId:(id)capture$1;
+- (instancetype __nonnull)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0
+                                                 withId:(id)capture$1;
 
 - (id)newInstanceWithIOSClass:(IOSClass *)c OBJC_METHOD_FAMILY_NONE;
 
@@ -42,8 +42,8 @@ __attribute__((unused)) static ComGoogleGsonInternalUnsafeAllocator_1 *create_Co
   jint val$constructorId_;
 }
 
-- (instancetype)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0
-                                      withInt:(jint)capture$1;
+- (instancetype __nonnull)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0
+                                                withInt:(jint)capture$1;
 
 - (id)newInstanceWithIOSClass:(IOSClass *)c OBJC_METHOD_FAMILY_NONE;
 
@@ -62,7 +62,7 @@ __attribute__((unused)) static ComGoogleGsonInternalUnsafeAllocator_2 *create_Co
   JavaLangReflectMethod *val$newInstance_;
 }
 
-- (instancetype)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0;
+- (instancetype __nonnull)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0;
 
 - (id)newInstanceWithIOSClass:(IOSClass *)c OBJC_METHOD_FAMILY_NONE;
 
@@ -78,7 +78,7 @@ __attribute__((unused)) static ComGoogleGsonInternalUnsafeAllocator_3 *create_Co
 
 @interface ComGoogleGsonInternalUnsafeAllocator_4 : ComGoogleGsonInternalUnsafeAllocator
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (id)newInstanceWithIOSClass:(IOSClass *)c OBJC_METHOD_FAMILY_NONE;
 
@@ -95,7 +95,7 @@ __attribute__((unused)) static ComGoogleGsonInternalUnsafeAllocator_4 *create_Co
 @implementation ComGoogleGsonInternalUnsafeAllocator
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInternalUnsafeAllocator_init(self);
   return self;
 }
@@ -119,6 +119,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(newInstanceWithIOSClass:);
   methods[2].selector = @selector(create);
@@ -170,8 +171,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalUnsafeAllocator)
 
 @implementation ComGoogleGsonInternalUnsafeAllocator_1
 
-- (instancetype)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0
-                                       withId:(id)capture$1 {
+- (instancetype __nonnull)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0
+                                                 withId:(id)capture$1 {
   ComGoogleGsonInternalUnsafeAllocator_1_initWithJavaLangReflectMethod_withId_(self, capture$0, capture$1);
   return self;
 }
@@ -193,6 +194,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalUnsafeAllocator)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangReflectMethod:withId:);
   methods[1].selector = @selector(newInstanceWithIOSClass:);
   #pragma clang diagnostic pop
@@ -223,8 +225,8 @@ ComGoogleGsonInternalUnsafeAllocator_1 *create_ComGoogleGsonInternalUnsafeAlloca
 
 @implementation ComGoogleGsonInternalUnsafeAllocator_2
 
-- (instancetype)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0
-                                      withInt:(jint)capture$1 {
+- (instancetype __nonnull)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0
+                                                withInt:(jint)capture$1 {
   ComGoogleGsonInternalUnsafeAllocator_2_initWithJavaLangReflectMethod_withInt_(self, capture$0, capture$1);
   return self;
 }
@@ -245,6 +247,7 @@ ComGoogleGsonInternalUnsafeAllocator_1 *create_ComGoogleGsonInternalUnsafeAlloca
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangReflectMethod:withInt:);
   methods[1].selector = @selector(newInstanceWithIOSClass:);
   #pragma clang diagnostic pop
@@ -275,7 +278,7 @@ ComGoogleGsonInternalUnsafeAllocator_2 *create_ComGoogleGsonInternalUnsafeAlloca
 
 @implementation ComGoogleGsonInternalUnsafeAllocator_3
 
-- (instancetype)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0 {
+- (instancetype __nonnull)initWithJavaLangReflectMethod:(JavaLangReflectMethod *)capture$0 {
   ComGoogleGsonInternalUnsafeAllocator_3_initWithJavaLangReflectMethod_(self, capture$0);
   return self;
 }
@@ -296,6 +299,7 @@ ComGoogleGsonInternalUnsafeAllocator_2 *create_ComGoogleGsonInternalUnsafeAlloca
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangReflectMethod:);
   methods[1].selector = @selector(newInstanceWithIOSClass:);
   #pragma clang diagnostic pop
@@ -325,7 +329,7 @@ ComGoogleGsonInternalUnsafeAllocator_3 *create_ComGoogleGsonInternalUnsafeAlloca
 @implementation ComGoogleGsonInternalUnsafeAllocator_4
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInternalUnsafeAllocator_4_init(self);
   return self;
 }
@@ -342,6 +346,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(newInstanceWithIOSClass:);
   #pragma clang diagnostic pop

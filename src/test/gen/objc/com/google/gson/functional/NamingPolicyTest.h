@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonFunctionalNamingPolicyTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalNamingPolicyTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalNamingPolicyTest || defined(INCLUDE_ComGoogleGsonFunctionalNamingPolicyTest))
 #define ComGoogleGsonFunctionalNamingPolicyTest_
 
@@ -29,7 +34,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief http://code.google.com/p/google-gson/issues/detail?
@@ -69,7 +74,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -95,7 +100,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalNamingPolicyTest)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -113,4 +118,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalNamingPolicyTest_AtName)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalNamingPolicyTest")

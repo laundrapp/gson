@@ -131,6 +131,7 @@ ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_values_[5];
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(separateCamelCaseWithNSString:withNSString:);
   methods[1].selector = @selector(upperCaseFirstLetterWithNSString:);
   methods[2].selector = @selector(modifyStringWithChar:withNSString:withInt:);
@@ -164,15 +165,15 @@ ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_values_[5];
     allocSize += objSize_LOWER_CASE_WITH_DASHES;
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
-    (JreEnum(ComGoogleGsonFieldNamingPolicy, IDENTITY) = e = objc_constructInstance([ComGoogleGsonFieldNamingPolicy_1 class], (void *)ptr), ptr += objSize_IDENTITY);
+    ((void) (JreEnum(ComGoogleGsonFieldNamingPolicy, IDENTITY) = e = objc_constructInstance([ComGoogleGsonFieldNamingPolicy_1 class], (void *)ptr)), ptr += objSize_IDENTITY);
     ComGoogleGsonFieldNamingPolicy_1_initWithNSString_withInt_(e, @"IDENTITY", 0);
-    (JreEnum(ComGoogleGsonFieldNamingPolicy, UPPER_CAMEL_CASE) = e = objc_constructInstance([ComGoogleGsonFieldNamingPolicy_2 class], (void *)ptr), ptr += objSize_UPPER_CAMEL_CASE);
+    ((void) (JreEnum(ComGoogleGsonFieldNamingPolicy, UPPER_CAMEL_CASE) = e = objc_constructInstance([ComGoogleGsonFieldNamingPolicy_2 class], (void *)ptr)), ptr += objSize_UPPER_CAMEL_CASE);
     ComGoogleGsonFieldNamingPolicy_2_initWithNSString_withInt_(e, @"UPPER_CAMEL_CASE", 1);
-    (JreEnum(ComGoogleGsonFieldNamingPolicy, UPPER_CAMEL_CASE_WITH_SPACES) = e = objc_constructInstance([ComGoogleGsonFieldNamingPolicy_3 class], (void *)ptr), ptr += objSize_UPPER_CAMEL_CASE_WITH_SPACES);
+    ((void) (JreEnum(ComGoogleGsonFieldNamingPolicy, UPPER_CAMEL_CASE_WITH_SPACES) = e = objc_constructInstance([ComGoogleGsonFieldNamingPolicy_3 class], (void *)ptr)), ptr += objSize_UPPER_CAMEL_CASE_WITH_SPACES);
     ComGoogleGsonFieldNamingPolicy_3_initWithNSString_withInt_(e, @"UPPER_CAMEL_CASE_WITH_SPACES", 2);
-    (JreEnum(ComGoogleGsonFieldNamingPolicy, LOWER_CASE_WITH_UNDERSCORES) = e = objc_constructInstance([ComGoogleGsonFieldNamingPolicy_4 class], (void *)ptr), ptr += objSize_LOWER_CASE_WITH_UNDERSCORES);
+    ((void) (JreEnum(ComGoogleGsonFieldNamingPolicy, LOWER_CASE_WITH_UNDERSCORES) = e = objc_constructInstance([ComGoogleGsonFieldNamingPolicy_4 class], (void *)ptr)), ptr += objSize_LOWER_CASE_WITH_UNDERSCORES);
     ComGoogleGsonFieldNamingPolicy_4_initWithNSString_withInt_(e, @"LOWER_CASE_WITH_UNDERSCORES", 3);
-    (JreEnum(ComGoogleGsonFieldNamingPolicy, LOWER_CASE_WITH_DASHES) = e = objc_constructInstance([ComGoogleGsonFieldNamingPolicy_5 class], (void *)ptr), ptr += objSize_LOWER_CASE_WITH_DASHES);
+    ((void) (JreEnum(ComGoogleGsonFieldNamingPolicy, LOWER_CASE_WITH_DASHES) = e = objc_constructInstance([ComGoogleGsonFieldNamingPolicy_5 class], (void *)ptr)), ptr += objSize_LOWER_CASE_WITH_DASHES);
     ComGoogleGsonFieldNamingPolicy_5_initWithNSString_withInt_(e, @"LOWER_CASE_WITH_DASHES", 4);
     J2OBJC_SET_INITIALIZED(ComGoogleGsonFieldNamingPolicy)
   }
@@ -270,6 +271,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFieldNamingPolicy)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(translateNameWithJavaLangReflectField:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "translateName", "LJavaLangReflectField;", "LComGoogleGsonFieldNamingPolicy;" };
@@ -300,6 +302,7 @@ void ComGoogleGsonFieldNamingPolicy_1_initWithNSString_withInt_(ComGoogleGsonFie
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(translateNameWithJavaLangReflectField:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "translateName", "LJavaLangReflectField;", "LComGoogleGsonFieldNamingPolicy;" };
@@ -330,6 +333,7 @@ void ComGoogleGsonFieldNamingPolicy_2_initWithNSString_withInt_(ComGoogleGsonFie
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(translateNameWithJavaLangReflectField:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "translateName", "LJavaLangReflectField;", "LComGoogleGsonFieldNamingPolicy;" };
@@ -360,6 +364,7 @@ void ComGoogleGsonFieldNamingPolicy_3_initWithNSString_withInt_(ComGoogleGsonFie
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(translateNameWithJavaLangReflectField:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "translateName", "LJavaLangReflectField;", "LComGoogleGsonFieldNamingPolicy;" };
@@ -390,6 +395,7 @@ void ComGoogleGsonFieldNamingPolicy_4_initWithNSString_withInt_(ComGoogleGsonFie
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(translateNameWithJavaLangReflectField:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "translateName", "LJavaLangReflectField;", "LComGoogleGsonFieldNamingPolicy;" };

@@ -26,7 +26,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonInternalBindJsonAdapterAnnotationTypeAdapterFac
 
 @implementation ComGoogleGsonInternalBindJsonAdapterAnnotationTypeAdapterFactory
 
-- (instancetype)initWithComGoogleGsonInternalConstructorConstructor:(ComGoogleGsonInternalConstructorConstructor *)constructorConstructor {
+- (instancetype __nonnull)initWithComGoogleGsonInternalConstructorConstructor:(ComGoogleGsonInternalConstructorConstructor *)constructorConstructor {
   ComGoogleGsonInternalBindJsonAdapterAnnotationTypeAdapterFactory_initWithComGoogleGsonInternalConstructorConstructor_(self, constructorConstructor);
   return self;
 }
@@ -60,6 +60,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonInternalBindJsonAdapterAnnotationTypeAdapterFac
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInternalConstructorConstructor:);
   methods[1].selector = @selector(createWithComGoogleGsonGson:withComGoogleGsonReflectTypeToken:);
   methods[2].selector = @selector(getTypeAdapterWithComGoogleGsonInternalConstructorConstructor:withComGoogleGsonGson:withComGoogleGsonReflectTypeToken:withComGoogleGsonAnnotationsJsonAdapter:);

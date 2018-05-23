@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonFunctionalMapTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalMapTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalMapTest || defined(INCLUDE_ComGoogleGsonFunctionalMapTest))
 #define ComGoogleGsonFunctionalMapTest_
 
@@ -29,7 +34,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)testBooleanKeyDeserialization;
 
@@ -146,7 +151,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -177,12 +182,12 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMapTest)
 
 #pragma mark Package-Private
 
-- (instancetype)initWithInt:(jint)x
-                    withInt:(jint)y;
+- (instancetype __nonnull)initWithInt:(jint)x
+                              withInt:(jint)y;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -216,7 +221,7 @@ withComGoogleGsonCommonTestTypes_Sub:(ComGoogleGsonCommonTestTypes_Sub *)value;
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -244,7 +249,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMapTest_MapClass)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -262,4 +267,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMapTest_MapWithGeneralMapParam
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalMapTest")

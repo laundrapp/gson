@@ -21,7 +21,7 @@
 
 @interface ComGoogleGsonFunctionalTypeVariableTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -47,7 +47,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalTypeVariableTest_Foo, someTField_, id
 @implementation ComGoogleGsonFunctionalTypeVariableTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeVariableTest_init(self);
   return self;
 }
@@ -94,6 +94,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testAdvancedTypeVariables);
   methods[2].selector = @selector(testTypeVariablesViaTypeParameter);
@@ -123,7 +124,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeVariableTest)
 @implementation ComGoogleGsonFunctionalTypeVariableTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeVariableTest_1_init(self);
   return self;
 }
@@ -135,6 +136,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalTypeVariableTest;", "testTypeVariablesViaTypeParameter", "Lcom/google/gson/reflect/TypeToken<Lcom/google/gson/functional/TypeVariableTest$Foo<Ljava/lang/String;Ljava/lang/Integer;>;>;" };
@@ -159,13 +161,13 @@ ComGoogleGsonFunctionalTypeVariableTest_1 *create_ComGoogleGsonFunctionalTypeVar
 @implementation ComGoogleGsonFunctionalTypeVariableTest_Red
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeVariableTest_Red_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithId:(id)redField {
+- (instancetype __nonnull)initWithId:(id)redField {
   ComGoogleGsonFunctionalTypeVariableTest_Red_initWithId_(self, redField);
   return self;
 }
@@ -182,6 +184,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithId:);
   #pragma clang diagnostic pop
@@ -225,13 +228,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeVariableTest_Red)
 @implementation ComGoogleGsonFunctionalTypeVariableTest_Blue
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeVariableTest_Blue_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithBoolean:(jboolean)value {
+- (instancetype __nonnull)initWithBoolean:(jboolean)value {
   ComGoogleGsonFunctionalTypeVariableTest_Blue_initWithBoolean_(self, value);
   return self;
 }
@@ -252,6 +255,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithBoolean:);
   methods[2].selector = @selector(isEqual:);
@@ -292,15 +296,15 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeVariableTest_Blue)
 @implementation ComGoogleGsonFunctionalTypeVariableTest_Foo
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeVariableTest_Foo_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithId:(id)sValue
-                    withId:(id)tValue
-       withJavaLangBoolean:(JavaLangBoolean *)redField {
+- (instancetype __nonnull)initWithId:(id)sValue
+                              withId:(id)tValue
+                 withJavaLangBoolean:(JavaLangBoolean *)redField {
   ComGoogleGsonFunctionalTypeVariableTest_Foo_initWithId_withId_withJavaLangBoolean_(self, sValue, tValue, redField);
   return self;
 }
@@ -328,6 +332,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithId:withId:withJavaLangBoolean:);
   methods[2].selector = @selector(isEqual:);
@@ -377,15 +382,15 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalTypeVariableTest_Foo)
 @implementation ComGoogleGsonFunctionalTypeVariableTest_Bar
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalTypeVariableTest_Bar_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithNSString:(NSString *)s
-             withJavaLangInteger:(JavaLangInteger *)i
-                     withBoolean:(jboolean)b {
+- (instancetype __nonnull)initWithNSString:(NSString *)s
+                       withJavaLangInteger:(JavaLangInteger *)i
+                               withBoolean:(jboolean)b {
   ComGoogleGsonFunctionalTypeVariableTest_Bar_initWithNSString_withJavaLangInteger_withBoolean_(self, s, i, b);
   return self;
 }
@@ -397,6 +402,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSString:withJavaLangInteger:withBoolean:);
   #pragma clang diagnostic pop

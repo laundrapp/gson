@@ -16,7 +16,7 @@
 
 @interface ComGoogleGsonInternalGsonTypesTest_1D : NSObject
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -32,7 +32,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalGsonTypesTest_1D)
 
 @interface ComGoogleGsonInternalGsonTypesTest_A : NSObject
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -48,7 +48,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalGsonTypesTest_A)
 
 @interface ComGoogleGsonInternalGsonTypesTest_B : NSObject
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -64,7 +64,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalGsonTypesTest_B)
 
 @interface ComGoogleGsonInternalGsonTypesTest_C : NSObject
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -81,7 +81,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalGsonTypesTest_C)
 @implementation ComGoogleGsonInternalGsonTypesTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInternalGsonTypesTest_init(self);
   return self;
 }
@@ -121,6 +121,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testNewParameterizedTypeWithoutOwner);
   methods[2].selector = @selector(testGetFirstTypeArgument);
@@ -159,7 +160,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalGsonTypesTest)
 @implementation ComGoogleGsonInternalGsonTypesTest_1D
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInternalGsonTypesTest_1D_init(self);
   return self;
 }
@@ -171,6 +172,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonInternalGsonTypesTest;", "testNewParameterizedTypeWithoutOwner" };
@@ -197,7 +199,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalGsonTypesTest_1D)
 @implementation ComGoogleGsonInternalGsonTypesTest_A
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInternalGsonTypesTest_A_init(self);
   return self;
 }
@@ -209,6 +211,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonInternalGsonTypesTest;" };
@@ -235,7 +238,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalGsonTypesTest_A)
 @implementation ComGoogleGsonInternalGsonTypesTest_B
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInternalGsonTypesTest_B_init(self);
   return self;
 }
@@ -247,6 +250,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonInternalGsonTypesTest;" };
@@ -273,7 +277,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalGsonTypesTest_B)
 @implementation ComGoogleGsonInternalGsonTypesTest_C
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInternalGsonTypesTest_C_init(self);
   return self;
 }
@@ -285,6 +289,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonInternalGsonTypesTest;" };

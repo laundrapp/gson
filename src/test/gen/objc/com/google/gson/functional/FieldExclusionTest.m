@@ -26,7 +26,7 @@ J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonFunctionalFieldExclusionTest, VALUE, 
 
 @interface ComGoogleGsonFunctionalFieldExclusionTest_Outer : NSObject
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -45,7 +45,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalFieldExclusionTest_Outer)
   NSString *value_;
 }
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 - (NSString *)toJson;
 
@@ -65,8 +65,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalFieldExclusionTest_NestedClass
 
 @interface ComGoogleGsonFunctionalFieldExclusionTest_Outer_Inner : ComGoogleGsonFunctionalFieldExclusionTest_NestedClass
 
-- (instancetype)initWithComGoogleGsonFunctionalFieldExclusionTest_Outer:(ComGoogleGsonFunctionalFieldExclusionTest_Outer *)outer$
-                                                           withNSString:(NSString *)value;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalFieldExclusionTest_Outer:(ComGoogleGsonFunctionalFieldExclusionTest_Outer *)outer$
+                                                                     withNSString:(NSString *)value;
 
 @end
 
@@ -83,7 +83,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalFieldExclusionTest_Outer_Inner
 @implementation ComGoogleGsonFunctionalFieldExclusionTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalFieldExclusionTest_init(self);
   return self;
 }
@@ -138,6 +138,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testDefaultInnerClassExclusion);
@@ -172,7 +173,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalFieldExclusionTest)
 @implementation ComGoogleGsonFunctionalFieldExclusionTest_Outer
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalFieldExclusionTest_Outer_init(self);
   return self;
 }
@@ -184,6 +185,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalFieldExclusionTest;", "LComGoogleGsonFunctionalFieldExclusionTest_Outer_Inner;" };
@@ -209,7 +211,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalFieldExclusionTest_Outer
 
 @implementation ComGoogleGsonFunctionalFieldExclusionTest_NestedClass
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   ComGoogleGsonFunctionalFieldExclusionTest_NestedClass_initWithNSString_(self, value);
   return self;
 }
@@ -230,6 +232,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalFieldExclusionTest_Outer
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(toJson);
   #pragma clang diagnostic pop
@@ -260,8 +263,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalFieldExclusionTest_Neste
 
 @implementation ComGoogleGsonFunctionalFieldExclusionTest_Outer_Inner
 
-- (instancetype)initWithComGoogleGsonFunctionalFieldExclusionTest_Outer:(ComGoogleGsonFunctionalFieldExclusionTest_Outer *)outer$
-                                                           withNSString:(NSString *)value {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalFieldExclusionTest_Outer:(ComGoogleGsonFunctionalFieldExclusionTest_Outer *)outer$
+                                                                     withNSString:(NSString *)value {
   ComGoogleGsonFunctionalFieldExclusionTest_Outer_Inner_initWithComGoogleGsonFunctionalFieldExclusionTest_Outer_withNSString_(self, outer$, value);
   return self;
 }
@@ -272,6 +275,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalFieldExclusionTest_Neste
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalFieldExclusionTest_Outer:withNSString:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LNSString;", "LComGoogleGsonFunctionalFieldExclusionTest_Outer;" };

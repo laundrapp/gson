@@ -32,7 +32,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief This test also ensures that <code>TypeAdapterFactory</code> registered through <code>JsonAdapter</code>
@@ -42,7 +42,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -70,11 +70,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunct
 
 #pragma mark Package-Private
 
-- (instancetype)initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType:(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType *)type;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType:(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunctionalTest_ShapeType *)type;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -143,12 +143,12 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalRuntimeTypeAdapterFactoryFunct
 
 #pragma mark Protected
 
-- (instancetype)initWithIOSClass:(IOSClass *)baseType
-                    withNSString:(NSString *)typeFieldName;
+- (instancetype __nonnull)initWithIOSClass:(IOSClass *)baseType
+                              withNSString:(NSString *)typeFieldName;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonFieldNamingStrategy
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFieldNamingStrategy_) && (INCLUDE_ALL_ComGoogleGsonFieldNamingStrategy || defined(INCLUDE_ComGoogleGsonFieldNamingStrategy))
 #define ComGoogleGsonFieldNamingStrategy_
 
@@ -45,4 +50,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFieldNamingStrategy)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFieldNamingStrategy")

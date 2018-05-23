@@ -19,7 +19,7 @@ J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonVersionExclusionStrategyTest, VERSION,
 
 @interface ComGoogleGsonVersionExclusionStrategyTest_MockObject : NSObject
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -44,7 +44,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonVersionExclusionStrategyTest_MockObject)
 @implementation ComGoogleGsonVersionExclusionStrategyTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonVersionExclusionStrategyTest_init(self);
   return self;
 }
@@ -77,6 +77,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testClassAndFieldAreAtSameVersion);
   methods[2].selector = @selector(testClassAndFieldAreBehindInVersion);
@@ -109,7 +110,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonVersionExclusionStrategyTest)
 @implementation ComGoogleGsonVersionExclusionStrategyTest_MockObject
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonVersionExclusionStrategyTest_MockObject_init(self);
   return self;
 }
@@ -121,6 +122,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

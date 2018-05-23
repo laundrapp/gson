@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonReflectTypeToken
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonReflectTypeToken_) && (INCLUDE_ALL_ComGoogleGsonReflectTypeToken || defined(INCLUDE_ComGoogleGsonReflectTypeToken))
 #define ComGoogleGsonReflectTypeToken_
 
@@ -95,14 +100,14 @@
   parameter in the anonymous class's type hierarchy so we can reconstitute it
   at runtime despite erasure.
  */
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 #pragma mark Package-Private
 
 /*!
  @brief Unsafe.Constructs a type literal manually.
  */
-- (instancetype)initWithJavaLangReflectType:(id<JavaLangReflectType>)type;
+- (instancetype __nonnull)initWithJavaLangReflectType:(id<JavaLangReflectType>)type;
 
 /*!
  @brief Returns the type from super class's type parameter in <code>form</code>
@@ -139,4 +144,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonReflectTypeToken)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonReflectTypeToken")

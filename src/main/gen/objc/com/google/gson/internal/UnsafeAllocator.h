@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalUnsafeAllocator
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternalUnsafeAllocator_) && (INCLUDE_ALL_ComGoogleGsonInternalUnsafeAllocator || defined(INCLUDE_ComGoogleGsonInternalUnsafeAllocator))
 #define ComGoogleGsonInternalUnsafeAllocator_
 
@@ -27,7 +32,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 + (ComGoogleGsonInternalUnsafeAllocator *)create;
 
@@ -45,4 +50,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalUnsafeAllocator)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalUnsafeAllocator")

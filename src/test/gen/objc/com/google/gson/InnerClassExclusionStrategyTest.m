@@ -22,7 +22,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonInnerClassExclusionStrategyTest, excluder_, Com
 @implementation ComGoogleGsonInnerClassExclusionStrategyTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInnerClassExclusionStrategyTest_init(self);
   return self;
 }
@@ -65,6 +65,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testExcludeInnerClassObject);
   methods[2].selector = @selector(testExcludeInnerClassField);
@@ -102,7 +103,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInnerClassExclusionStrategyTest)
 
 @implementation ComGoogleGsonInnerClassExclusionStrategyTest_InnerClass
 
-- (instancetype)initWithComGoogleGsonInnerClassExclusionStrategyTest:(ComGoogleGsonInnerClassExclusionStrategyTest *)outer$ {
+- (instancetype __nonnull)initWithComGoogleGsonInnerClassExclusionStrategyTest:(ComGoogleGsonInnerClassExclusionStrategyTest *)outer$ {
   ComGoogleGsonInnerClassExclusionStrategyTest_InnerClass_initWithComGoogleGsonInnerClassExclusionStrategyTest_(self, outer$);
   return self;
 }
@@ -113,6 +114,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInnerClassExclusionStrategyTest)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInnerClassExclusionStrategyTest:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonInnerClassExclusionStrategyTest;" };
@@ -139,7 +141,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInnerClassExclusionStrategyTest_In
 @implementation ComGoogleGsonInnerClassExclusionStrategyTest_StaticNestedClass
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInnerClassExclusionStrategyTest_StaticNestedClass_init(self);
   return self;
 }
@@ -151,6 +153,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonInnerClassExclusionStrategyTest;" };

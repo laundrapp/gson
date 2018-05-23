@@ -28,7 +28,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest, gs
   jint b_;
 }
 
-- (instancetype)initWithInt:(jint)b;
+- (instancetype __nonnull)initWithInt:(jint)b;
 
 @end
 
@@ -47,8 +47,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMoreSpecificTypeSerializationT
   jint s_;
 }
 
-- (instancetype)initWithInt:(jint)b
-                    withInt:(jint)s;
+- (instancetype __nonnull)initWithInt:(jint)b
+                              withInt:(jint)s;
 
 @end
 
@@ -67,7 +67,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMoreSpecificTypeSerializationT
   ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base *b_;
 }
 
-- (instancetype)initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base:(ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base *)b;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base:(ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base *)b;
 
 @end
 
@@ -89,8 +89,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMoreSpecificTypeSerializationT
   id<JavaUtilMap> map_;
 }
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)collection
-                           withJavaUtilMap:(id<JavaUtilMap>)map;
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)collection
+                                     withJavaUtilMap:(id<JavaUtilMap>)map;
 
 @end
 
@@ -112,7 +112,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMoreSpecificTypeSerializationT
   id t_;
 }
 
-- (instancetype)initWithId:(id)t;
+- (instancetype __nonnull)initWithId:(id)t;
 
 @end
 
@@ -133,8 +133,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMoreSpecificTypeSerializationT
   id s_;
 }
 
-- (instancetype)initWithId:(id)t
-                    withId:(id)s;
+- (instancetype __nonnull)initWithId:(id)t
+                              withId:(id)s;
 
 @end
 
@@ -155,7 +155,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMoreSpecificTypeSerializationT
   ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase *b_;
 }
 
-- (instancetype)initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase:(ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase *)b;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase:(ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase *)b;
 
 @end
 
@@ -177,8 +177,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMoreSpecificTypeSerializationT
   id<JavaUtilMap> map_;
 }
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)collection
-                           withJavaUtilMap:(id<JavaUtilMap>)map;
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)collection
+                                     withJavaUtilMap:(id<JavaUtilMap>)map;
 
 @end
 
@@ -198,7 +198,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMoreSpecificTypeSerializationT
 @implementation ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_init(self);
   return self;
 }
@@ -285,6 +285,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testSubclassFields);
@@ -320,7 +321,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
 
 @implementation ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base
 
-- (instancetype)initWithInt:(jint)b {
+- (instancetype __nonnull)initWithInt:(jint)b {
   ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base_initWithInt_(self, b);
   return self;
 }
@@ -331,6 +332,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithInt:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -360,8 +362,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
 
 @implementation ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Sub
 
-- (instancetype)initWithInt:(jint)b
-                    withInt:(jint)s {
+- (instancetype __nonnull)initWithInt:(jint)b
+                              withInt:(jint)s {
   ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Sub_initWithInt_withInt_(self, b, s);
   return self;
 }
@@ -372,6 +374,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithInt:withInt:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -401,7 +404,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
 
 @implementation ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ClassWithBaseFields
 
-- (instancetype)initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base:(ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base *)b {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base:(ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base *)b {
   ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ClassWithBaseFields_initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base_(self, b);
   return self;
 }
@@ -417,6 +420,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_Base:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -446,8 +450,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
 
 @implementation ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ClassWithContainersOfBaseFields
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)collection
-                           withJavaUtilMap:(id<JavaUtilMap>)map {
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)collection
+                                     withJavaUtilMap:(id<JavaUtilMap>)map {
   ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ClassWithContainersOfBaseFields_initWithJavaUtilCollection_withJavaUtilMap_(self, collection, map);
   return self;
 }
@@ -464,6 +468,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaUtilCollection:withJavaUtilMap:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -495,7 +500,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
 
 @implementation ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase
 
-- (instancetype)initWithId:(id)t {
+- (instancetype __nonnull)initWithId:(id)t {
   ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase_initWithId_(self, t);
   return self;
 }
@@ -511,6 +516,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithId:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -540,8 +546,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
 
 @implementation ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedSub
 
-- (instancetype)initWithId:(id)t
-                    withId:(id)s {
+- (instancetype __nonnull)initWithId:(id)t
+                              withId:(id)s {
   ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedSub_initWithId_withId_(self, t, s);
   return self;
 }
@@ -557,6 +563,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithId:withId:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -586,7 +593,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
 
 @implementation ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ClassWithParameterizedBaseFields
 
-- (instancetype)initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase:(ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase *)b {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase:(ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase *)b {
   ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ClassWithParameterizedBaseFields_initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase_(self, b);
   return self;
 }
@@ -602,6 +609,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ParameterizedBase:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -631,8 +639,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
 
 @implementation ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ClassWithContainersOfParameterizedBaseFields
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)collection
-                           withJavaUtilMap:(id<JavaUtilMap>)map {
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)collection
+                                     withJavaUtilMap:(id<JavaUtilMap>)map {
   ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_ClassWithContainersOfParameterizedBaseFields_initWithJavaUtilCollection_withJavaUtilMap_(self, collection, map);
   return self;
 }
@@ -649,6 +657,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalMoreSpecificTypeSerializ
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaUtilCollection:withJavaUtilMap:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

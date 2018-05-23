@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonCommonMoreAsserts
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonCommonMoreAsserts_) && (INCLUDE_ALL_ComGoogleGsonCommonMoreAsserts || defined(INCLUDE_ComGoogleGsonCommonMoreAsserts))
 #define ComGoogleGsonCommonMoreAsserts_
 
@@ -29,7 +34,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief Asserts that the specified <code>value</code> is not present in <code>collection</code>
@@ -70,4 +75,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonCommonMoreAsserts)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonCommonMoreAsserts")

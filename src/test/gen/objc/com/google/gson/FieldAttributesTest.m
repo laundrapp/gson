@@ -26,7 +26,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFieldAttributesTest, fieldAttributes_, ComGoogl
 
 @interface ComGoogleGsonFieldAttributesTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -43,7 +43,7 @@ __attribute__((unused)) static ComGoogleGsonFieldAttributesTest_1 *create_ComGoo
   id<JavaUtilList> bar_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -62,7 +62,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFieldAttributesTest_Foo)
 @implementation ComGoogleGsonFieldAttributesTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFieldAttributesTest_init(self);
   return self;
 }
@@ -128,6 +128,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testNullField);
@@ -164,7 +165,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFieldAttributesTest)
 @implementation ComGoogleGsonFieldAttributesTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFieldAttributesTest_1_init(self);
   return self;
 }
@@ -176,6 +177,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFieldAttributesTest;", "testDeclaredTypeAndClass", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Ljava/lang/String;>;>;" };
@@ -200,7 +202,7 @@ ComGoogleGsonFieldAttributesTest_1 *create_ComGoogleGsonFieldAttributesTest_1_in
 @implementation ComGoogleGsonFieldAttributesTest_Foo
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFieldAttributesTest_Foo_init(self);
   return self;
 }
@@ -217,6 +219,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonAnnotationsJsonAdapter
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonAnnotationsJsonAdapter_) && (INCLUDE_ALL_ComGoogleGsonAnnotationsJsonAdapter || defined(INCLUDE_ComGoogleGsonAnnotationsJsonAdapter))
 #define ComGoogleGsonAnnotationsJsonAdapter_
 
@@ -84,6 +89,10 @@
 
 @property (readonly) IOSClass *value;
 
+- (jboolean)isEqual:(id)obj;
+
+- (NSUInteger)hash;
+
 @end
 
 @interface ComGoogleGsonAnnotationsJsonAdapter : NSObject < ComGoogleGsonAnnotationsJsonAdapter > {
@@ -101,4 +110,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonAnnotationsJsonAdapter)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonAnnotationsJsonAdapter")

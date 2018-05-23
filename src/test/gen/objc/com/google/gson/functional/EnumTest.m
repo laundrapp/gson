@@ -38,7 +38,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalEnumTest, gson_, ComGoogleGsonGson *)
 
 @interface ComGoogleGsonFunctionalEnumTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -52,7 +52,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalEnumTest_1 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalEnumTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -104,7 +104,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalEnumTest_MyEnum)
   ComGoogleGsonFunctionalEnumTest_MyEnum *value2_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (NSString *)getExpectedJson;
 
@@ -125,7 +125,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalEnumTest_ClassWithEnumFields)
 
 @interface ComGoogleGsonFunctionalEnumTest_3 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -139,7 +139,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalEnumTest_3 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalEnumTest_4 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -153,7 +153,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalEnumTest_4 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalEnumTest_5 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -167,7 +167,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalEnumTest_5 *create_ComGoog
 
 @interface ComGoogleGsonFunctionalEnumTest_6 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -213,7 +213,7 @@ __attribute__((unused)) static void ComGoogleGsonFunctionalEnumTest_Roshambo_3_i
 
 @interface ComGoogleGsonFunctionalEnumTest_MyEnumTypeAdapter : NSObject < ComGoogleGsonJsonSerializer, ComGoogleGsonJsonDeserializer >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(ComGoogleGsonFunctionalEnumTest_Roshambo *)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -244,7 +244,7 @@ __attribute__((unused)) static IOSObjectArray *ComGoogleGsonFunctionalEnumTest_G
 @implementation ComGoogleGsonFunctionalEnumTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalEnumTest_init(self);
   return self;
 }
@@ -364,6 +364,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testTopLevelEnumSerialization);
@@ -405,7 +406,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalEnumTest)
 @implementation ComGoogleGsonFunctionalEnumTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalEnumTest_1_init(self);
   return self;
 }
@@ -417,6 +418,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalEnumTest;", "testCollectionOfEnumsSerialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Collection<Lcom/google/gson/functional/EnumTest$MyEnum;>;>;" };
@@ -441,7 +443,7 @@ ComGoogleGsonFunctionalEnumTest_1 *create_ComGoogleGsonFunctionalEnumTest_1_init
 @implementation ComGoogleGsonFunctionalEnumTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalEnumTest_2_init(self);
   return self;
 }
@@ -453,6 +455,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalEnumTest;", "testCollectionOfEnumsDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Collection<Lcom/google/gson/functional/EnumTest$MyEnum;>;>;" };
@@ -495,6 +498,7 @@ ComGoogleGsonFunctionalEnumTest_MyEnum *ComGoogleGsonFunctionalEnumTest_MyEnum_v
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(values);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop
@@ -514,7 +518,7 @@ ComGoogleGsonFunctionalEnumTest_MyEnum *ComGoogleGsonFunctionalEnumTest_MyEnum_v
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
     for (jint i = 0; i < 2; i++) {
-      (ComGoogleGsonFunctionalEnumTest_MyEnum_values_[i] = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+      ((void)(ComGoogleGsonFunctionalEnumTest_MyEnum_values_[i] = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
       ComGoogleGsonFunctionalEnumTest_MyEnum_initWithNSString_withInt_(e, JreEnumConstantName(ComGoogleGsonFunctionalEnumTest_MyEnum_class_(), i), i);
     }
     J2OBJC_SET_INITIALIZED(ComGoogleGsonFunctionalEnumTest_MyEnum)
@@ -557,7 +561,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalEnumTest_MyEnum)
 @implementation ComGoogleGsonFunctionalEnumTest_ClassWithEnumFields
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalEnumTest_ClassWithEnumFields_init(self);
   return self;
 }
@@ -580,6 +584,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(getExpectedJson);
   #pragma clang diagnostic pop
@@ -613,7 +618,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalEnumTest_ClassWithEnumFi
 @implementation ComGoogleGsonFunctionalEnumTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalEnumTest_3_init(self);
   return self;
 }
@@ -625,6 +630,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalEnumTest;", "testEnumSubclass", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Set<Lcom/google/gson/functional/EnumTest$Roshambo;>;>;" };
@@ -649,7 +655,7 @@ ComGoogleGsonFunctionalEnumTest_3 *create_ComGoogleGsonFunctionalEnumTest_3_init
 @implementation ComGoogleGsonFunctionalEnumTest_4
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalEnumTest_4_init(self);
   return self;
 }
@@ -661,6 +667,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalEnumTest;", "testEnumSubclassWithRegisteredTypeAdapter", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Set<Lcom/google/gson/functional/EnumTest$Roshambo;>;>;" };
@@ -685,7 +692,7 @@ ComGoogleGsonFunctionalEnumTest_4 *create_ComGoogleGsonFunctionalEnumTest_4_init
 @implementation ComGoogleGsonFunctionalEnumTest_5
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalEnumTest_5_init(self);
   return self;
 }
@@ -697,6 +704,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalEnumTest;", "testEnumSubclassAsParameterizedType", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Collection<Lcom/google/gson/functional/EnumTest$Roshambo;>;>;" };
@@ -721,7 +729,7 @@ ComGoogleGsonFunctionalEnumTest_5 *create_ComGoogleGsonFunctionalEnumTest_5_init
 @implementation ComGoogleGsonFunctionalEnumTest_6
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalEnumTest_6_init(self);
   return self;
 }
@@ -733,6 +741,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalEnumTest;", "testEnumSet", "Lcom/google/gson/reflect/TypeToken<Ljava/util/EnumSet<Lcom/google/gson/functional/EnumTest$Roshambo;>;>;" };
@@ -782,6 +791,7 @@ ComGoogleGsonFunctionalEnumTest_Roshambo *ComGoogleGsonFunctionalEnumTest_Rosham
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(defeats);
   methods[1].selector = @selector(values);
   methods[2].selector = @selector(valueOfWithNSString:);
@@ -807,11 +817,11 @@ ComGoogleGsonFunctionalEnumTest_Roshambo *ComGoogleGsonFunctionalEnumTest_Rosham
     allocSize += objSize_SCISSORS;
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
-    (JreEnum(ComGoogleGsonFunctionalEnumTest_Roshambo, ROCK) = e = objc_constructInstance([ComGoogleGsonFunctionalEnumTest_Roshambo_1 class], (void *)ptr), ptr += objSize_ROCK);
+    ((void) (JreEnum(ComGoogleGsonFunctionalEnumTest_Roshambo, ROCK) = e = objc_constructInstance([ComGoogleGsonFunctionalEnumTest_Roshambo_1 class], (void *)ptr)), ptr += objSize_ROCK);
     ComGoogleGsonFunctionalEnumTest_Roshambo_1_initWithNSString_withInt_(e, @"ROCK", 0);
-    (JreEnum(ComGoogleGsonFunctionalEnumTest_Roshambo, PAPER) = e = objc_constructInstance([ComGoogleGsonFunctionalEnumTest_Roshambo_2 class], (void *)ptr), ptr += objSize_PAPER);
+    ((void) (JreEnum(ComGoogleGsonFunctionalEnumTest_Roshambo, PAPER) = e = objc_constructInstance([ComGoogleGsonFunctionalEnumTest_Roshambo_2 class], (void *)ptr)), ptr += objSize_PAPER);
     ComGoogleGsonFunctionalEnumTest_Roshambo_2_initWithNSString_withInt_(e, @"PAPER", 1);
-    (JreEnum(ComGoogleGsonFunctionalEnumTest_Roshambo, SCISSORS) = e = objc_constructInstance([ComGoogleGsonFunctionalEnumTest_Roshambo_3 class], (void *)ptr), ptr += objSize_SCISSORS);
+    ((void) (JreEnum(ComGoogleGsonFunctionalEnumTest_Roshambo, SCISSORS) = e = objc_constructInstance([ComGoogleGsonFunctionalEnumTest_Roshambo_3 class], (void *)ptr)), ptr += objSize_SCISSORS);
     ComGoogleGsonFunctionalEnumTest_Roshambo_3_initWithNSString_withInt_(e, @"SCISSORS", 2);
     J2OBJC_SET_INITIALIZED(ComGoogleGsonFunctionalEnumTest_Roshambo)
   }
@@ -867,6 +877,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalEnumTest_Roshambo)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(defeats);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalEnumTest_Roshambo;" };
@@ -897,6 +908,7 @@ void ComGoogleGsonFunctionalEnumTest_Roshambo_1_initWithNSString_withInt_(ComGoo
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(defeats);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalEnumTest_Roshambo;" };
@@ -927,6 +939,7 @@ void ComGoogleGsonFunctionalEnumTest_Roshambo_2_initWithNSString_withInt_(ComGoo
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(defeats);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalEnumTest_Roshambo;" };
@@ -943,7 +956,7 @@ void ComGoogleGsonFunctionalEnumTest_Roshambo_3_initWithNSString_withInt_(ComGoo
 @implementation ComGoogleGsonFunctionalEnumTest_MyEnumTypeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalEnumTest_MyEnumTypeAdapter_init(self);
   return self;
 }
@@ -969,6 +982,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   methods[2].selector = @selector(deserializeWithComGoogleGsonJsonElement:withJavaLangReflectType:withComGoogleGsonJsonDeserializationContext:);
@@ -1015,6 +1029,7 @@ ComGoogleGsonFunctionalEnumTest_Gender *ComGoogleGsonFunctionalEnumTest_Gender_v
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(values);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop
@@ -1034,7 +1049,7 @@ ComGoogleGsonFunctionalEnumTest_Gender *ComGoogleGsonFunctionalEnumTest_Gender_v
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
     for (jint i = 0; i < 2; i++) {
-      (ComGoogleGsonFunctionalEnumTest_Gender_values_[i] = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+      ((void)(ComGoogleGsonFunctionalEnumTest_Gender_values_[i] = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
       ComGoogleGsonFunctionalEnumTest_Gender_initWithNSString_withInt_(e, JreEnumConstantName(ComGoogleGsonFunctionalEnumTest_Gender_class_(), i), i);
     }
     J2OBJC_SET_INITIALIZED(ComGoogleGsonFunctionalEnumTest_Gender)

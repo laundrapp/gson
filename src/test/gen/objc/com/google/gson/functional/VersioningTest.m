@@ -46,7 +46,7 @@ J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonFunctionalVersioningTest, D, jint)
   jint b_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -69,7 +69,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalVersioningTest_Version1)
   jint c_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -90,7 +90,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalVersioningTest_Version1_1)
   jint d_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -112,7 +112,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalVersioningTest_Version1_2)
   jint b_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -131,7 +131,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalVersioningTest_SinceUntilMixin
 @implementation ComGoogleGsonFunctionalVersioningTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalVersioningTest_init(self);
   return self;
 }
@@ -258,6 +258,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testVersionedUntilSerialization);
@@ -302,7 +303,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalVersioningTest)
 @implementation ComGoogleGsonFunctionalVersioningTest_Version1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalVersioningTest_Version1_init(self);
   return self;
 }
@@ -314,6 +315,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -354,7 +356,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalVersioningTest_Version1)
 @implementation ComGoogleGsonFunctionalVersioningTest_Version1_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalVersioningTest_Version1_1_init(self);
   return self;
 }
@@ -366,6 +368,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -400,7 +403,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalVersioningTest_Version1_
 @implementation ComGoogleGsonFunctionalVersioningTest_Version1_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalVersioningTest_Version1_2_init(self);
   return self;
 }
@@ -412,6 +415,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -446,7 +450,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalVersioningTest_Version1_
 @implementation ComGoogleGsonFunctionalVersioningTest_SinceUntilMixing
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalVersioningTest_SinceUntilMixing_init(self);
   return self;
 }
@@ -458,6 +462,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest || defined(INCLUDE_ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest))
 #define ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest_
 
@@ -28,7 +33,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief For parameterized type in a List, Gson ignores the more-specific type and sticks to
@@ -59,7 +64,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -75,4 +80,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalMoreSpecificTypeSerializationT
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalMoreSpecificTypeSerializationTest")

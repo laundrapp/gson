@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonJsonParseException
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonJsonParseException_) && (INCLUDE_ALL_ComGoogleGsonJsonParseException || defined(INCLUDE_ComGoogleGsonJsonParseException))
 #define ComGoogleGsonJsonParseException_
 
@@ -43,31 +48,31 @@
   using <code>Throwable)</code> instead.
  @param msg error message describing a possible cause of this exception.
  */
-- (instancetype)initWithNSString:(NSString *)msg;
+- (instancetype __nonnull)initWithNSString:(NSString *)msg;
 
 /*!
  @brief Creates exception with the specified message and cause.
  @param msg error message describing what happened.
  @param cause root exception that caused this exception to be thrown.
  */
-- (instancetype)initWithNSString:(NSString *)msg
-           withJavaLangThrowable:(JavaLangThrowable *)cause;
+- (instancetype __nonnull)initWithNSString:(NSString *)msg
+                     withJavaLangThrowable:(JavaLangThrowable *)cause;
 
 /*!
  @brief Creates exception with the specified cause.Consider using 
  <code>Throwable)</code> instead if you can describe what happened.
  @param cause root exception that caused this exception to be thrown.
  */
-- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)cause;
+- (instancetype __nonnull)initWithJavaLangThrowable:(JavaLangThrowable *)cause;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
-- (instancetype)initWithNSString:(NSString *)arg0
-           withJavaLangThrowable:(JavaLangThrowable *)arg1
-                     withBoolean:(jboolean)arg2
-                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0
+                     withJavaLangThrowable:(JavaLangThrowable *)arg1
+                               withBoolean:(jboolean)arg2
+                               withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
 
 @end
 
@@ -99,4 +104,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonParseException)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonJsonParseException")

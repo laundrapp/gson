@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonTypeAdapterFactory
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonTypeAdapterFactory_) && (INCLUDE_ALL_ComGoogleGsonTypeAdapterFactory || defined(INCLUDE_ComGoogleGsonTypeAdapterFactory))
 #define ComGoogleGsonTypeAdapterFactory_
 
@@ -159,4 +164,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonTypeAdapterFactory)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonTypeAdapterFactory")

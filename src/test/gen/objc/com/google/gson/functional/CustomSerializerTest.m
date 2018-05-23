@@ -20,7 +20,7 @@
 
 @interface ComGoogleGsonFunctionalCustomSerializerTest_1 : NSObject < ComGoogleGsonJsonSerializer >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(ComGoogleGsonCommonTestTypes_Base *)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -39,7 +39,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalCustomSerializerTest_1 *cr
 @implementation ComGoogleGsonFunctionalCustomSerializerTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalCustomSerializerTest_init(self);
   return self;
 }
@@ -97,6 +97,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testBaseClassSerializerInvokedForBaseClassFields);
   methods[2].selector = @selector(testSubClassSerializerInvokedForBaseClassFieldsHoldingSubClassInstances);
@@ -127,7 +128,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalCustomSerializerTest)
 @implementation ComGoogleGsonFunctionalCustomSerializerTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalCustomSerializerTest_1_init(self);
   return self;
 }
@@ -146,6 +147,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   #pragma clang diagnostic pop

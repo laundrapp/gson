@@ -42,7 +42,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalInterfaceTest_TestObjectInterf
   NSString *someStringValue_;
 }
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 @end
 
@@ -63,7 +63,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalInterfaceTest_TestObject)
   id<ComGoogleGsonFunctionalInterfaceTest_TestObjectInterface> obj_;
 }
 
-- (instancetype)initWithComGoogleGsonFunctionalInterfaceTest_TestObjectInterface:(id<ComGoogleGsonFunctionalInterfaceTest_TestObjectInterface>)obj;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalInterfaceTest_TestObjectInterface:(id<ComGoogleGsonFunctionalInterfaceTest_TestObjectInterface>)obj;
 
 @end
 
@@ -82,7 +82,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalInterfaceTest_TestObjectWrappe
 @implementation ComGoogleGsonFunctionalInterfaceTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInterfaceTest_init(self);
   return self;
 }
@@ -118,6 +118,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testSerializingObjectImplementingInterface);
@@ -163,7 +164,7 @@ J2OBJC_INTERFACE_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalInterfaceTest_TestOb
 
 @implementation ComGoogleGsonFunctionalInterfaceTest_TestObject
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   ComGoogleGsonFunctionalInterfaceTest_TestObject_initWithNSString_(self, value);
   return self;
 }
@@ -179,6 +180,7 @@ J2OBJC_INTERFACE_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalInterfaceTest_TestOb
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -208,7 +210,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalInterfaceTest_TestObject
 
 @implementation ComGoogleGsonFunctionalInterfaceTest_TestObjectWrapper
 
-- (instancetype)initWithComGoogleGsonFunctionalInterfaceTest_TestObjectInterface:(id<ComGoogleGsonFunctionalInterfaceTest_TestObjectInterface>)obj {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalInterfaceTest_TestObjectInterface:(id<ComGoogleGsonFunctionalInterfaceTest_TestObjectInterface>)obj {
   ComGoogleGsonFunctionalInterfaceTest_TestObjectWrapper_initWithComGoogleGsonFunctionalInterfaceTest_TestObjectInterface_(self, obj);
   return self;
 }
@@ -224,6 +226,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalInterfaceTest_TestObject
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalInterfaceTest_TestObjectInterface:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

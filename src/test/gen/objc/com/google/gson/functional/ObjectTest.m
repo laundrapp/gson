@@ -49,7 +49,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalObjectTest, oldTimeZone_, JavaUtilTim
 
 @interface ComGoogleGsonFunctionalObjectTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -66,7 +66,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalObjectTest_1 *create_ComGo
   id<JavaUtilCollection> children_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -84,7 +84,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalObjectTest_ClassWithCollection
 
 @interface ComGoogleGsonFunctionalObjectTest_2 : ComGoogleGsonCommonTestTypes_ClassWithNoFields
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -98,7 +98,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalObjectTest_2 *create_ComGo
 
 @interface ComGoogleGsonFunctionalObjectTest_3 : NSObject < ComGoogleGsonJsonSerializer >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(ComGoogleGsonCommonTestTypes_ClassWithNoFields *)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -116,7 +116,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalObjectTest_3 *create_ComGo
 
 @interface ComGoogleGsonFunctionalObjectTest_4 : ComGoogleGsonCommonTestTypes_ClassWithNoFields
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -133,7 +133,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalObjectTest_4 *create_ComGo
   id member_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -154,7 +154,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalObjectTest_ClassWithObjectFiel
   ComGoogleGsonFunctionalObjectTest_Parent *val$p_;
 }
 
-- (instancetype)initWithComGoogleGsonFunctionalObjectTest_Parent:(ComGoogleGsonFunctionalObjectTest_Parent *)capture$0;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalObjectTest_Parent:(ComGoogleGsonFunctionalObjectTest_Parent *)capture$0;
 
 - (ComGoogleGsonFunctionalObjectTest_Parent_Child *)createInstanceWithJavaLangReflectType:(id<JavaLangReflectType>)type;
 
@@ -173,7 +173,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalObjectTest_5 *create_ComGo
   jint value1_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -192,7 +192,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalObjectTest_Parent)
   jint value2_;
 }
 
-- (instancetype)initWithComGoogleGsonFunctionalObjectTest_Parent:(ComGoogleGsonFunctionalObjectTest_Parent *)outer$;
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalObjectTest_Parent:(ComGoogleGsonFunctionalObjectTest_Parent *)outer$;
 
 @end
 
@@ -211,7 +211,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalObjectTest_Parent_Child)
   IOSObjectArray *elements_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (NSString *)getExpectedJson;
 
@@ -234,7 +234,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalObjectTest_ArrayOfArrays)
   jint a_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -255,7 +255,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalObjectTest_ClassWithPrivateNoA
   NSString *c_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -287,7 +287,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalObjectTest_Product, departments_, id<
 @implementation ComGoogleGsonFunctionalObjectTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_init(self);
   return self;
 }
@@ -653,6 +653,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(tearDown);
@@ -730,7 +731,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest)
 @implementation ComGoogleGsonFunctionalObjectTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_1_init(self);
   return self;
 }
@@ -742,6 +743,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalObjectTest;", "testTruncatedDeserialization", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Ljava/lang/String;>;>;" };
@@ -766,7 +768,7 @@ ComGoogleGsonFunctionalObjectTest_1 *create_ComGoogleGsonFunctionalObjectTest_1_
 @implementation ComGoogleGsonFunctionalObjectTest_ClassWithCollectionField
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_ClassWithCollectionField_init(self);
   return self;
 }
@@ -783,6 +785,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -813,7 +816,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_ClassWithColl
 @implementation ComGoogleGsonFunctionalObjectTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_2_init(self);
   return self;
 }
@@ -825,6 +828,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalObjectTest;", "testAnonymousLocalClassesSerialization" };
@@ -849,7 +853,7 @@ ComGoogleGsonFunctionalObjectTest_2 *create_ComGoogleGsonFunctionalObjectTest_2_
 @implementation ComGoogleGsonFunctionalObjectTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_3_init(self);
   return self;
 }
@@ -868,6 +872,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   #pragma clang diagnostic pop
@@ -893,7 +898,7 @@ ComGoogleGsonFunctionalObjectTest_3 *create_ComGoogleGsonFunctionalObjectTest_3_
 @implementation ComGoogleGsonFunctionalObjectTest_4
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_4_init(self);
   return self;
 }
@@ -905,6 +910,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalObjectTest;", "testAnonymousLocalClassesCustomSerialization" };
@@ -929,7 +935,7 @@ ComGoogleGsonFunctionalObjectTest_4 *create_ComGoogleGsonFunctionalObjectTest_4_
 @implementation ComGoogleGsonFunctionalObjectTest_ClassWithObjectField
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_ClassWithObjectField_init(self);
   return self;
 }
@@ -946,6 +952,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -974,7 +981,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_ClassWithObje
 
 @implementation ComGoogleGsonFunctionalObjectTest_5
 
-- (instancetype)initWithComGoogleGsonFunctionalObjectTest_Parent:(ComGoogleGsonFunctionalObjectTest_Parent *)capture$0 {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalObjectTest_Parent:(ComGoogleGsonFunctionalObjectTest_Parent *)capture$0 {
   ComGoogleGsonFunctionalObjectTest_5_initWithComGoogleGsonFunctionalObjectTest_Parent_(self, capture$0);
   return self;
 }
@@ -995,6 +1002,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_ClassWithObje
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalObjectTest_Parent:);
   methods[1].selector = @selector(createInstanceWithJavaLangReflectType:);
   #pragma clang diagnostic pop
@@ -1024,7 +1032,7 @@ ComGoogleGsonFunctionalObjectTest_5 *create_ComGoogleGsonFunctionalObjectTest_5_
 @implementation ComGoogleGsonFunctionalObjectTest_Parent
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_Parent_init(self);
   return self;
 }
@@ -1036,6 +1044,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1065,7 +1074,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_Parent)
 
 @implementation ComGoogleGsonFunctionalObjectTest_Parent_Child
 
-- (instancetype)initWithComGoogleGsonFunctionalObjectTest_Parent:(ComGoogleGsonFunctionalObjectTest_Parent *)outer$ {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalObjectTest_Parent:(ComGoogleGsonFunctionalObjectTest_Parent *)outer$ {
   ComGoogleGsonFunctionalObjectTest_Parent_Child_initWithComGoogleGsonFunctionalObjectTest_Parent_(self, outer$);
   return self;
 }
@@ -1076,6 +1085,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_Parent)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalObjectTest_Parent:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1106,7 +1116,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_Parent_Child)
 @implementation ComGoogleGsonFunctionalObjectTest_ArrayOfArrays
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_ArrayOfArrays_init(self);
   return self;
 }
@@ -1163,6 +1173,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(getExpectedJson);
   #pragma clang diagnostic pop
@@ -1200,7 +1211,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_ArrayOfArrays
 @implementation ComGoogleGsonFunctionalObjectTest_ClassWithPrivateNoArgsConstructor
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_ClassWithPrivateNoArgsConstructor_init(self);
   return self;
 }
@@ -1212,6 +1223,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1242,7 +1254,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_ClassWithPriv
 @implementation ComGoogleGsonFunctionalObjectTest_ClassWithEmptyStringFields
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_ClassWithEmptyStringFields_init(self);
   return self;
 }
@@ -1261,6 +1273,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1294,7 +1307,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_ClassWithEmpt
 
 @implementation ComGoogleGsonFunctionalObjectTest_HasObjectMap
 
-- (instancetype)initWithComGoogleGsonFunctionalObjectTest:(ComGoogleGsonFunctionalObjectTest *)outer$ {
+- (instancetype __nonnull)initWithComGoogleGsonFunctionalObjectTest:(ComGoogleGsonFunctionalObjectTest *)outer$ {
   ComGoogleGsonFunctionalObjectTest_HasObjectMap_initWithComGoogleGsonFunctionalObjectTest_(self, outer$);
   return self;
 }
@@ -1310,6 +1323,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_ClassWithEmpt
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonFunctionalObjectTest:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1340,7 +1354,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_HasObjectMap)
 @implementation ComGoogleGsonFunctionalObjectTest_Department
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_Department_init(self);
   return self;
 }
@@ -1358,6 +1372,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -1390,7 +1405,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalObjectTest_Department)
 @implementation ComGoogleGsonFunctionalObjectTest_Product
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalObjectTest_Product_init(self);
   return self;
 }
@@ -1408,6 +1423,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonFunctionalStreamingTypeAdaptersTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalStreamingTypeAdaptersTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalStreamingTypeAdaptersTest || defined(INCLUDE_ComGoogleGsonFunctionalStreamingTypeAdaptersTest))
 #define ComGoogleGsonFunctionalStreamingTypeAdaptersTest_
 
@@ -24,7 +29,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)testDeserialize;
 
@@ -62,7 +67,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -91,7 +96,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalStreamingTypeAdaptersTest)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -126,12 +131,12 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalStreamingTypeAdaptersTest_Truc
 
 #pragma mark Package-Private
 
-- (instancetype)initWithNSString:(NSString *)name
-                         withInt:(jint)age;
+- (instancetype __nonnull)initWithNSString:(NSString *)name
+                                   withInt:(jint)age;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -161,11 +166,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalStreamingTypeAdaptersTest_Pers
 
 #pragma mark Package-Private
 
-- (instancetype)initWithNSString:(NSString *)label;
+- (instancetype __nonnull)initWithNSString:(NSString *)label;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -185,4 +190,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalStreamingTypeAdaptersTest_Node
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalStreamingTypeAdaptersTest")

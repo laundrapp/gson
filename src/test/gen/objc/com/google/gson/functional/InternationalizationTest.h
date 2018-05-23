@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonFunctionalInternationalizationTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalInternationalizationTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalInternationalizationTest || defined(INCLUDE_ComGoogleGsonFunctionalInternationalizationTest))
 #define ComGoogleGsonFunctionalInternationalizationTest_
 
@@ -28,7 +33,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)testStringsWithRawChineseCharactersDeserialization;
 
@@ -44,7 +49,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -60,4 +65,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalInternationalizationTest)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalInternationalizationTest")

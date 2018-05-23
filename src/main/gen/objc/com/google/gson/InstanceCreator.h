@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInstanceCreator
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInstanceCreator_) && (INCLUDE_ALL_ComGoogleGsonInstanceCreator || defined(INCLUDE_ComGoogleGsonInstanceCreator))
 #define ComGoogleGsonInstanceCreator_
 
@@ -102,4 +107,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInstanceCreator)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInstanceCreator")

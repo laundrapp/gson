@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalBindMapTypeAdapterFactory
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonInternalBindMapTypeAdapterFactory_) && (INCLUDE_ALL_ComGoogleGsonInternalBindMapTypeAdapterFactory || defined(INCLUDE_ComGoogleGsonInternalBindMapTypeAdapterFactory))
 #define ComGoogleGsonInternalBindMapTypeAdapterFactory_
 
@@ -97,15 +102,15 @@ com.google.gson.JsonParseException: Expecting object found: "(5,6)"
 
 #pragma mark Public
 
-- (instancetype)initWithComGoogleGsonInternalConstructorConstructor:(ComGoogleGsonInternalConstructorConstructor *)constructorConstructor
-                                                        withBoolean:(jboolean)complexMapKeySerialization;
+- (instancetype __nonnull)initWithComGoogleGsonInternalConstructorConstructor:(ComGoogleGsonInternalConstructorConstructor *)constructorConstructor
+                                                                  withBoolean:(jboolean)complexMapKeySerialization;
 
 - (ComGoogleGsonTypeAdapter *)createWithComGoogleGsonGson:(ComGoogleGsonGson *)gson
                         withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)typeToken;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -121,4 +126,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindMapTypeAdapterFactory)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalBindMapTypeAdapterFactory")

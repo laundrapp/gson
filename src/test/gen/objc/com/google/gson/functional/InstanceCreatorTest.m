@@ -20,7 +20,7 @@
 
 @interface ComGoogleGsonFunctionalInstanceCreatorTest_1 : NSObject < ComGoogleGsonInstanceCreator >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonCommonTestTypes_Base *)createInstanceWithJavaLangReflectType:(id<JavaLangReflectType>)type;
 
@@ -36,7 +36,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalInstanceCreatorTest_1 *cre
 
 @interface ComGoogleGsonFunctionalInstanceCreatorTest_2 : NSObject < ComGoogleGsonInstanceCreator >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonCommonTestTypes_Base *)createInstanceWithJavaLangReflectType:(id<JavaLangReflectType>)type;
 
@@ -52,7 +52,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalInstanceCreatorTest_2 *cre
 
 @interface ComGoogleGsonFunctionalInstanceCreatorTest_3 : NSObject < ComGoogleGsonInstanceCreator >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonCommonTestTypes_Base *)createInstanceWithJavaLangReflectType:(id<JavaLangReflectType>)type;
 
@@ -68,7 +68,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalInstanceCreatorTest_3 *cre
 
 @interface ComGoogleGsonFunctionalInstanceCreatorTest_1SubArrayList : JavaUtilArrayList
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -84,7 +84,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalInstanceCreatorTest_1SubArrayL
 
 @interface ComGoogleGsonFunctionalInstanceCreatorTest_4 : NSObject < ComGoogleGsonInstanceCreator >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (id<JavaUtilList>)createInstanceWithJavaLangReflectType:(id<JavaLangReflectType>)type;
 
@@ -100,7 +100,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalInstanceCreatorTest_4 *cre
 
 @interface ComGoogleGsonFunctionalInstanceCreatorTest_5 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -114,7 +114,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalInstanceCreatorTest_5 *cre
 
 @interface ComGoogleGsonFunctionalInstanceCreatorTest_1SubTreeSet : JavaUtilTreeSet
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -130,7 +130,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalInstanceCreatorTest_1SubTreeSe
 
 @interface ComGoogleGsonFunctionalInstanceCreatorTest_6 : NSObject < ComGoogleGsonInstanceCreator >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (id<JavaUtilSortedSet>)createInstanceWithJavaLangReflectType:(id<JavaLangReflectType>)type;
 
@@ -146,7 +146,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalInstanceCreatorTest_6 *cre
 
 @interface ComGoogleGsonFunctionalInstanceCreatorTest_7 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -161,7 +161,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalInstanceCreatorTest_7 *cre
 @implementation ComGoogleGsonFunctionalInstanceCreatorTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInstanceCreatorTest_init(self);
   return self;
 }
@@ -223,6 +223,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testInstanceCreatorReturnsBaseType);
   methods[2].selector = @selector(testInstanceCreatorReturnsSubTypeForTopLevelObject);
@@ -254,7 +255,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalInstanceCreatorTest)
 @implementation ComGoogleGsonFunctionalInstanceCreatorTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInstanceCreatorTest_1_init(self);
   return self;
 }
@@ -271,6 +272,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createInstanceWithJavaLangReflectType:);
   #pragma clang diagnostic pop
@@ -296,7 +298,7 @@ ComGoogleGsonFunctionalInstanceCreatorTest_1 *create_ComGoogleGsonFunctionalInst
 @implementation ComGoogleGsonFunctionalInstanceCreatorTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInstanceCreatorTest_2_init(self);
   return self;
 }
@@ -313,6 +315,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createInstanceWithJavaLangReflectType:);
   #pragma clang diagnostic pop
@@ -338,7 +341,7 @@ ComGoogleGsonFunctionalInstanceCreatorTest_2 *create_ComGoogleGsonFunctionalInst
 @implementation ComGoogleGsonFunctionalInstanceCreatorTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInstanceCreatorTest_3_init(self);
   return self;
 }
@@ -355,6 +358,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createInstanceWithJavaLangReflectType:);
   #pragma clang diagnostic pop
@@ -380,14 +384,14 @@ ComGoogleGsonFunctionalInstanceCreatorTest_3 *create_ComGoogleGsonFunctionalInst
 @implementation ComGoogleGsonFunctionalInstanceCreatorTest_1SubArrayList
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInstanceCreatorTest_1SubArrayList_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id *)stackbuf count:(NSUInteger)len {
-  return JreDefaultFastEnumeration(self, state, stackbuf, len);
+  return JreDefaultFastEnumeration(self, state, stackbuf);
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -396,6 +400,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalInstanceCreatorTest;", "testInstanceCreatorForCollectionType", "<T:Ljava/lang/Object;>Ljava/util/ArrayList<TT;>;" };
@@ -422,7 +427,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalInstanceCreatorTest_1Sub
 @implementation ComGoogleGsonFunctionalInstanceCreatorTest_4
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInstanceCreatorTest_4_init(self);
   return self;
 }
@@ -439,6 +444,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createInstanceWithJavaLangReflectType:);
   #pragma clang diagnostic pop
@@ -464,7 +470,7 @@ ComGoogleGsonFunctionalInstanceCreatorTest_4 *create_ComGoogleGsonFunctionalInst
 @implementation ComGoogleGsonFunctionalInstanceCreatorTest_5
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInstanceCreatorTest_5_init(self);
   return self;
 }
@@ -476,6 +482,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalInstanceCreatorTest;", "testInstanceCreatorForCollectionType", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Ljava/lang/String;>;>;" };
@@ -500,14 +507,14 @@ ComGoogleGsonFunctionalInstanceCreatorTest_5 *create_ComGoogleGsonFunctionalInst
 @implementation ComGoogleGsonFunctionalInstanceCreatorTest_1SubTreeSet
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInstanceCreatorTest_1SubTreeSet_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id *)stackbuf count:(NSUInteger)len {
-  return JreDefaultFastEnumeration(self, state, stackbuf, len);
+  return JreDefaultFastEnumeration(self, state, stackbuf);
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -516,6 +523,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalInstanceCreatorTest;", "testInstanceCreatorForParametrizedType", "<T:Ljava/lang/Object;>Ljava/util/TreeSet<TT;>;" };
@@ -542,7 +550,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalInstanceCreatorTest_1Sub
 @implementation ComGoogleGsonFunctionalInstanceCreatorTest_6
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInstanceCreatorTest_6_init(self);
   return self;
 }
@@ -559,6 +567,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createInstanceWithJavaLangReflectType:);
   #pragma clang diagnostic pop
@@ -584,7 +593,7 @@ ComGoogleGsonFunctionalInstanceCreatorTest_6 *create_ComGoogleGsonFunctionalInst
 @implementation ComGoogleGsonFunctionalInstanceCreatorTest_7
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInstanceCreatorTest_7_init(self);
   return self;
 }
@@ -596,6 +605,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalInstanceCreatorTest;", "testInstanceCreatorForParametrizedType", "Lcom/google/gson/reflect/TypeToken<Ljava/util/SortedSet<Ljava/lang/String;>;>;" };

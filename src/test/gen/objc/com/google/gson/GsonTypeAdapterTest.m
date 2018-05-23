@@ -43,7 +43,7 @@ __attribute__((unused)) static void ComGoogleGsonGsonTypeAdapterTest_assertSeria
 
 @interface ComGoogleGsonGsonTypeAdapterTest_ExceptionTypeAdapter : NSObject < ComGoogleGsonJsonSerializer, ComGoogleGsonJsonDeserializer >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(JavaUtilConcurrentAtomicAtomicLong *)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -67,7 +67,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonGsonTypeAdapterTest_ExceptionTypeAdapter
 
 @interface ComGoogleGsonGsonTypeAdapterTest_AtomicIntegerTypeAdapter : NSObject < ComGoogleGsonJsonSerializer, ComGoogleGsonJsonDeserializer >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(JavaUtilConcurrentAtomicAtomicInteger *)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -91,7 +91,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonGsonTypeAdapterTest_AtomicIntegerTypeAda
 
 @interface ComGoogleGsonGsonTypeAdapterTest_1 : NSObject < ComGoogleGsonJsonDeserializer >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonGsonTypeAdapterTest_Abstract *)deserializeWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)json
                                                                withJavaLangReflectType:(id<JavaLangReflectType>)typeOfT
@@ -110,7 +110,7 @@ __attribute__((unused)) static ComGoogleGsonGsonTypeAdapterTest_1 *create_ComGoo
 @implementation ComGoogleGsonGsonTypeAdapterTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGsonTypeAdapterTest_init(self);
   return self;
 }
@@ -202,6 +202,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testDefaultTypeAdapterThrowsParseException);
@@ -251,7 +252,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonGsonTypeAdapterTest)
 @implementation ComGoogleGsonGsonTypeAdapterTest_ExceptionTypeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGsonTypeAdapterTest_ExceptionTypeAdapter_init(self);
   return self;
 }
@@ -277,6 +278,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   methods[2].selector = @selector(deserializeWithComGoogleGsonJsonElement:withJavaLangReflectType:withComGoogleGsonJsonDeserializationContext:);
@@ -305,7 +307,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonGsonTypeAdapterTest_ExceptionTypeA
 @implementation ComGoogleGsonGsonTypeAdapterTest_AtomicIntegerTypeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGsonTypeAdapterTest_AtomicIntegerTypeAdapter_init(self);
   return self;
 }
@@ -332,6 +334,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   methods[2].selector = @selector(deserializeWithComGoogleGsonJsonElement:withJavaLangReflectType:withComGoogleGsonJsonDeserializationContext:);
@@ -360,7 +363,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonGsonTypeAdapterTest_AtomicIntegerT
 @implementation ComGoogleGsonGsonTypeAdapterTest_Abstract
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGsonTypeAdapterTest_Abstract_init(self);
   return self;
 }
@@ -377,6 +380,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -398,7 +402,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonGsonTypeAdapterTest_Abstract)
 @implementation ComGoogleGsonGsonTypeAdapterTest_Concrete
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGsonTypeAdapterTest_Concrete_init(self);
   return self;
 }
@@ -415,6 +419,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -444,7 +449,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonGsonTypeAdapterTest_Concrete)
 @implementation ComGoogleGsonGsonTypeAdapterTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGsonTypeAdapterTest_1_init(self);
   return self;
 }
@@ -463,6 +468,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(deserializeWithComGoogleGsonJsonElement:withJavaLangReflectType:withComGoogleGsonJsonDeserializationContext:);
   #pragma clang diagnostic pop

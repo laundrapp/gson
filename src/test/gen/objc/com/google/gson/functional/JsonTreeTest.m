@@ -37,11 +37,11 @@ __attribute__((unused)) static void ComGoogleGsonFunctionalJsonTreeTest_assertCo
   jfloat f_;
 }
 
-- (instancetype)initWithLong:(jlong)l
-                     withInt:(jint)i
-                 withBoolean:(jboolean)b
-                withNSString:(NSString *)string
-                   withFloat:(jfloat)f;
+- (instancetype __nonnull)initWithLong:(jlong)l
+                               withInt:(jint)i
+                           withBoolean:(jboolean)b
+                          withNSString:(NSString *)string
+                             withFloat:(jfloat)f;
 
 @end
 
@@ -58,7 +58,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalJsonTreeTest_SubTypeOfBagOfPri
 @implementation ComGoogleGsonFunctionalJsonTreeTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonTreeTest_init(self);
   return self;
 }
@@ -131,6 +131,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testToJsonTree);
@@ -177,11 +178,11 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonTreeTest)
 
 @implementation ComGoogleGsonFunctionalJsonTreeTest_SubTypeOfBagOfPrimitives
 
-- (instancetype)initWithLong:(jlong)l
-                     withInt:(jint)i
-                 withBoolean:(jboolean)b
-                withNSString:(NSString *)string
-                   withFloat:(jfloat)f {
+- (instancetype __nonnull)initWithLong:(jlong)l
+                               withInt:(jint)i
+                           withBoolean:(jboolean)b
+                          withNSString:(NSString *)string
+                             withFloat:(jfloat)f {
   ComGoogleGsonFunctionalJsonTreeTest_SubTypeOfBagOfPrimitives_initWithLong_withInt_withBoolean_withNSString_withFloat_(self, l, i, b, string, f);
   return self;
 }
@@ -192,6 +193,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonTreeTest)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithLong:withInt:withBoolean:withNSString:withFloat:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

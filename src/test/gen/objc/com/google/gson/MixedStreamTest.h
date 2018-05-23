@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonMixedStreamTest
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonMixedStreamTest_) && (INCLUDE_ALL_ComGoogleGsonMixedStreamTest || defined(INCLUDE_ComGoogleGsonMixedStreamTest))
 #define ComGoogleGsonMixedStreamTest_
 
@@ -24,7 +29,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)testReadClosed;
 
@@ -52,7 +57,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -85,10 +90,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonMixedStreamTest)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSString:(NSString *)name
-                         withInt:(jint)color;
+- (instancetype __nonnull)initWithNSString:(NSString *)name
+                                   withInt:(jint)color;
 
 @end
 
@@ -112,4 +117,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonMixedStreamTest_Car)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonMixedStreamTest")

@@ -14,18 +14,18 @@ J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamMalformedJsonException, serialVe
 
 @implementation ComGoogleGsonStreamMalformedJsonException
 
-- (instancetype)initWithNSString:(NSString *)msg {
+- (instancetype __nonnull)initWithNSString:(NSString *)msg {
   ComGoogleGsonStreamMalformedJsonException_initWithNSString_(self, msg);
   return self;
 }
 
-- (instancetype)initWithNSString:(NSString *)msg
-           withJavaLangThrowable:(JavaLangThrowable *)throwable {
+- (instancetype __nonnull)initWithNSString:(NSString *)msg
+                     withJavaLangThrowable:(JavaLangThrowable *)throwable {
   ComGoogleGsonStreamMalformedJsonException_initWithNSString_withJavaLangThrowable_(self, msg, throwable);
   return self;
 }
 
-- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)throwable {
+- (instancetype __nonnull)initWithJavaLangThrowable:(JavaLangThrowable *)throwable {
   ComGoogleGsonStreamMalformedJsonException_initWithJavaLangThrowable_(self, throwable);
   return self;
 }
@@ -38,6 +38,7 @@ J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamMalformedJsonException, serialVe
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(initWithNSString:withJavaLangThrowable:);
   methods[2].selector = @selector(initWithJavaLangThrowable:);

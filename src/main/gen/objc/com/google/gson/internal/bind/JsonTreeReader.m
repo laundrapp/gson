@@ -56,7 +56,7 @@ __attribute__((unused)) static void ComGoogleGsonInternalBindJsonTreeReader_expe
 
 @interface ComGoogleGsonInternalBindJsonTreeReader_1 : JavaIoReader
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jint)readWithCharArray:(IOSCharArray *)buffer
                   withInt:(jint)offset
@@ -78,7 +78,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonInternalBindJsonTreeReader)
 
 @implementation ComGoogleGsonInternalBindJsonTreeReader
 
-- (instancetype)initWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)element {
+- (instancetype __nonnull)initWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)element {
   ComGoogleGsonInternalBindJsonTreeReader_initWithComGoogleGsonJsonElement_(self, element);
   return self;
 }
@@ -293,6 +293,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonInternalBindJsonTreeReader)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonJsonElement:);
   methods[1].selector = @selector(beginArray);
   methods[2].selector = @selector(endArray);
@@ -368,7 +369,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalBindJsonTreeReader)
 @implementation ComGoogleGsonInternalBindJsonTreeReader_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonInternalBindJsonTreeReader_1_init(self);
   return self;
 }
@@ -392,6 +393,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(readWithCharArray:withInt:withInt:);
   methods[2].selector = @selector(close);

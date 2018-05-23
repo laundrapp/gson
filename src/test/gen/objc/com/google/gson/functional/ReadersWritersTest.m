@@ -35,7 +35,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalReadersWritersTest, gson_, ComGoogleG
 
 @interface ComGoogleGsonFunctionalReadersWritersTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -49,7 +49,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalReadersWritersTest_1 *crea
 
 @interface ComGoogleGsonFunctionalReadersWritersTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -64,7 +64,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalReadersWritersTest_2 *crea
 @implementation ComGoogleGsonFunctionalReadersWritersTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalReadersWritersTest_init(self);
   return self;
 }
@@ -184,6 +184,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testWriterForSerialization);
@@ -224,7 +225,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalReadersWritersTest)
 @implementation ComGoogleGsonFunctionalReadersWritersTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalReadersWritersTest_1_init(self);
   return self;
 }
@@ -236,6 +237,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalReadersWritersTest;", "testTypeMismatchThrowsJsonSyntaxExceptionForStrings", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;>;" };
@@ -260,7 +262,7 @@ ComGoogleGsonFunctionalReadersWritersTest_1 *create_ComGoogleGsonFunctionalReade
 @implementation ComGoogleGsonFunctionalReadersWritersTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalReadersWritersTest_2_init(self);
   return self;
 }
@@ -272,6 +274,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalReadersWritersTest;", "testTypeMismatchThrowsJsonSyntaxExceptionForReaders", "Lcom/google/gson/reflect/TypeToken<Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;>;" };

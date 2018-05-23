@@ -39,8 +39,8 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFunctionalInheritanceTest, gson_, ComGoogleGson
 
 @interface ComGoogleGsonFunctionalInheritanceTest_SubTypeOfNested : ComGoogleGsonCommonTestTypes_Nested
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive1
-                    withComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive2;
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive1
+                              withComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive2;
 
 - (void)appendFieldsWithJavaLangStringBuilder:(JavaLangStringBuilder *)sb;
 
@@ -68,10 +68,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalInheritanceTest_SubTypeOfNeste
   id<JavaUtilSortedSet> sortedSet_;
 }
 
-- (instancetype)initWithJavaUtilList:(id<JavaUtilList>)list
-                   withJavaUtilQueue:(id<JavaUtilQueue>)queue
-                     withJavaUtilSet:(id<JavaUtilSet>)set
-               withJavaUtilSortedSet:(id<JavaUtilSortedSet>)sortedSet;
+- (instancetype __nonnull)initWithJavaUtilList:(id<JavaUtilList>)list
+                             withJavaUtilQueue:(id<JavaUtilQueue>)queue
+                               withJavaUtilSet:(id<JavaUtilSet>)set
+                         withJavaUtilSortedSet:(id<JavaUtilSortedSet>)sortedSet;
 
 - (jboolean)listContainsWithIntArray:(IOSIntArray *)values;
 
@@ -108,7 +108,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalInheritanceTest_ClassWithSubIn
 @implementation ComGoogleGsonFunctionalInheritanceTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalInheritanceTest_init(self);
   return self;
 }
@@ -256,6 +256,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testSubClassSerialization);
@@ -298,8 +299,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalInheritanceTest)
 
 @implementation ComGoogleGsonFunctionalInheritanceTest_SubTypeOfNested
 
-- (instancetype)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive1
-                    withComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive2 {
+- (instancetype __nonnull)initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive1
+                              withComGoogleGsonCommonTestTypes_BagOfPrimitives:(ComGoogleGsonCommonTestTypes_BagOfPrimitives *)primitive2 {
   ComGoogleGsonFunctionalInheritanceTest_SubTypeOfNested_initWithComGoogleGsonCommonTestTypes_BagOfPrimitives_withComGoogleGsonCommonTestTypes_BagOfPrimitives_(self, primitive1, primitive2);
   return self;
 }
@@ -316,6 +317,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalInheritanceTest)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonCommonTestTypes_BagOfPrimitives:withComGoogleGsonCommonTestTypes_BagOfPrimitives:);
   methods[1].selector = @selector(appendFieldsWithJavaLangStringBuilder:);
   #pragma clang diagnostic pop
@@ -345,10 +347,10 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalInheritanceTest_SubTypeO
 
 @implementation ComGoogleGsonFunctionalInheritanceTest_ClassWithSubInterfacesOfCollection
 
-- (instancetype)initWithJavaUtilList:(id<JavaUtilList>)list
-                   withJavaUtilQueue:(id<JavaUtilQueue>)queue
-                     withJavaUtilSet:(id<JavaUtilSet>)set
-               withJavaUtilSortedSet:(id<JavaUtilSortedSet>)sortedSet {
+- (instancetype __nonnull)initWithJavaUtilList:(id<JavaUtilList>)list
+                             withJavaUtilQueue:(id<JavaUtilQueue>)queue
+                               withJavaUtilSet:(id<JavaUtilSet>)set
+                         withJavaUtilSortedSet:(id<JavaUtilSortedSet>)sortedSet {
   ComGoogleGsonFunctionalInheritanceTest_ClassWithSubInterfacesOfCollection_initWithJavaUtilList_withJavaUtilQueue_withJavaUtilSet_withJavaUtilSortedSet_(self, list, queue, set, sortedSet);
   return self;
 }
@@ -453,6 +455,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalInheritanceTest_SubTypeO
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaUtilList:withJavaUtilQueue:withJavaUtilSet:withJavaUtilSortedSet:);
   methods[1].selector = @selector(listContainsWithIntArray:);
   methods[2].selector = @selector(queueContainsWithLongArray:);

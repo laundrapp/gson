@@ -36,7 +36,7 @@
 
 @interface ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_1 : ComGoogleGsonTypeAdapter
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)writeWithComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)outArg
                                         withId:(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_A *)value;
@@ -61,7 +61,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalJsonAdapterAnnotationOnCla
 
 @interface ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_2 : NSObject < ComGoogleGsonJsonSerializer >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonJsonElement *)serializeWithId:(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_A *)src
                       withJavaLangReflectType:(id<JavaLangReflectType>)typeOfSrc
@@ -79,7 +79,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalJsonAdapterAnnotationOnCla
 
 @interface ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_3 : NSObject < ComGoogleGsonJsonDeserializer >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_A *)deserializeWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)json
                                                                                  withJavaLangReflectType:(id<JavaLangReflectType>)typeOfT
@@ -100,7 +100,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalJsonAdapterAnnotationOnCla
   NSString *value_;
 }
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 @end
 
@@ -120,7 +120,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClasses
 
 @interface ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_A_JsonAdapter : ComGoogleGsonTypeAdapter
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)writeWithComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)outArg
                                         withId:(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_A *)value;
@@ -150,7 +150,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClasses
   NSString *value_;
 }
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 @end
 
@@ -170,7 +170,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClasses
 
 @interface ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_C_JsonAdapterFactory : NSObject < ComGoogleGsonTypeAdapterFactory >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonTypeAdapter *)createWithComGoogleGsonGson:(ComGoogleGsonGson *)gson
                         withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)type;
@@ -189,7 +189,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClasses
 
 @interface ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_C_JsonAdapterFactory_1 : ComGoogleGsonTypeAdapter
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)writeWithComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)outArg
                                         withId:(id)value;
@@ -208,7 +208,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalJsonAdapterAnnotationOnCla
 
 @interface ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_B : ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_A
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 @end
 
@@ -227,7 +227,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClasses
   NSString *value_;
 }
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 @end
 
@@ -251,8 +251,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClasses
   NSString *lastName_;
 }
 
-- (instancetype)initWithNSString:(NSString *)firstName
-                    withNSString:(NSString *)lastName;
+- (instancetype __nonnull)initWithNSString:(NSString *)firstName
+                              withNSString:(NSString *)lastName;
 
 @end
 
@@ -273,7 +273,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClasses
 
 @interface ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_UserJsonAdapter : ComGoogleGsonTypeAdapter
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)writeWithComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)outArg
                                         withId:(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_User *)user;
@@ -336,7 +336,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClasses
 
 @interface ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_FooJsonAdapter : ComGoogleGsonTypeAdapter
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)writeWithComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)outArg
                                         withId:(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_Foo *)value;
@@ -364,7 +364,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClasses
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_init(self);
   return self;
 }
@@ -445,6 +445,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(testJsonAdapterInvoked);
   methods[2].selector = @selector(testJsonAdapterFactoryInvoked);
@@ -478,7 +479,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_1_init(self);
   return self;
 }
@@ -501,6 +502,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
@@ -527,7 +529,7 @@ ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_1 *create_ComGoogleGso
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_2_init(self);
   return self;
 }
@@ -546,6 +548,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   #pragma clang diagnostic pop
@@ -571,7 +574,7 @@ ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_2 *create_ComGoogleGso
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_3_init(self);
   return self;
 }
@@ -590,6 +593,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(deserializeWithComGoogleGsonJsonElement:withJavaLangReflectType:withComGoogleGsonJsonDeserializationContext:);
   #pragma clang diagnostic pop
@@ -614,7 +618,7 @@ ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_3 *create_ComGoogleGso
 
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_A
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_A_initWithNSString_(self, value);
   return self;
 }
@@ -630,6 +634,7 @@ ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_3 *create_ComGoogleGso
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -664,7 +669,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_A_JsonAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_A_JsonAdapter_init(self);
   return self;
 }
@@ -688,6 +693,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
@@ -715,7 +721,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
 
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_C
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_C_initWithNSString_(self, value);
   return self;
 }
@@ -731,6 +737,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -765,7 +772,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_C_JsonAdapterFactory
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_C_JsonAdapterFactory_init(self);
   return self;
 }
@@ -783,6 +790,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createWithComGoogleGsonGson:withComGoogleGsonReflectTypeToken:);
   #pragma clang diagnostic pop
@@ -810,7 +818,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_C_JsonAdapterFactory_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_C_JsonAdapterFactory_1_init(self);
   return self;
 }
@@ -834,6 +842,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
@@ -859,7 +868,7 @@ ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_C_JsonAdapterFactory_1
 
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_B
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_B_initWithNSString_(self, value);
   return self;
 }
@@ -870,6 +879,7 @@ ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_C_JsonAdapterFactory_1
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LNSString;", "LComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest;" };
@@ -895,7 +905,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
 
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_ClassWithIncorrectJsonAdapter
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_ClassWithIncorrectJsonAdapter_initWithNSString_(self, value);
   return self;
 }
@@ -911,6 +921,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -944,8 +955,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
 
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_User
 
-- (instancetype)initWithNSString:(NSString *)firstName
-                    withNSString:(NSString *)lastName {
+- (instancetype __nonnull)initWithNSString:(NSString *)firstName
+                              withNSString:(NSString *)lastName {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_User_initWithNSString_withNSString_(self, firstName, lastName);
   return self;
 }
@@ -962,6 +973,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withNSString:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -998,7 +1010,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_UserJsonAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_UserJsonAdapter_init(self);
   return self;
 }
@@ -1028,6 +1040,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
@@ -1074,6 +1087,7 @@ ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_Foo *ComGoogleGsonFunc
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(values);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop
@@ -1093,7 +1107,7 @@ ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_Foo *ComGoogleGsonFunc
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
     for (jint i = 0; i < 2; i++) {
-      (ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_Foo_values_[i] = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+      ((void)(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_Foo_values_[i] = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
       ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_Foo_initWithNSString_withInt_(e, JreEnumConstantName(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_Foo_class_(), i), i);
     }
     J2OBJC_SET_INITIALIZED(ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_Foo)
@@ -1140,7 +1154,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalJsonAdapterAnnotationOnC
 @implementation ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_FooJsonAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalJsonAdapterAnnotationOnClassesTest_FooJsonAdapter_init(self);
   return self;
 }
@@ -1163,6 +1177,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);

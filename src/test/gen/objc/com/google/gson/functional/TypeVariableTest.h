@@ -22,6 +22,11 @@
 #define INCLUDE_ComGoogleGsonFunctionalTypeVariableTest_Red 1
 #endif
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonFunctionalTypeVariableTest_) && (INCLUDE_ALL_ComGoogleGsonFunctionalTypeVariableTest || defined(INCLUDE_ComGoogleGsonFunctionalTypeVariableTest))
 #define ComGoogleGsonFunctionalTypeVariableTest_
 
@@ -38,7 +43,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)testAdvancedTypeVariables;
 
@@ -48,7 +53,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -74,9 +79,9 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeVariableTest)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithId:(id)redField;
+- (instancetype __nonnull)initWithId:(id)redField;
 
 @end
 
@@ -107,15 +112,15 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeVariableTest_Red)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithBoolean:(jboolean)value;
+- (instancetype __nonnull)initWithBoolean:(jboolean)value;
 
 - (jboolean)isEqual:(id)o;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithId:(id)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithId:(id)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -150,17 +155,17 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeVariableTest_Blue)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithId:(id)sValue
-                    withId:(id)tValue
-       withJavaLangBoolean:(JavaLangBoolean *)redField;
+- (instancetype __nonnull)initWithId:(id)sValue
+                              withId:(id)tValue
+                 withJavaLangBoolean:(JavaLangBoolean *)redField;
 
 - (jboolean)isEqual:(id)o;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithId:(id)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithId:(id)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -194,17 +199,17 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeVariableTest_Foo)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSString:(NSString *)s
-             withJavaLangInteger:(JavaLangInteger *)i
-                     withBoolean:(jboolean)b;
+- (instancetype __nonnull)initWithNSString:(NSString *)s
+                       withJavaLangInteger:(JavaLangInteger *)i
+                               withBoolean:(jboolean)b;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithId:(id)arg0
-                    withId:(id)arg1
-       withJavaLangBoolean:(JavaLangBoolean *)arg2 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithId:(id)arg0
+                              withId:(id)arg1
+                 withJavaLangBoolean:(JavaLangBoolean *)arg2 NS_UNAVAILABLE;
 
 @end
 
@@ -226,4 +231,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalTypeVariableTest_Bar)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonFunctionalTypeVariableTest")

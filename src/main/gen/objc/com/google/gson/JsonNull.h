@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonJsonNull
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonJsonNull_) && (INCLUDE_ALL_ComGoogleGsonJsonNull || defined(INCLUDE_ComGoogleGsonJsonNull))
 #define ComGoogleGsonJsonNull_
 
@@ -34,7 +39,7 @@
  @brief Creates a new JsonNull object.
  Deprecated since Gson version 1.8. Use <code>INSTANCE</code> instead
  */
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief All instances of JsonNull are the same
@@ -73,4 +78,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonNull)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonJsonNull")

@@ -26,7 +26,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonGenericArrayTypeTest, ourType_, id<JavaLangRefl
 
 @interface ComGoogleGsonGenericArrayTypeTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -40,7 +40,7 @@ __attribute__((unused)) static ComGoogleGsonGenericArrayTypeTest_1 *create_ComGo
 
 @interface ComGoogleGsonGenericArrayTypeTest_2 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -54,7 +54,7 @@ __attribute__((unused)) static ComGoogleGsonGenericArrayTypeTest_2 *create_ComGo
 
 @interface ComGoogleGsonGenericArrayTypeTest_3 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -69,7 +69,7 @@ __attribute__((unused)) static ComGoogleGsonGenericArrayTypeTest_3 *create_ComGo
 @implementation ComGoogleGsonGenericArrayTypeTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGenericArrayTypeTest_init(self);
   return self;
 }
@@ -108,6 +108,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testOurTypeFunctionality);
@@ -140,7 +141,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonGenericArrayTypeTest)
 @implementation ComGoogleGsonGenericArrayTypeTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGenericArrayTypeTest_1_init(self);
   return self;
 }
@@ -152,6 +153,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonGenericArrayTypeTest;", "testOurTypeFunctionality", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Ljava/lang/String;>;>;" };
@@ -176,7 +178,7 @@ ComGoogleGsonGenericArrayTypeTest_1 *create_ComGoogleGsonGenericArrayTypeTest_1_
 @implementation ComGoogleGsonGenericArrayTypeTest_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGenericArrayTypeTest_2_init(self);
   return self;
 }
@@ -188,6 +190,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonGenericArrayTypeTest;", "testOurTypeFunctionality", "Lcom/google/gson/reflect/TypeToken<[Ljava/util/List<Ljava/lang/String;>;>;" };
@@ -212,7 +215,7 @@ ComGoogleGsonGenericArrayTypeTest_2 *create_ComGoogleGsonGenericArrayTypeTest_2_
 @implementation ComGoogleGsonGenericArrayTypeTest_3
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonGenericArrayTypeTest_3_init(self);
   return self;
 }
@@ -224,6 +227,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonGenericArrayTypeTest;", "testNotEquals", "Lcom/google/gson/reflect/TypeToken<[[Ljava/util/List<Ljava/lang/String;>;>;" };

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonParameterizedTypeFixtures
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonParameterizedTypeFixtures_) && (INCLUDE_ALL_ComGoogleGsonParameterizedTypeFixtures || defined(INCLUDE_ComGoogleGsonParameterizedTypeFixtures))
 #define ComGoogleGsonParameterizedTypeFixtures_
 
@@ -27,7 +32,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -53,7 +58,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonParameterizedTypeFixtures)
 
 #pragma mark Public
 
-- (instancetype)initWithId:(id)value;
+- (instancetype __nonnull)initWithId:(id)value;
 
 - (jboolean)isEqual:(id)obj;
 
@@ -65,7 +70,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonParameterizedTypeFixtures)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -104,13 +109,13 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonParameterizedTypeFixtures_MyParameterize
   dangerous in practice.
  @param instanceOfT
  */
-- (instancetype)initWithId:(id)instanceOfT;
+- (instancetype __nonnull)initWithId:(id)instanceOfT;
 
 - (ComGoogleGsonParameterizedTypeFixtures_MyParameterizedType *)createInstanceWithJavaLangReflectType:(id<JavaLangReflectType>)type;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -147,7 +152,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonParameterizedTypeFixtures_MyParameterize
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (ComGoogleGsonParameterizedTypeFixtures_MyParameterizedType *)deserializeWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)json
                                                                                 withJavaLangReflectType:(id<JavaLangReflectType>)typeOfT
@@ -175,4 +180,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonParameterizedTypeFixtures_MyParameterize
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonParameterizedTypeFixtures")

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_ComGoogleGsonAnnotationsSerializedName
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (ComGoogleGsonAnnotationsSerializedName_) && (INCLUDE_ALL_ComGoogleGsonAnnotationsSerializedName || defined(INCLUDE_ComGoogleGsonAnnotationsSerializedName))
 #define ComGoogleGsonAnnotationsSerializedName_
 
@@ -66,6 +71,10 @@
 
 @property (readonly) NSString *value;
 
+- (jboolean)isEqual:(id)obj;
+
+- (NSUInteger)hash;
+
 @end
 
 @interface ComGoogleGsonAnnotationsSerializedName : NSObject < ComGoogleGsonAnnotationsSerializedName > {
@@ -83,4 +92,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonAnnotationsSerializedName)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonAnnotationsSerializedName")

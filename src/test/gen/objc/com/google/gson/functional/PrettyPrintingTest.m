@@ -40,7 +40,7 @@ __attribute__((unused)) static void ComGoogleGsonFunctionalPrettyPrintingTest_pr
 
 @interface ComGoogleGsonFunctionalPrettyPrintingTest_1 : ComGoogleGsonReflectTypeToken
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -58,7 +58,7 @@ __attribute__((unused)) static ComGoogleGsonFunctionalPrettyPrintingTest_1 *crea
   jint value_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -77,7 +77,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonFunctionalPrettyPrintingTest_ClassWithMa
 @implementation ComGoogleGsonFunctionalPrettyPrintingTest
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalPrettyPrintingTest_init(self);
   return self;
 }
@@ -169,6 +169,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(setUp);
   methods[2].selector = @selector(testPrettyPrintList);
@@ -212,7 +213,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonFunctionalPrettyPrintingTest)
 @implementation ComGoogleGsonFunctionalPrettyPrintingTest_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalPrettyPrintingTest_1_init(self);
   return self;
 }
@@ -224,6 +225,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LComGoogleGsonFunctionalPrettyPrintingTest;", "testPrettyPrintList", "Lcom/google/gson/reflect/TypeToken<Ljava/util/List<Lcom/google/gson/common/TestTypes$BagOfPrimitives;>;>;" };
@@ -248,7 +250,7 @@ ComGoogleGsonFunctionalPrettyPrintingTest_1 *create_ComGoogleGsonFunctionalPrett
 @implementation ComGoogleGsonFunctionalPrettyPrintingTest_ClassWithMap
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   ComGoogleGsonFunctionalPrettyPrintingTest_ClassWithMap_init(self);
   return self;
 }
@@ -265,6 +267,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
