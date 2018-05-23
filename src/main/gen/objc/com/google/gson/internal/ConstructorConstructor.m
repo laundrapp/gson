@@ -71,8 +71,8 @@ __attribute__((unused)) static id<ComGoogleGsonInternalObjectConstructor> ComGoo
   id<JavaLangReflectType> val$type_;
 }
 
-- (instancetype __nonnull)initWithComGoogleGsonInstanceCreator:(id<ComGoogleGsonInstanceCreator>)capture$0
-                                       withJavaLangReflectType:(id<JavaLangReflectType>)capture$1;
+- (instancetype)initWithComGoogleGsonInstanceCreator:(id<ComGoogleGsonInstanceCreator>)capture$0
+                             withJavaLangReflectType:(id<JavaLangReflectType>)capture$1;
 
 - (id)construct;
 
@@ -92,8 +92,8 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_1 *cr
   id<JavaLangReflectType> val$type_;
 }
 
-- (instancetype __nonnull)initWithComGoogleGsonInstanceCreator:(id<ComGoogleGsonInstanceCreator>)capture$0
-                                       withJavaLangReflectType:(id<JavaLangReflectType>)capture$1;
+- (instancetype)initWithComGoogleGsonInstanceCreator:(id<ComGoogleGsonInstanceCreator>)capture$0
+                             withJavaLangReflectType:(id<JavaLangReflectType>)capture$1;
 
 - (id)construct;
 
@@ -112,7 +112,7 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_2 *cr
   JavaLangReflectConstructor *val$constructor_;
 }
 
-- (instancetype __nonnull)initWithJavaLangReflectConstructor:(JavaLangReflectConstructor *)capture$0;
+- (instancetype)initWithJavaLangReflectConstructor:(JavaLangReflectConstructor *)capture$0;
 
 - (id)construct;
 
@@ -128,7 +128,7 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_3 *cr
 
 @interface ComGoogleGsonInternalConstructorConstructor_4 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (id)construct;
 
@@ -147,7 +147,7 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_4 *cr
   id<JavaLangReflectType> val$type_;
 }
 
-- (instancetype __nonnull)initWithJavaLangReflectType:(id<JavaLangReflectType>)capture$0;
+- (instancetype)initWithJavaLangReflectType:(id<JavaLangReflectType>)capture$0;
 
 - (id)construct;
 
@@ -163,7 +163,7 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_5 *cr
 
 @interface ComGoogleGsonInternalConstructorConstructor_6 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (id)construct;
 
@@ -179,7 +179,7 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_6 *cr
 
 @interface ComGoogleGsonInternalConstructorConstructor_7 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (id)construct;
 
@@ -195,7 +195,7 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_7 *cr
 
 @interface ComGoogleGsonInternalConstructorConstructor_8 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (id)construct;
 
@@ -211,7 +211,7 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_8 *cr
 
 @interface ComGoogleGsonInternalConstructorConstructor_9 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (id)construct;
 
@@ -227,7 +227,7 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_9 *cr
 
 @interface ComGoogleGsonInternalConstructorConstructor_10 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (id)construct;
 
@@ -243,7 +243,7 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_10 *c
 
 @interface ComGoogleGsonInternalConstructorConstructor_11 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (id)construct;
 
@@ -264,8 +264,8 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_11 *c
   ComGoogleGsonInternalUnsafeAllocator *unsafeAllocator_;
 }
 
-- (instancetype __nonnull)initWithIOSClass:(IOSClass *)capture$0
-                   withJavaLangReflectType:(id<JavaLangReflectType>)capture$1;
+- (instancetype)initWithIOSClass:(IOSClass *)capture$0
+         withJavaLangReflectType:(id<JavaLangReflectType>)capture$1;
 
 - (id)construct;
 
@@ -283,7 +283,7 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_12 *c
 
 @implementation ComGoogleGsonInternalConstructorConstructor
 
-- (instancetype __nonnull)initWithJavaUtilMap:(id<JavaUtilMap>)instanceCreators {
+- (instancetype)initWithJavaUtilMap:(id<JavaUtilMap>)instanceCreators {
   ComGoogleGsonInternalConstructorConstructor_initWithJavaUtilMap_(self, instanceCreators);
   return self;
 }
@@ -344,7 +344,6 @@ __attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_12 *c
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaUtilMap:);
   methods[1].selector = @selector(getWithComGoogleGsonReflectTypeToken:);
   methods[2].selector = @selector(newDefaultConstructorWithIOSClass:);
@@ -428,8 +427,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalConstructorConstructor)
 
 @implementation ComGoogleGsonInternalConstructorConstructor_1
 
-- (instancetype __nonnull)initWithComGoogleGsonInstanceCreator:(id<ComGoogleGsonInstanceCreator>)capture$0
-                                       withJavaLangReflectType:(id<JavaLangReflectType>)capture$1 {
+- (instancetype)initWithComGoogleGsonInstanceCreator:(id<ComGoogleGsonInstanceCreator>)capture$0
+                             withJavaLangReflectType:(id<JavaLangReflectType>)capture$1 {
   ComGoogleGsonInternalConstructorConstructor_1_initWithComGoogleGsonInstanceCreator_withJavaLangReflectType_(self, capture$0, capture$1);
   return self;
 }
@@ -451,7 +450,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalConstructorConstructor)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInstanceCreator:withJavaLangReflectType:);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop
@@ -482,8 +480,8 @@ ComGoogleGsonInternalConstructorConstructor_1 *create_ComGoogleGsonInternalConst
 
 @implementation ComGoogleGsonInternalConstructorConstructor_2
 
-- (instancetype __nonnull)initWithComGoogleGsonInstanceCreator:(id<ComGoogleGsonInstanceCreator>)capture$0
-                                       withJavaLangReflectType:(id<JavaLangReflectType>)capture$1 {
+- (instancetype)initWithComGoogleGsonInstanceCreator:(id<ComGoogleGsonInstanceCreator>)capture$0
+                             withJavaLangReflectType:(id<JavaLangReflectType>)capture$1 {
   ComGoogleGsonInternalConstructorConstructor_2_initWithComGoogleGsonInstanceCreator_withJavaLangReflectType_(self, capture$0, capture$1);
   return self;
 }
@@ -505,7 +503,6 @@ ComGoogleGsonInternalConstructorConstructor_1 *create_ComGoogleGsonInternalConst
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInstanceCreator:withJavaLangReflectType:);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop
@@ -536,7 +533,7 @@ ComGoogleGsonInternalConstructorConstructor_2 *create_ComGoogleGsonInternalConst
 
 @implementation ComGoogleGsonInternalConstructorConstructor_3
 
-- (instancetype __nonnull)initWithJavaLangReflectConstructor:(JavaLangReflectConstructor *)capture$0 {
+- (instancetype)initWithJavaLangReflectConstructor:(JavaLangReflectConstructor *)capture$0 {
   ComGoogleGsonInternalConstructorConstructor_3_initWithJavaLangReflectConstructor_(self, capture$0);
   return self;
 }
@@ -569,7 +566,6 @@ ComGoogleGsonInternalConstructorConstructor_2 *create_ComGoogleGsonInternalConst
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangReflectConstructor:);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop
@@ -599,7 +595,7 @@ ComGoogleGsonInternalConstructorConstructor_3 *create_ComGoogleGsonInternalConst
 @implementation ComGoogleGsonInternalConstructorConstructor_4
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalConstructorConstructor_4_init(self);
   return self;
 }
@@ -616,7 +612,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop
@@ -641,7 +636,7 @@ ComGoogleGsonInternalConstructorConstructor_4 *create_ComGoogleGsonInternalConst
 
 @implementation ComGoogleGsonInternalConstructorConstructor_5
 
-- (instancetype __nonnull)initWithJavaLangReflectType:(id<JavaLangReflectType>)capture$0 {
+- (instancetype)initWithJavaLangReflectType:(id<JavaLangReflectType>)capture$0 {
   ComGoogleGsonInternalConstructorConstructor_5_initWithJavaLangReflectType_(self, capture$0);
   return self;
 }
@@ -673,7 +668,6 @@ ComGoogleGsonInternalConstructorConstructor_4 *create_ComGoogleGsonInternalConst
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangReflectType:);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop
@@ -703,7 +697,7 @@ ComGoogleGsonInternalConstructorConstructor_5 *create_ComGoogleGsonInternalConst
 @implementation ComGoogleGsonInternalConstructorConstructor_6
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalConstructorConstructor_6_init(self);
   return self;
 }
@@ -720,7 +714,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop
@@ -746,7 +739,7 @@ ComGoogleGsonInternalConstructorConstructor_6 *create_ComGoogleGsonInternalConst
 @implementation ComGoogleGsonInternalConstructorConstructor_7
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalConstructorConstructor_7_init(self);
   return self;
 }
@@ -763,7 +756,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop
@@ -789,7 +781,7 @@ ComGoogleGsonInternalConstructorConstructor_7 *create_ComGoogleGsonInternalConst
 @implementation ComGoogleGsonInternalConstructorConstructor_8
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalConstructorConstructor_8_init(self);
   return self;
 }
@@ -806,7 +798,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop
@@ -832,7 +823,7 @@ ComGoogleGsonInternalConstructorConstructor_8 *create_ComGoogleGsonInternalConst
 @implementation ComGoogleGsonInternalConstructorConstructor_9
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalConstructorConstructor_9_init(self);
   return self;
 }
@@ -849,7 +840,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop
@@ -875,7 +865,7 @@ ComGoogleGsonInternalConstructorConstructor_9 *create_ComGoogleGsonInternalConst
 @implementation ComGoogleGsonInternalConstructorConstructor_10
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalConstructorConstructor_10_init(self);
   return self;
 }
@@ -892,7 +882,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop
@@ -918,7 +907,7 @@ ComGoogleGsonInternalConstructorConstructor_10 *create_ComGoogleGsonInternalCons
 @implementation ComGoogleGsonInternalConstructorConstructor_11
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalConstructorConstructor_11_init(self);
   return self;
 }
@@ -935,7 +924,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop
@@ -960,8 +948,8 @@ ComGoogleGsonInternalConstructorConstructor_11 *create_ComGoogleGsonInternalCons
 
 @implementation ComGoogleGsonInternalConstructorConstructor_12
 
-- (instancetype __nonnull)initWithIOSClass:(IOSClass *)capture$0
-                   withJavaLangReflectType:(id<JavaLangReflectType>)capture$1 {
+- (instancetype)initWithIOSClass:(IOSClass *)capture$0
+         withJavaLangReflectType:(id<JavaLangReflectType>)capture$1 {
   ComGoogleGsonInternalConstructorConstructor_12_initWithIOSClass_withJavaLangReflectType_(self, capture$0, capture$1);
   return self;
 }
@@ -990,7 +978,6 @@ ComGoogleGsonInternalConstructorConstructor_11 *create_ComGoogleGsonInternalCons
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithIOSClass:withJavaLangReflectType:);
   methods[1].selector = @selector(construct);
   #pragma clang diagnostic pop

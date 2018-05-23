@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonJsonParser
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonJsonParser_) && (INCLUDE_ALL_ComGoogleGsonJsonParser || defined(INCLUDE_ComGoogleGsonJsonParser))
 #define ComGoogleGsonJsonParser_
 
@@ -35,7 +30,7 @@
 
 #pragma mark Public
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 /*!
  @brief Returns the next value from the JSON stream as a parse tree.
@@ -77,8 +72,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonParser)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonJsonParser")

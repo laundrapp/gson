@@ -10,18 +10,18 @@
 
 @implementation ComGoogleGsonJsonParseException
 
-- (instancetype __nonnull)initWithNSString:(NSString *)msg {
+- (instancetype)initWithNSString:(NSString *)msg {
   ComGoogleGsonJsonParseException_initWithNSString_(self, msg);
   return self;
 }
 
-- (instancetype __nonnull)initWithNSString:(NSString *)msg
-                     withJavaLangThrowable:(JavaLangThrowable *)cause {
+- (instancetype)initWithNSString:(NSString *)msg
+           withJavaLangThrowable:(JavaLangThrowable *)cause {
   ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(self, msg, cause);
   return self;
 }
 
-- (instancetype __nonnull)initWithJavaLangThrowable:(JavaLangThrowable *)cause {
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)cause {
   ComGoogleGsonJsonParseException_initWithJavaLangThrowable_(self, cause);
   return self;
 }
@@ -34,7 +34,6 @@
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(initWithNSString:withJavaLangThrowable:);
   methods[2].selector = @selector(initWithJavaLangThrowable:);

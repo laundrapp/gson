@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalBindCollectionTypeAdapterFactory
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonInternalBindCollectionTypeAdapterFactory_) && (INCLUDE_ALL_ComGoogleGsonInternalBindCollectionTypeAdapterFactory || defined(INCLUDE_ComGoogleGsonInternalBindCollectionTypeAdapterFactory))
 #define ComGoogleGsonInternalBindCollectionTypeAdapterFactory_
 
@@ -37,14 +32,14 @@
 
 #pragma mark Public
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalConstructorConstructor:(ComGoogleGsonInternalConstructorConstructor *)constructorConstructor;
+- (instancetype)initWithComGoogleGsonInternalConstructorConstructor:(ComGoogleGsonInternalConstructorConstructor *)constructorConstructor;
 
 - (ComGoogleGsonTypeAdapter *)createWithComGoogleGsonGson:(ComGoogleGsonGson *)gson
                         withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)typeToken;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -60,8 +55,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindCollectionTypeAdapterFactory
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalBindCollectionTypeAdapterFactory")

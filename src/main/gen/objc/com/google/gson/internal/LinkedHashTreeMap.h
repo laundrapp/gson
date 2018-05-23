@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalLinkedHashTreeMap
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonInternalLinkedHashTreeMap_) && (INCLUDE_ALL_ComGoogleGsonInternalLinkedHashTreeMap || defined(INCLUDE_ComGoogleGsonInternalLinkedHashTreeMap))
 #define ComGoogleGsonInternalLinkedHashTreeMap_
 
@@ -59,7 +54,7 @@
  @brief Create a natural order, empty tree map whose keys must be mutually
   comparable and non-null.
  */
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 /*!
  @brief Create a tree map ordered by <code>comparator</code>.This map's keys may only
@@ -67,7 +62,7 @@
  @param comparator the comparator to order elements with, or <code>null</code>  to
        use the natural ordering.
  */
-- (instancetype __nonnull)initWithJavaUtilComparator:(id<JavaUtilComparator>)comparator;
+- (instancetype)initWithJavaUtilComparator:(id<JavaUtilComparator>)comparator;
 
 - (void)clear;
 
@@ -199,16 +194,16 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedHashTreeMap)
 /*!
  @brief Create the header entry
  */
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 /*!
  @brief Create a regular entry
  */
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedHashTreeMap_Node:(ComGoogleGsonInternalLinkedHashTreeMap_Node *)parent
-                                                                       withId:(id)key
-                                                                      withInt:(jint)hash_
-                              withComGoogleGsonInternalLinkedHashTreeMap_Node:(ComGoogleGsonInternalLinkedHashTreeMap_Node *)next
-                              withComGoogleGsonInternalLinkedHashTreeMap_Node:(ComGoogleGsonInternalLinkedHashTreeMap_Node *)prev;
+- (instancetype)initWithComGoogleGsonInternalLinkedHashTreeMap_Node:(ComGoogleGsonInternalLinkedHashTreeMap_Node *)parent
+                                                             withId:(id)key
+                                                            withInt:(jint)hash_
+                    withComGoogleGsonInternalLinkedHashTreeMap_Node:(ComGoogleGsonInternalLinkedHashTreeMap_Node *)next
+                    withComGoogleGsonInternalLinkedHashTreeMap_Node:(ComGoogleGsonInternalLinkedHashTreeMap_Node *)prev;
 
 @end
 
@@ -260,7 +255,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedHashTreeMap_Node)
 
 #pragma mark Package-Private
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (void)resetWithComGoogleGsonInternalLinkedHashTreeMap_Node:(ComGoogleGsonInternalLinkedHashTreeMap_Node *)root;
 
@@ -304,7 +299,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedHashTreeMap_AvlIterator)
 
 #pragma mark Package-Private
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (void)addWithComGoogleGsonInternalLinkedHashTreeMap_Node:(ComGoogleGsonInternalLinkedHashTreeMap_Node *)node;
 
@@ -352,11 +347,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedHashTreeMap_AvlBuilder)
 
 #pragma mark Package-Private
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedHashTreeMap:(ComGoogleGsonInternalLinkedHashTreeMap *)outer$;
+- (instancetype)initWithComGoogleGsonInternalLinkedHashTreeMap:(ComGoogleGsonInternalLinkedHashTreeMap *)outer$;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -398,11 +393,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedHashTreeMap_EntrySet)
 
 #pragma mark Package-Private
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedHashTreeMap:(ComGoogleGsonInternalLinkedHashTreeMap *)outer$;
+- (instancetype)initWithComGoogleGsonInternalLinkedHashTreeMap:(ComGoogleGsonInternalLinkedHashTreeMap *)outer$;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -418,8 +413,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedHashTreeMap_KeySet)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalLinkedHashTreeMap")

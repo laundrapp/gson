@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonJsonStreamParser
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonJsonStreamParser_) && (INCLUDE_ALL_ComGoogleGsonJsonStreamParser || defined(INCLUDE_ComGoogleGsonJsonStreamParser))
 #define ComGoogleGsonJsonStreamParser_
 
@@ -57,13 +52,13 @@
  @param reader The data stream containing JSON elements concatenated to each other.
  @since 1.4
  */
-- (instancetype __nonnull)initWithJavaIoReader:(JavaIoReader *)reader;
+- (instancetype)initWithJavaIoReader:(JavaIoReader *)reader;
 
 /*!
  @param json The string containing JSON elements concatenated to each other.
  @since 1.4
  */
-- (instancetype __nonnull)initWithNSString:(NSString *)json;
+- (instancetype)initWithNSString:(NSString *)json;
 
 /*!
  @brief Returns true if a <code>JsonElement</code> is available on the input for consumption
@@ -89,7 +84,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -111,8 +106,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonStreamParser)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonJsonStreamParser")

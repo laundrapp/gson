@@ -38,9 +38,9 @@ __attribute__((unused)) static id<JavaLangReflectType> ComGoogleGsonInternalBind
 
 @implementation ComGoogleGsonInternalBindTypeAdapterRuntimeTypeWrapper
 
-- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)context
-                       withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)delegate
-                            withJavaLangReflectType:(id<JavaLangReflectType>)type {
+- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)context
+             withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)delegate
+                  withJavaLangReflectType:(id<JavaLangReflectType>)type {
   ComGoogleGsonInternalBindTypeAdapterRuntimeTypeWrapper_initWithComGoogleGsonGson_withComGoogleGsonTypeAdapter_withJavaLangReflectType_(self, context, delegate, type);
   return self;
 }
@@ -89,7 +89,6 @@ __attribute__((unused)) static id<JavaLangReflectType> ComGoogleGsonInternalBind
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonGson:withComGoogleGsonTypeAdapter:withJavaLangReflectType:);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);

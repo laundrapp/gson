@@ -27,7 +27,7 @@ __attribute__((unused)) static id ComGoogleGsonTypeAdapter_fromJsonWithJavaIoRea
   ComGoogleGsonTypeAdapter *this$0_;
 }
 
-- (instancetype __nonnull)initWithComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)outer$;
+- (instancetype)initWithComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)outer$;
 
 - (void)writeWithComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)outArg
                                         withId:(id)value;
@@ -47,7 +47,7 @@ __attribute__((unused)) static ComGoogleGsonTypeAdapter_1 *create_ComGoogleGsonT
 @implementation ComGoogleGsonTypeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonTypeAdapter_init(self);
   return self;
 }
@@ -124,7 +124,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
   methods[2].selector = @selector(toJsonWithJavaIoWriter:withId:);
@@ -161,7 +160,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonTypeAdapter)
 
 @implementation ComGoogleGsonTypeAdapter_1
 
-- (instancetype __nonnull)initWithComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)outer$ {
+- (instancetype)initWithComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)outer$ {
   ComGoogleGsonTypeAdapter_1_initWithComGoogleGsonTypeAdapter_(self, outer$);
   return self;
 }
@@ -197,7 +196,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonTypeAdapter)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonTypeAdapter:);
   methods[1].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
   methods[2].selector = @selector(readWithComGoogleGsonStreamJsonReader:);

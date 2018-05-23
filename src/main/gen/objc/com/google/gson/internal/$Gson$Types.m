@@ -27,7 +27,7 @@
 
 @interface ComGoogleGsonInternal_Gson_Types ()
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 + (jint)hashCodeOrZeroWithId:(id)o;
 
@@ -65,9 +65,9 @@ __attribute__((unused)) static void ComGoogleGsonInternal_Gson_Types_checkNotPri
   IOSObjectArray *typeArguments_;
 }
 
-- (instancetype __nonnull)initWithJavaLangReflectType:(id<JavaLangReflectType>)ownerType
-                              withJavaLangReflectType:(id<JavaLangReflectType>)rawType
-                         withJavaLangReflectTypeArray:(IOSObjectArray *)typeArguments;
+- (instancetype)initWithJavaLangReflectType:(id<JavaLangReflectType>)ownerType
+                    withJavaLangReflectType:(id<JavaLangReflectType>)rawType
+               withJavaLangReflectTypeArray:(IOSObjectArray *)typeArguments;
 
 - (IOSObjectArray *)getActualTypeArguments;
 
@@ -106,7 +106,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternal_Gson_Types_ParameterizedTypeImp
   id<JavaLangReflectType> componentType_;
 }
 
-- (instancetype __nonnull)initWithJavaLangReflectType:(id<JavaLangReflectType>)componentType;
+- (instancetype)initWithJavaLangReflectType:(id<JavaLangReflectType>)componentType;
 
 - (id<JavaLangReflectType>)getGenericComponentType;
 
@@ -146,8 +146,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternal_Gson_Types_GenericArrayTypeImpl
   id<JavaLangReflectType> lowerBound_;
 }
 
-- (instancetype __nonnull)initWithJavaLangReflectTypeArray:(IOSObjectArray *)upperBounds
-                              withJavaLangReflectTypeArray:(IOSObjectArray *)lowerBounds;
+- (instancetype)initWithJavaLangReflectTypeArray:(IOSObjectArray *)upperBounds
+                    withJavaLangReflectTypeArray:(IOSObjectArray *)lowerBounds;
 
 - (IOSObjectArray *)getUpperBounds;
 
@@ -185,7 +185,7 @@ IOSObjectArray *ComGoogleGsonInternal_Gson_Types_EMPTY_TYPE_ARRAY;
 @implementation ComGoogleGsonInternal_Gson_Types
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternal_Gson_Types_init(self);
   return self;
 }
@@ -312,7 +312,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(newParameterizedTypeWithOwnerWithJavaLangReflectType:withJavaLangReflectType:withJavaLangReflectTypeArray:);
   methods[2].selector = @selector(arrayOfWithJavaLangReflectType:);
@@ -664,9 +663,9 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternal_Gson_Types)
 
 @implementation ComGoogleGsonInternal_Gson_Types_ParameterizedTypeImpl
 
-- (instancetype __nonnull)initWithJavaLangReflectType:(id<JavaLangReflectType>)ownerType
-                              withJavaLangReflectType:(id<JavaLangReflectType>)rawType
-                         withJavaLangReflectTypeArray:(IOSObjectArray *)typeArguments {
+- (instancetype)initWithJavaLangReflectType:(id<JavaLangReflectType>)ownerType
+                    withJavaLangReflectType:(id<JavaLangReflectType>)rawType
+               withJavaLangReflectTypeArray:(IOSObjectArray *)typeArguments {
   ComGoogleGsonInternal_Gson_Types_ParameterizedTypeImpl_initWithJavaLangReflectType_withJavaLangReflectType_withJavaLangReflectTypeArray_(self, ownerType, rawType, typeArguments);
   return self;
 }
@@ -727,7 +726,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternal_Gson_Types)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangReflectType:withJavaLangReflectType:withJavaLangReflectTypeArray:);
   methods[1].selector = @selector(getActualTypeArguments);
   methods[2].selector = @selector(getRawType);
@@ -778,7 +776,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternal_Gson_Types_ParameterizedT
 
 @implementation ComGoogleGsonInternal_Gson_Types_GenericArrayTypeImpl
 
-- (instancetype __nonnull)initWithJavaLangReflectType:(id<JavaLangReflectType>)componentType {
+- (instancetype)initWithJavaLangReflectType:(id<JavaLangReflectType>)componentType {
   ComGoogleGsonInternal_Gson_Types_GenericArrayTypeImpl_initWithJavaLangReflectType_(self, componentType);
   return self;
 }
@@ -818,7 +816,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternal_Gson_Types_ParameterizedT
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangReflectType:);
   methods[1].selector = @selector(getGenericComponentType);
   methods[2].selector = @selector(isEqual:);
@@ -853,8 +850,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternal_Gson_Types_GenericArrayTy
 
 @implementation ComGoogleGsonInternal_Gson_Types_WildcardTypeImpl
 
-- (instancetype __nonnull)initWithJavaLangReflectTypeArray:(IOSObjectArray *)upperBounds
-                              withJavaLangReflectTypeArray:(IOSObjectArray *)lowerBounds {
+- (instancetype)initWithJavaLangReflectTypeArray:(IOSObjectArray *)upperBounds
+                    withJavaLangReflectTypeArray:(IOSObjectArray *)lowerBounds {
   ComGoogleGsonInternal_Gson_Types_WildcardTypeImpl_initWithJavaLangReflectTypeArray_withJavaLangReflectTypeArray_(self, upperBounds, lowerBounds);
   return self;
 }
@@ -908,7 +905,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternal_Gson_Types_GenericArrayTy
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangReflectTypeArray:withJavaLangReflectTypeArray:);
   methods[1].selector = @selector(getUpperBounds);
   methods[2].selector = @selector(getLowerBounds);

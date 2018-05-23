@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalLinkedTreeMap
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonInternalLinkedTreeMap_) && (INCLUDE_ALL_ComGoogleGsonInternalLinkedTreeMap || defined(INCLUDE_ComGoogleGsonInternalLinkedTreeMap))
 #define ComGoogleGsonInternalLinkedTreeMap_
 
@@ -56,7 +51,7 @@
  @brief Create a natural order, empty tree map whose keys must be mutually
   comparable and non-null.
  */
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 /*!
  @brief Create a tree map ordered by <code>comparator</code>.This map's keys may only
@@ -64,7 +59,7 @@
  @param comparator the comparator to order elements with, or <code>null</code>  to
        use the natural ordering.
  */
-- (instancetype __nonnull)initWithJavaUtilComparator:(id<JavaUtilComparator>)comparator;
+- (instancetype)initWithJavaUtilComparator:(id<JavaUtilComparator>)comparator;
 
 - (void)clear;
 
@@ -187,15 +182,15 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedTreeMap)
 /*!
  @brief Create the header entry
  */
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 /*!
  @brief Create a regular entry
  */
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)parent
-                                                                   withId:(id)key
-                              withComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)next
-                              withComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)prev;
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)parent
+                                                         withId:(id)key
+                    withComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)next
+                    withComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)prev;
 
 @end
 
@@ -251,11 +246,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedTreeMap_Node)
 
 #pragma mark Package-Private
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$;
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -297,11 +292,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedTreeMap_EntrySet)
 
 #pragma mark Package-Private
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$;
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -317,8 +312,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedTreeMap_KeySet)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalLinkedTreeMap")

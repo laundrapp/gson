@@ -326,7 +326,7 @@ __attribute__((unused)) static void ComGoogleGsonStreamJsonReader_consumeNonExec
 
 @interface ComGoogleGsonStreamJsonReader_1 : ComGoogleGsonInternalJsonReaderInternalAccess
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (void)promoteNameToValueWithComGoogleGsonStreamJsonReader:(ComGoogleGsonStreamJsonReader *)reader;
 
@@ -344,7 +344,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonStreamJsonReader)
 
 @implementation ComGoogleGsonStreamJsonReader
 
-- (instancetype __nonnull)initWithJavaIoReader:(JavaIoReader *)inArg {
+- (instancetype)initWithJavaIoReader:(JavaIoReader *)inArg {
   ComGoogleGsonStreamJsonReader_initWithJavaIoReader_(self, inArg);
   return self;
 }
@@ -879,7 +879,6 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonStreamJsonReader)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaIoReader:);
   methods[1].selector = @selector(setLenientWithBoolean:);
   methods[2].selector = @selector(isLenient);
@@ -1702,7 +1701,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonStreamJsonReader)
 @implementation ComGoogleGsonStreamJsonReader_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonStreamJsonReader_1_init(self);
   return self;
 }
@@ -1738,7 +1737,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(promoteNameToValueWithComGoogleGsonStreamJsonReader:);
   #pragma clang diagnostic pop

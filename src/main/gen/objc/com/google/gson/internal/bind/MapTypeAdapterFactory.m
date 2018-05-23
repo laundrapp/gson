@@ -61,13 +61,13 @@ __attribute__((unused)) static ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBi
   id<ComGoogleGsonInternalObjectConstructor> constructor_;
 }
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalBindMapTypeAdapterFactory:(ComGoogleGsonInternalBindMapTypeAdapterFactory *)outer$
-                                                           withComGoogleGsonGson:(ComGoogleGsonGson *)context
-                                                         withJavaLangReflectType:(id<JavaLangReflectType>)keyType
-                                                    withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)keyTypeAdapter
-                                                         withJavaLangReflectType:(id<JavaLangReflectType>)valueType
-                                                    withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)valueTypeAdapter
-                                      withComGoogleGsonInternalObjectConstructor:(id<ComGoogleGsonInternalObjectConstructor>)constructor;
+- (instancetype)initWithComGoogleGsonInternalBindMapTypeAdapterFactory:(ComGoogleGsonInternalBindMapTypeAdapterFactory *)outer$
+                                                 withComGoogleGsonGson:(ComGoogleGsonGson *)context
+                                               withJavaLangReflectType:(id<JavaLangReflectType>)keyType
+                                          withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)keyTypeAdapter
+                                               withJavaLangReflectType:(id<JavaLangReflectType>)valueType
+                                          withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)valueTypeAdapter
+                            withComGoogleGsonInternalObjectConstructor:(id<ComGoogleGsonInternalObjectConstructor>)constructor;
 
 - (id<JavaUtilMap>)readWithComGoogleGsonStreamJsonReader:(ComGoogleGsonStreamJsonReader *)inArg;
 
@@ -102,8 +102,8 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindMapTypeAdapterFactory_Adapte
 
 @implementation ComGoogleGsonInternalBindMapTypeAdapterFactory
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalConstructorConstructor:(ComGoogleGsonInternalConstructorConstructor *)constructorConstructor
-                                                                  withBoolean:(jboolean)complexMapKeySerialization {
+- (instancetype)initWithComGoogleGsonInternalConstructorConstructor:(ComGoogleGsonInternalConstructorConstructor *)constructorConstructor
+                                                        withBoolean:(jboolean)complexMapKeySerialization {
   ComGoogleGsonInternalBindMapTypeAdapterFactory_initWithComGoogleGsonInternalConstructorConstructor_withBoolean_(self, constructorConstructor, complexMapKeySerialization);
   return self;
 }
@@ -142,7 +142,6 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindMapTypeAdapterFactory_Adapte
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInternalConstructorConstructor:withBoolean:);
   methods[1].selector = @selector(createWithComGoogleGsonGson:withComGoogleGsonReflectTypeToken:);
   methods[2].selector = @selector(getKeyAdapterWithComGoogleGsonGson:withJavaLangReflectType:);
@@ -180,13 +179,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalBindMapTypeAdapterFactory)
 
 @implementation ComGoogleGsonInternalBindMapTypeAdapterFactory_Adapter
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalBindMapTypeAdapterFactory:(ComGoogleGsonInternalBindMapTypeAdapterFactory *)outer$
-                                                           withComGoogleGsonGson:(ComGoogleGsonGson *)context
-                                                         withJavaLangReflectType:(id<JavaLangReflectType>)keyType
-                                                    withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)keyTypeAdapter
-                                                         withJavaLangReflectType:(id<JavaLangReflectType>)valueType
-                                                    withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)valueTypeAdapter
-                                      withComGoogleGsonInternalObjectConstructor:(id<ComGoogleGsonInternalObjectConstructor>)constructor {
+- (instancetype)initWithComGoogleGsonInternalBindMapTypeAdapterFactory:(ComGoogleGsonInternalBindMapTypeAdapterFactory *)outer$
+                                                 withComGoogleGsonGson:(ComGoogleGsonGson *)context
+                                               withJavaLangReflectType:(id<JavaLangReflectType>)keyType
+                                          withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)keyTypeAdapter
+                                               withJavaLangReflectType:(id<JavaLangReflectType>)valueType
+                                          withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)valueTypeAdapter
+                            withComGoogleGsonInternalObjectConstructor:(id<ComGoogleGsonInternalObjectConstructor>)constructor {
   ComGoogleGsonInternalBindMapTypeAdapterFactory_Adapter_initWithComGoogleGsonInternalBindMapTypeAdapterFactory_withComGoogleGsonGson_withJavaLangReflectType_withComGoogleGsonTypeAdapter_withJavaLangReflectType_withComGoogleGsonTypeAdapter_withComGoogleGsonInternalObjectConstructor_(self, outer$, context, keyType, keyTypeAdapter, valueType, valueTypeAdapter, constructor);
   return self;
 }
@@ -294,7 +293,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalBindMapTypeAdapterFactory)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInternalBindMapTypeAdapterFactory:withComGoogleGsonGson:withJavaLangReflectType:withComGoogleGsonTypeAdapter:withJavaLangReflectType:withComGoogleGsonTypeAdapter:withComGoogleGsonInternalObjectConstructor:);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);

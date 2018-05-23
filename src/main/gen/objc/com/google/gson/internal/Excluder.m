@@ -83,11 +83,11 @@ __attribute__((unused)) static jboolean ComGoogleGsonInternalExcluder_isValidUnt
   ComGoogleGsonTypeAdapter *delegate_;
 }
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalExcluder:(ComGoogleGsonInternalExcluder *)outer$
-                                                    withBoolean:(jboolean)capture$0
-                                                    withBoolean:(jboolean)capture$1
-                                          withComGoogleGsonGson:(ComGoogleGsonGson *)capture$2
-                              withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)capture$3;
+- (instancetype)initWithComGoogleGsonInternalExcluder:(ComGoogleGsonInternalExcluder *)outer$
+                                          withBoolean:(jboolean)capture$0
+                                          withBoolean:(jboolean)capture$1
+                                withComGoogleGsonGson:(ComGoogleGsonGson *)capture$2
+                    withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)capture$3;
 
 - (id)readWithComGoogleGsonStreamJsonReader:(ComGoogleGsonStreamJsonReader *)inArg;
 
@@ -117,7 +117,7 @@ ComGoogleGsonInternalExcluder *ComGoogleGsonInternalExcluder_DEFAULT;
 @implementation ComGoogleGsonInternalExcluder
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalExcluder_init(self);
   return self;
 }
@@ -298,7 +298,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(java_clone);
   methods[2].selector = @selector(withVersionWithDouble:);
@@ -401,11 +400,11 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalExcluder)
 
 @implementation ComGoogleGsonInternalExcluder_1
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalExcluder:(ComGoogleGsonInternalExcluder *)outer$
-                                                    withBoolean:(jboolean)capture$0
-                                                    withBoolean:(jboolean)capture$1
-                                          withComGoogleGsonGson:(ComGoogleGsonGson *)capture$2
-                              withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)capture$3 {
+- (instancetype)initWithComGoogleGsonInternalExcluder:(ComGoogleGsonInternalExcluder *)outer$
+                                          withBoolean:(jboolean)capture$0
+                                          withBoolean:(jboolean)capture$1
+                                withComGoogleGsonGson:(ComGoogleGsonGson *)capture$2
+                    withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)capture$3 {
   ComGoogleGsonInternalExcluder_1_initWithComGoogleGsonInternalExcluder_withBoolean_withBoolean_withComGoogleGsonGson_withComGoogleGsonReflectTypeToken_(self, outer$, capture$0, capture$1, capture$2, capture$3);
   return self;
 }
@@ -448,7 +447,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalExcluder)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInternalExcluder:withBoolean:withBoolean:withComGoogleGsonGson:withComGoogleGsonReflectTypeToken:);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);

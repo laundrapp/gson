@@ -18,7 +18,6 @@
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(serializeWithId:withJavaLangReflectType:withComGoogleGsonJsonSerializationContext:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "serialize", "LNSObject;LJavaLangReflectType;LComGoogleGsonJsonSerializationContext;", "(TT;Ljava/lang/reflect/Type;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;", "<T:Ljava/lang/Object;>Ljava/lang/Object;" };

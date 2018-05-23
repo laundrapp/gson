@@ -32,7 +32,7 @@ __attribute__((unused)) static id ComGoogleGsonInternalLazilyParsedNumber_writeR
 
 @implementation ComGoogleGsonInternalLazilyParsedNumber
 
-- (instancetype __nonnull)initWithNSString:(NSString *)value {
+- (instancetype)initWithNSString:(NSString *)value {
   ComGoogleGsonInternalLazilyParsedNumber_initWithNSString_(self, value);
   return self;
 }
@@ -101,7 +101,6 @@ __attribute__((unused)) static id ComGoogleGsonInternalLazilyParsedNumber_writeR
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(intValue);
   methods[2].selector = @selector(longLongValue);

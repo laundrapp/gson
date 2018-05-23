@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonJsonIOException
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonJsonIOException_) && (INCLUDE_ALL_ComGoogleGsonJsonIOException || defined(INCLUDE_ComGoogleGsonJsonIOException))
 #define ComGoogleGsonJsonIOException_
 
@@ -37,17 +32,17 @@
 
 #pragma mark Public
 
-- (instancetype __nonnull)initWithNSString:(NSString *)msg;
+- (instancetype)initWithNSString:(NSString *)msg;
 
-- (instancetype __nonnull)initWithNSString:(NSString *)msg
-                     withJavaLangThrowable:(JavaLangThrowable *)cause;
+- (instancetype)initWithNSString:(NSString *)msg
+           withJavaLangThrowable:(JavaLangThrowable *)cause;
 
 /*!
  @brief Creates exception with the specified cause.Consider using 
  <code>Throwable)</code> instead if you can describe what happened.
  @param cause root exception that caused this exception to be thrown.
  */
-- (instancetype __nonnull)initWithJavaLangThrowable:(JavaLangThrowable *)cause;
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)cause;
 
 @end
 
@@ -75,8 +70,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonIOException)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonJsonIOException")

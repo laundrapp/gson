@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonStreamJsonReader
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonStreamJsonReader_) && (INCLUDE_ALL_ComGoogleGsonStreamJsonReader || defined(INCLUDE_ComGoogleGsonStreamJsonReader))
 #define ComGoogleGsonStreamJsonReader_
 
@@ -184,7 +179,7 @@
 /*!
  @brief Creates a new instance that reads a JSON-encoded stream from <code>in</code>.
  */
-- (instancetype __nonnull)initWithJavaIoReader:(JavaIoReader *)inArg;
+- (instancetype)initWithJavaIoReader:(JavaIoReader *)inArg;
 
 /*!
  @brief Consumes the next token from the JSON stream and asserts that it is the
@@ -346,7 +341,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -362,8 +357,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonStreamJsonReader)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonStreamJsonReader")

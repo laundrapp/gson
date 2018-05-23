@@ -38,12 +38,12 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonJsonStreamParser, lock_, id)
 
 @implementation ComGoogleGsonJsonStreamParser
 
-- (instancetype __nonnull)initWithNSString:(NSString *)json {
+- (instancetype)initWithNSString:(NSString *)json {
   ComGoogleGsonJsonStreamParser_initWithNSString_(self, json);
   return self;
 }
 
-- (instancetype __nonnull)initWithJavaIoReader:(JavaIoReader *)reader {
+- (instancetype)initWithJavaIoReader:(JavaIoReader *)reader {
   ComGoogleGsonJsonStreamParser_initWithJavaIoReader_(self, reader);
   return self;
 }
@@ -104,7 +104,6 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonJsonStreamParser, lock_, id)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(initWithJavaIoReader:);
   methods[2].selector = @selector(next);

@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonJsonPrimitive
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonJsonPrimitive_) && (INCLUDE_ALL_ComGoogleGsonJsonPrimitive || defined(INCLUDE_ComGoogleGsonJsonPrimitive))
 #define ComGoogleGsonJsonPrimitive_
 
@@ -45,26 +40,26 @@
  @brief Create a primitive containing a boolean value.
  @param bool_ the value to create the primitive with.
  */
-- (instancetype __nonnull)initWithJavaLangBoolean:(JavaLangBoolean *)bool_;
+- (instancetype)initWithJavaLangBoolean:(JavaLangBoolean *)bool_;
 
 /*!
  @brief Create a primitive containing a character.The character is turned into a one character String
   since Json only supports String.
  @param c the value to create the primitive with.
  */
-- (instancetype __nonnull)initWithJavaLangCharacter:(JavaLangCharacter *)c;
+- (instancetype)initWithJavaLangCharacter:(JavaLangCharacter *)c;
 
 /*!
  @brief Create a primitive containing a <code>Number</code>.
  @param number the value to create the primitive with.
  */
-- (instancetype __nonnull)initWithNSNumber:(NSNumber *)number;
+- (instancetype)initWithNSNumber:(NSNumber *)number;
 
 /*!
  @brief Create a primitive containing a String value.
  @param string the value to create the primitive with.
  */
-- (instancetype __nonnull)initWithNSString:(NSString *)string;
+- (instancetype)initWithNSString:(NSString *)string;
 
 - (jboolean)isEqual:(id)obj;
 
@@ -167,7 +162,7 @@
   Java primitive type, or a String.
  @param primitive the value to create the primitive with.
  */
-- (instancetype __nonnull)initWithId:(id)primitive;
+- (instancetype)initWithId:(id)primitive;
 
 - (ComGoogleGsonJsonPrimitive *)deepCopy;
 
@@ -181,7 +176,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -221,8 +216,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonPrimitive)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonJsonPrimitive")

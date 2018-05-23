@@ -66,7 +66,7 @@ __attribute__((unused)) static void ComGoogleGsonInternalBindJsonTreeWriter_putW
 
 @interface ComGoogleGsonInternalBindJsonTreeWriter_1 : JavaIoWriter
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (void)writeWithCharArray:(IOSCharArray *)buffer
                    withInt:(jint)offset
@@ -91,7 +91,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonInternalBindJsonTreeWriter)
 @implementation ComGoogleGsonInternalBindJsonTreeWriter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalBindJsonTreeWriter_init(self);
   return self;
 }
@@ -246,7 +246,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(get);
   methods[2].selector = @selector(peek);
@@ -332,7 +331,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalBindJsonTreeWriter)
 @implementation ComGoogleGsonInternalBindJsonTreeWriter_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalBindJsonTreeWriter_1_init(self);
   return self;
 }
@@ -361,7 +360,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(writeWithCharArray:withInt:withInt:);
   methods[2].selector = @selector(flush);

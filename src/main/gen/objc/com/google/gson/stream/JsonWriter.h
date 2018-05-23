@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonStreamJsonWriter
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonStreamJsonWriter_) && (INCLUDE_ALL_ComGoogleGsonStreamJsonWriter || defined(INCLUDE_ComGoogleGsonStreamJsonWriter))
 #define ComGoogleGsonStreamJsonWriter_
 
@@ -135,7 +130,7 @@
  For best performance, ensure <code>Writer</code> is buffered; wrapping in 
  <code>BufferedWriter</code> if necessary.
  */
-- (instancetype __nonnull)initWithJavaIoWriter:(JavaIoWriter *)outArg;
+- (instancetype)initWithJavaIoWriter:(JavaIoWriter *)outArg;
 
 /*!
  @brief Begins encoding a new array.Each call to this method must be paired with
@@ -283,7 +278,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -299,8 +294,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonStreamJsonWriter)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonStreamJsonWriter")

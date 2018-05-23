@@ -129,7 +129,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonStreamJsonWriter)
 
 @implementation ComGoogleGsonStreamJsonWriter
 
-- (instancetype __nonnull)initWithJavaIoWriter:(JavaIoWriter *)outArg {
+- (instancetype)initWithJavaIoWriter:(JavaIoWriter *)outArg {
   ComGoogleGsonStreamJsonWriter_initWithJavaIoWriter_(self, outArg);
   return self;
 }
@@ -368,7 +368,6 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonStreamJsonWriter)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaIoWriter:);
   methods[1].selector = @selector(setIndentWithNSString:);
   methods[2].selector = @selector(setLenientWithBoolean:);

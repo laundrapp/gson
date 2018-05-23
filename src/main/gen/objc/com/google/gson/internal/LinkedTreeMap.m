@@ -89,7 +89,7 @@ __attribute__((unused)) static id ComGoogleGsonInternalLinkedTreeMap_writeReplac
 
 @interface ComGoogleGsonInternalLinkedTreeMap_1 : NSObject < JavaUtilComparator >
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (jint)compareWithId:(id<JavaLangComparable>)a
                withId:(id<JavaLangComparable>)b;
@@ -112,7 +112,7 @@ __attribute__((unused)) static ComGoogleGsonInternalLinkedTreeMap_1 *create_ComG
   jint expectedModCount_;
 }
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$;
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$;
 
 - (jboolean)hasNext;
 
@@ -142,7 +142,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedTreeMap_LinkedTreeMapItera
 
 @interface ComGoogleGsonInternalLinkedTreeMap_EntrySet_1 : ComGoogleGsonInternalLinkedTreeMap_LinkedTreeMapIterator
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap_EntrySet:(ComGoogleGsonInternalLinkedTreeMap_EntrySet *)outer$;
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap_EntrySet:(ComGoogleGsonInternalLinkedTreeMap_EntrySet *)outer$;
 
 - (id<JavaUtilMap_Entry>)next;
 
@@ -165,7 +165,7 @@ __attribute__((unused)) static ComGoogleGsonInternalLinkedTreeMap_EntrySet_1 *cr
 
 @interface ComGoogleGsonInternalLinkedTreeMap_KeySet_1 : ComGoogleGsonInternalLinkedTreeMap_LinkedTreeMapIterator
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap_KeySet:(ComGoogleGsonInternalLinkedTreeMap_KeySet *)outer$;
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap_KeySet:(ComGoogleGsonInternalLinkedTreeMap_KeySet *)outer$;
 
 - (id)next;
 
@@ -184,13 +184,13 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonInternalLinkedTreeMap)
 @implementation ComGoogleGsonInternalLinkedTreeMap
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalLinkedTreeMap_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype __nonnull)initWithJavaUtilComparator:(id<JavaUtilComparator>)comparator {
+- (instancetype)initWithJavaUtilComparator:(id<JavaUtilComparator>)comparator {
   ComGoogleGsonInternalLinkedTreeMap_initWithJavaUtilComparator_(self, comparator);
   return self;
 }
@@ -421,7 +421,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithJavaUtilComparator:);
   methods[2].selector = @selector(size);
@@ -620,7 +619,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedTreeMap)
 @implementation ComGoogleGsonInternalLinkedTreeMap_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalLinkedTreeMap_1_init(self);
   return self;
 }
@@ -667,7 +666,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(compareWithId:withId:);
   #pragma clang diagnostic pop
@@ -693,16 +691,16 @@ ComGoogleGsonInternalLinkedTreeMap_1 *create_ComGoogleGsonInternalLinkedTreeMap_
 @implementation ComGoogleGsonInternalLinkedTreeMap_Node
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalLinkedTreeMap_Node_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)parent
-                                                                   withId:(id)key
-                              withComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)next
-                              withComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)prev {
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)parent
+                                                         withId:(id)key
+                    withComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)next
+                    withComGoogleGsonInternalLinkedTreeMap_Node:(ComGoogleGsonInternalLinkedTreeMap_Node *)prev {
   ComGoogleGsonInternalLinkedTreeMap_Node_initWithComGoogleGsonInternalLinkedTreeMap_Node_withId_withComGoogleGsonInternalLinkedTreeMap_Node_withComGoogleGsonInternalLinkedTreeMap_Node_(self, parent, key, next, prev);
   return self;
 }
@@ -783,7 +781,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithComGoogleGsonInternalLinkedTreeMap_Node:withId:withComGoogleGsonInternalLinkedTreeMap_Node:withComGoogleGsonInternalLinkedTreeMap_Node:);
   methods[2].selector = @selector(getKey);
@@ -849,7 +846,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedTreeMap_Node)
 
 @implementation ComGoogleGsonInternalLinkedTreeMap_LinkedTreeMapIterator
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$ {
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$ {
   ComGoogleGsonInternalLinkedTreeMap_LinkedTreeMapIterator_initWithComGoogleGsonInternalLinkedTreeMap_(self, outer$);
   return self;
 }
@@ -891,7 +888,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedTreeMap_Node)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInternalLinkedTreeMap:);
   methods[1].selector = @selector(hasNext);
   methods[2].selector = @selector(nextNode);
@@ -934,7 +930,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedTreeMap_LinkedTreeMa
 
 @implementation ComGoogleGsonInternalLinkedTreeMap_EntrySet
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$ {
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$ {
   ComGoogleGsonInternalLinkedTreeMap_EntrySet_initWithComGoogleGsonInternalLinkedTreeMap_(self, outer$);
   return self;
 }
@@ -968,7 +964,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedTreeMap_LinkedTreeMa
 }
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id *)stackbuf count:(NSUInteger)len {
-  return JreDefaultFastEnumeration(self, state, stackbuf);
+  return JreDefaultFastEnumeration(self, state, stackbuf, len);
 }
 
 - (void)dealloc {
@@ -987,7 +983,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedTreeMap_LinkedTreeMa
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInternalLinkedTreeMap:);
   methods[1].selector = @selector(size);
   methods[2].selector = @selector(iterator);
@@ -1022,7 +1017,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedTreeMap_EntrySet)
 
 @implementation ComGoogleGsonInternalLinkedTreeMap_EntrySet_1
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap_EntrySet:(ComGoogleGsonInternalLinkedTreeMap_EntrySet *)outer$ {
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap_EntrySet:(ComGoogleGsonInternalLinkedTreeMap_EntrySet *)outer$ {
   ComGoogleGsonInternalLinkedTreeMap_EntrySet_1_initWithComGoogleGsonInternalLinkedTreeMap_EntrySet_(self, outer$);
   return self;
 }
@@ -1038,7 +1033,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedTreeMap_EntrySet)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInternalLinkedTreeMap_EntrySet:);
   methods[1].selector = @selector(next);
   #pragma clang diagnostic pop
@@ -1063,7 +1057,7 @@ ComGoogleGsonInternalLinkedTreeMap_EntrySet_1 *create_ComGoogleGsonInternalLinke
 
 @implementation ComGoogleGsonInternalLinkedTreeMap_KeySet
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$ {
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$ {
   ComGoogleGsonInternalLinkedTreeMap_KeySet_initWithComGoogleGsonInternalLinkedTreeMap_(self, outer$);
   return self;
 }
@@ -1089,7 +1083,7 @@ ComGoogleGsonInternalLinkedTreeMap_EntrySet_1 *create_ComGoogleGsonInternalLinke
 }
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id *)stackbuf count:(NSUInteger)len {
-  return JreDefaultFastEnumeration(self, state, stackbuf);
+  return JreDefaultFastEnumeration(self, state, stackbuf, len);
 }
 
 - (void)dealloc {
@@ -1108,7 +1102,6 @@ ComGoogleGsonInternalLinkedTreeMap_EntrySet_1 *create_ComGoogleGsonInternalLinke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInternalLinkedTreeMap:);
   methods[1].selector = @selector(size);
   methods[2].selector = @selector(iterator);
@@ -1143,7 +1136,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedTreeMap_KeySet)
 
 @implementation ComGoogleGsonInternalLinkedTreeMap_KeySet_1
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalLinkedTreeMap_KeySet:(ComGoogleGsonInternalLinkedTreeMap_KeySet *)outer$ {
+- (instancetype)initWithComGoogleGsonInternalLinkedTreeMap_KeySet:(ComGoogleGsonInternalLinkedTreeMap_KeySet *)outer$ {
   ComGoogleGsonInternalLinkedTreeMap_KeySet_1_initWithComGoogleGsonInternalLinkedTreeMap_KeySet_(self, outer$);
   return self;
 }
@@ -1159,7 +1152,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedTreeMap_KeySet)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonInternalLinkedTreeMap_KeySet:);
   methods[1].selector = @selector(next);
   #pragma clang diagnostic pop

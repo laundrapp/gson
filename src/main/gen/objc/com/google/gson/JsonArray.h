@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonJsonArray
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonJsonArray_) && (INCLUDE_ALL_ComGoogleGsonJsonArray || defined(INCLUDE_ComGoogleGsonJsonArray))
 #define ComGoogleGsonJsonArray_
 
@@ -50,7 +45,7 @@
 /*!
  @brief Creates an empty JsonArray.
  */
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 /*!
  @brief Adds the specified element to self.
@@ -244,8 +239,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonArray)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonJsonArray")

@@ -34,11 +34,11 @@
   ComGoogleGsonTypeAdapter *delegate_;
 }
 
-- (instancetype __nonnull)initWithComGoogleGsonJsonSerializer:(id<ComGoogleGsonJsonSerializer>)serializer
-                            withComGoogleGsonJsonDeserializer:(id<ComGoogleGsonJsonDeserializer>)deserializer
-                                        withComGoogleGsonGson:(ComGoogleGsonGson *)gson
-                            withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)typeToken
-                          withComGoogleGsonTypeAdapterFactory:(id<ComGoogleGsonTypeAdapterFactory>)skipPast;
+- (instancetype)initWithComGoogleGsonJsonSerializer:(id<ComGoogleGsonJsonSerializer>)serializer
+                  withComGoogleGsonJsonDeserializer:(id<ComGoogleGsonJsonDeserializer>)deserializer
+                              withComGoogleGsonGson:(ComGoogleGsonGson *)gson
+                  withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)typeToken
+                withComGoogleGsonTypeAdapterFactory:(id<ComGoogleGsonTypeAdapterFactory>)skipPast;
 
 - (ComGoogleGsonTypeAdapter *)delegate;
 
@@ -68,10 +68,10 @@ __attribute__((unused)) static ComGoogleGsonTypeAdapter *ComGoogleGsonTreeTypeAd
   id<ComGoogleGsonJsonDeserializer> deserializer_;
 }
 
-- (instancetype __nonnull)initWithId:(id)typeAdapter
-   withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)exactType
-                         withBoolean:(jboolean)matchRawType
-                        withIOSClass:(IOSClass *)hierarchyType;
+- (instancetype)initWithId:(id)typeAdapter
+withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)exactType
+               withBoolean:(jboolean)matchRawType
+              withIOSClass:(IOSClass *)hierarchyType;
 
 - (ComGoogleGsonTypeAdapter *)createWithComGoogleGsonGson:(ComGoogleGsonGson *)gson
                         withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)type;
@@ -95,11 +95,11 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonTreeTypeAdapter_SingleTypeFactory)
 
 @implementation ComGoogleGsonTreeTypeAdapter
 
-- (instancetype __nonnull)initWithComGoogleGsonJsonSerializer:(id<ComGoogleGsonJsonSerializer>)serializer
-                            withComGoogleGsonJsonDeserializer:(id<ComGoogleGsonJsonDeserializer>)deserializer
-                                        withComGoogleGsonGson:(ComGoogleGsonGson *)gson
-                            withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)typeToken
-                          withComGoogleGsonTypeAdapterFactory:(id<ComGoogleGsonTypeAdapterFactory>)skipPast {
+- (instancetype)initWithComGoogleGsonJsonSerializer:(id<ComGoogleGsonJsonSerializer>)serializer
+                  withComGoogleGsonJsonDeserializer:(id<ComGoogleGsonJsonDeserializer>)deserializer
+                              withComGoogleGsonGson:(ComGoogleGsonGson *)gson
+                  withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)typeToken
+                withComGoogleGsonTypeAdapterFactory:(id<ComGoogleGsonTypeAdapterFactory>)skipPast {
   ComGoogleGsonTreeTypeAdapter_initWithComGoogleGsonJsonSerializer_withComGoogleGsonJsonDeserializer_withComGoogleGsonGson_withComGoogleGsonReflectTypeToken_withComGoogleGsonTypeAdapterFactory_(self, serializer, deserializer, gson, typeToken, skipPast);
   return self;
 }
@@ -170,7 +170,6 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonTreeTypeAdapter_SingleTypeFactory)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithComGoogleGsonJsonSerializer:withComGoogleGsonJsonDeserializer:withComGoogleGsonGson:withComGoogleGsonReflectTypeToken:withComGoogleGsonTypeAdapterFactory:);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
@@ -236,10 +235,10 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonTreeTypeAdapter)
 
 @implementation ComGoogleGsonTreeTypeAdapter_SingleTypeFactory
 
-- (instancetype __nonnull)initWithId:(id)typeAdapter
-   withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)exactType
-                         withBoolean:(jboolean)matchRawType
-                        withIOSClass:(IOSClass *)hierarchyType {
+- (instancetype)initWithId:(id)typeAdapter
+withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)exactType
+               withBoolean:(jboolean)matchRawType
+              withIOSClass:(IOSClass *)hierarchyType {
   ComGoogleGsonTreeTypeAdapter_SingleTypeFactory_initWithId_withComGoogleGsonReflectTypeToken_withBoolean_withIOSClass_(self, typeAdapter, exactType, matchRawType, hierarchyType);
   return self;
 }
@@ -265,7 +264,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonTreeTypeAdapter)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithId:withComGoogleGsonReflectTypeToken:withBoolean:withIOSClass:);
   methods[1].selector = @selector(createWithComGoogleGsonGson:withComGoogleGsonReflectTypeToken:);
   #pragma clang diagnostic pop

@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalBindArrayTypeAdapter
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonInternalBindArrayTypeAdapter_) && (INCLUDE_ALL_ComGoogleGsonInternalBindArrayTypeAdapter || defined(INCLUDE_ComGoogleGsonInternalBindArrayTypeAdapter))
 #define ComGoogleGsonInternalBindArrayTypeAdapter_
 
@@ -38,9 +33,9 @@
 
 #pragma mark Public
 
-- (instancetype __nonnull)initWithComGoogleGsonGson:(ComGoogleGsonGson *)context
-                       withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)componentTypeAdapter
-                                       withIOSClass:(IOSClass *)componentType;
+- (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)context
+             withComGoogleGsonTypeAdapter:(ComGoogleGsonTypeAdapter *)componentTypeAdapter
+                             withIOSClass:(IOSClass *)componentType;
 
 - (id)readWithComGoogleGsonStreamJsonReader:(ComGoogleGsonStreamJsonReader *)inArg;
 
@@ -49,7 +44,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -70,8 +65,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindArrayTypeAdapter)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalBindArrayTypeAdapter")

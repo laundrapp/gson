@@ -36,7 +36,7 @@ __attribute__((unused)) static ComGoogleGsonJsonElement *ComGoogleGsonJsonObject
 @implementation ComGoogleGsonJsonObject
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonJsonObject_init(self);
   return self;
 }
@@ -145,7 +145,6 @@ withComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)value {
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(deepCopy);
   methods[2].selector = @selector(addWithNSString:withComGoogleGsonJsonElement:);

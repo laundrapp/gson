@@ -27,21 +27,12 @@ __attribute__((unused)) static IOSObjectArray *ComGoogleGsonAnnotationsUntil__An
   return [NSString stringWithFormat:@"@com.google.gson.annotations.Until(value=%lf)", value_];
 }
 
-- (jboolean)isEqual:(id)obj {
-  return JreAnnotationEquals(self, obj);
-}
-
-- (NSUInteger)hash {
-  return JreAnnotationHashCode(self);
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "D", 0x401, -1, -1, -1, -1, -1, -1 },
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(value);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

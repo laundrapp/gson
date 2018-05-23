@@ -40,7 +40,7 @@ task translateJava(type:Exec) {
         }
     }.flatten())
 
-    executable "${J2OBJC_HOME_LATEST}/j2objc"
+    executable "${J2OBJC_HOME_OLD}/j2objc"
     args '--doc-comments'
     args '--nullability'
 //    args '--strip-reflection' // Uncomment this line if the library does not use reflection, search the source for '.reflect'
@@ -48,4 +48,54 @@ task translateJava(type:Exec) {
     args '-sourcepath', (sourceSets.main.allJava.srcDirs).join(':')
     args '-classpath', sourceSets.main.runtimeClasspath.collect { it.absolutePath }.join(':')
     args inputs.files
+}
+
+task translateTestJava(type:Exec) {
+    inputs.files sourceSets.test.allJava
+    outputs.files files((sourceSets.test.allJava).collect { i ->
+        i.collect { j ->
+            def name = projectDir.path + 'src/test/gen/objc/' + i.name
+            return [name.replace('.java', '.h'), name.replace('.java', '.m')]
+        }
+    }.flatten())
+
+    executable "${J2OBJC_HOME_OLD}/j2objc"
+    args '--doc-comments'
+    args '--nullability'
+//    args '--strip-reflection' // Uncomment this line if the library does not use reflection, search the source for '.reflect'
+    args '-d', file('src/test/gen/objc').path
+    args '-sourcepath', (sourceSets.test.allJava.srcDirs).join(':')
+    args '-classpath', "${J2OBJC_HOME_OLD}/lib/j2objc_junit.jar:" + sourceSets.test.runtimeClasspath.collect { it.absolutePath }.join(':')
+    args inputs.files
+}
+
+task linkTestObjC(type:Exec) {
+    inputs.files files((sourceSets.main.allJava.plus(sourceSets.test.allJava)).collect { i ->
+        i.collect { j ->
+            def name = i.path.replace('/java', '/gen/objc')
+            return name.replace('.java', '.m')
+        }
+    }.flatten())
+    outputs.files file('tests')
+
+    executable "${J2OBJC_HOME_OLD}/j2objcc"
+    args '-ObjC'
+    args '-o', 'tests'
+    args '-ljre_emul'
+    args '-ljunit'
+    args '-I', 'src/main/gen/objc/'
+    args '-I', 'src/test/gen/objc/'
+    args '-Wno-deprecated'
+    args '-Wno-unused-value'
+    args inputs.files
+}
+
+task runTestObjC(type:Exec) {
+    executable "./tests"
+    args 'org.junit.runner.JUnitCore'
+    args sourceSets.test.allJava.collect { i ->
+//            def name = projectDir.path
+        def name = i.path.substring(projectDir.path.length()).replace('/src/test/java', '').replace('/', '.')
+        return name.replace('.java', '')
+    }.findAll { i -> i.endsWith('Test') }.flatten()
 }

@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonAnnotationsUntil
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonAnnotationsUntil_) && (INCLUDE_ALL_ComGoogleGsonAnnotationsUntil || defined(INCLUDE_ComGoogleGsonAnnotationsUntil))
 #define ComGoogleGsonAnnotationsUntil_
 
@@ -63,10 +58,6 @@
 
 @property (readonly) jdouble value;
 
-- (jboolean)isEqual:(id)obj;
-
-- (NSUInteger)hash;
-
 @end
 
 @interface ComGoogleGsonAnnotationsUntil : NSObject < ComGoogleGsonAnnotationsUntil > {
@@ -84,8 +75,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonAnnotationsUntil)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonAnnotationsUntil")

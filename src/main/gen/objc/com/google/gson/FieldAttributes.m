@@ -26,7 +26,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFieldAttributes, field_, JavaLangReflectField *
 
 @implementation ComGoogleGsonFieldAttributes
 
-- (instancetype __nonnull)initWithJavaLangReflectField:(JavaLangReflectField *)f {
+- (instancetype)initWithJavaLangReflectField:(JavaLangReflectField *)f {
   ComGoogleGsonFieldAttributes_initWithJavaLangReflectField_(self, f);
   return self;
 }
@@ -87,7 +87,6 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonFieldAttributes, field_, JavaLangReflectField *
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangReflectField:);
   methods[1].selector = @selector(getDeclaringClass);
   methods[2].selector = @selector(getName);

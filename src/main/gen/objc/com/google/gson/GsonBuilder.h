@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonGsonBuilder
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonGsonBuilder_) && (INCLUDE_ALL_ComGoogleGsonGsonBuilder || defined(INCLUDE_ComGoogleGsonGsonBuilder))
 #define ComGoogleGsonGsonBuilder_
 
@@ -77,7 +72,7 @@
   invoking various configuration methods to set desired options, and finally calling 
  <code>create()</code>.
  */
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 /*!
  @brief Configures Gson to apply the passed in exclusion strategy during deserialization.
@@ -413,8 +408,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonGsonBuilder)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonGsonBuilder")

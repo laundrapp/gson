@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonStreamMalformedJsonException
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonStreamMalformedJsonException_) && (INCLUDE_ALL_ComGoogleGsonStreamMalformedJsonException || defined(INCLUDE_ComGoogleGsonStreamMalformedJsonException))
 #define ComGoogleGsonStreamMalformedJsonException_
 
@@ -35,16 +30,16 @@
 
 #pragma mark Public
 
-- (instancetype __nonnull)initWithNSString:(NSString *)msg;
+- (instancetype)initWithNSString:(NSString *)msg;
 
-- (instancetype __nonnull)initWithNSString:(NSString *)msg
-                     withJavaLangThrowable:(JavaLangThrowable *)throwable;
+- (instancetype)initWithNSString:(NSString *)msg
+           withJavaLangThrowable:(JavaLangThrowable *)throwable;
 
-- (instancetype __nonnull)initWithJavaLangThrowable:(JavaLangThrowable *)throwable;
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)throwable;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -72,8 +67,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonStreamMalformedJsonException)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonStreamMalformedJsonException")

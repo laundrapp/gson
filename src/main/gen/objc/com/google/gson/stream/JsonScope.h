@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonStreamJsonScope
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonStreamJsonScope_) && (INCLUDE_ALL_ComGoogleGsonStreamJsonScope || defined(INCLUDE_ComGoogleGsonStreamJsonScope))
 #define ComGoogleGsonStreamJsonScope_
 
@@ -30,7 +25,7 @@
 
 #pragma mark Package-Private
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 @end
 
@@ -107,8 +102,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonStreamJsonScope)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonStreamJsonScope")

@@ -62,7 +62,6 @@ ComGoogleGsonLongSerializationPolicy *ComGoogleGsonLongSerializationPolicy_value
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(serializeWithJavaLangLong:);
   methods[1].selector = @selector(values);
   methods[2].selector = @selector(valueOfWithNSString:);
@@ -85,9 +84,9 @@ ComGoogleGsonLongSerializationPolicy *ComGoogleGsonLongSerializationPolicy_value
     allocSize += objSize_STRING;
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
-    ((void) (JreEnum(ComGoogleGsonLongSerializationPolicy, DEFAULT) = e = objc_constructInstance([ComGoogleGsonLongSerializationPolicy_1 class], (void *)ptr)), ptr += objSize_DEFAULT);
+    (JreEnum(ComGoogleGsonLongSerializationPolicy, DEFAULT) = e = objc_constructInstance([ComGoogleGsonLongSerializationPolicy_1 class], (void *)ptr), ptr += objSize_DEFAULT);
     ComGoogleGsonLongSerializationPolicy_1_initWithNSString_withInt_(e, @"DEFAULT", 0);
-    ((void) (JreEnum(ComGoogleGsonLongSerializationPolicy, STRING) = e = objc_constructInstance([ComGoogleGsonLongSerializationPolicy_2 class], (void *)ptr)), ptr += objSize_STRING);
+    (JreEnum(ComGoogleGsonLongSerializationPolicy, STRING) = e = objc_constructInstance([ComGoogleGsonLongSerializationPolicy_2 class], (void *)ptr), ptr += objSize_STRING);
     ComGoogleGsonLongSerializationPolicy_2_initWithNSString_withInt_(e, @"STRING", 1);
     J2OBJC_SET_INITIALIZED(ComGoogleGsonLongSerializationPolicy)
   }
@@ -143,7 +142,6 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonLongSerializationPolicy)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(serializeWithJavaLangLong:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "serialize", "LJavaLangLong;", "LComGoogleGsonLongSerializationPolicy;" };
@@ -174,7 +172,6 @@ void ComGoogleGsonLongSerializationPolicy_1_initWithNSString_withInt_(ComGoogleG
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(serializeWithJavaLangLong:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "serialize", "LJavaLangLong;", "LComGoogleGsonLongSerializationPolicy;" };

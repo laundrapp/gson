@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonGson
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonGson_) && (INCLUDE_ALL_ComGoogleGsonGson || defined(INCLUDE_ComGoogleGsonGson))
 #define ComGoogleGsonGson_
 
@@ -124,7 +119,7 @@
  <code>GsonBuilder.excludeFieldsWithModifiers(int...)</code>.</li>
   </ul>
  */
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 /*!
  @brief This method deserializes the Json read from the specified parse tree into an object of the
@@ -468,17 +463,17 @@ withComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)writer;
 
 #pragma mark Package-Private
 
-- (instancetype __nonnull)initWithComGoogleGsonInternalExcluder:(ComGoogleGsonInternalExcluder *)excluder
-                           withComGoogleGsonFieldNamingStrategy:(id<ComGoogleGsonFieldNamingStrategy>)fieldNamingPolicy
-                                                withJavaUtilMap:(id<JavaUtilMap>)instanceCreators
-                                                    withBoolean:(jboolean)serializeNulls
-                                                    withBoolean:(jboolean)complexMapKeySerialization
-                                                    withBoolean:(jboolean)generateNonExecutableGson
-                                                    withBoolean:(jboolean)htmlSafe
-                                                    withBoolean:(jboolean)prettyPrinting
-                                                    withBoolean:(jboolean)serializeSpecialFloatingPointValues
-                       withComGoogleGsonLongSerializationPolicy:(ComGoogleGsonLongSerializationPolicy *)longSerializationPolicy
-                                               withJavaUtilList:(id<JavaUtilList>)typeAdapterFactories;
+- (instancetype)initWithComGoogleGsonInternalExcluder:(ComGoogleGsonInternalExcluder *)excluder
+                 withComGoogleGsonFieldNamingStrategy:(id<ComGoogleGsonFieldNamingStrategy>)fieldNamingPolicy
+                                      withJavaUtilMap:(id<JavaUtilMap>)instanceCreators
+                                          withBoolean:(jboolean)serializeNulls
+                                          withBoolean:(jboolean)complexMapKeySerialization
+                                          withBoolean:(jboolean)generateNonExecutableGson
+                                          withBoolean:(jboolean)htmlSafe
+                                          withBoolean:(jboolean)prettyPrinting
+                                          withBoolean:(jboolean)serializeSpecialFloatingPointValues
+             withComGoogleGsonLongSerializationPolicy:(ComGoogleGsonLongSerializationPolicy *)longSerializationPolicy
+                                     withJavaUtilList:(id<JavaUtilList>)typeAdapterFactories;
 
 @end
 
@@ -530,7 +525,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonGson)
 
 #pragma mark Package-Private
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 @end
 
@@ -546,8 +541,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonGson_FutureTypeAdapter)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonGson")

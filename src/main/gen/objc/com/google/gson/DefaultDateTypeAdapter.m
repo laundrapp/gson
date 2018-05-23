@@ -44,30 +44,30 @@ __attribute__((unused)) static JavaUtilDate *ComGoogleGsonDefaultDateTypeAdapter
 @implementation ComGoogleGsonDefaultDateTypeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonDefaultDateTypeAdapter_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype __nonnull)initWithNSString:(NSString *)datePattern {
+- (instancetype)initWithNSString:(NSString *)datePattern {
   ComGoogleGsonDefaultDateTypeAdapter_initWithNSString_(self, datePattern);
   return self;
 }
 
-- (instancetype __nonnull)initWithInt:(jint)style {
+- (instancetype)initWithInt:(jint)style {
   ComGoogleGsonDefaultDateTypeAdapter_initWithInt_(self, style);
   return self;
 }
 
-- (instancetype __nonnull)initWithInt:(jint)dateStyle
-                              withInt:(jint)timeStyle {
+- (instancetype)initWithInt:(jint)dateStyle
+                    withInt:(jint)timeStyle {
   ComGoogleGsonDefaultDateTypeAdapter_initWithInt_withInt_(self, dateStyle, timeStyle);
   return self;
 }
 
-- (instancetype __nonnull)initWithJavaTextDateFormat:(JavaTextDateFormat *)enUsFormat
-                              withJavaTextDateFormat:(JavaTextDateFormat *)localFormat {
+- (instancetype)initWithJavaTextDateFormat:(JavaTextDateFormat *)enUsFormat
+                    withJavaTextDateFormat:(JavaTextDateFormat *)localFormat {
   ComGoogleGsonDefaultDateTypeAdapter_initWithJavaTextDateFormat_withJavaTextDateFormat_(self, enUsFormat, localFormat);
   return self;
 }
@@ -134,7 +134,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSString:);
   methods[2].selector = @selector(initWithInt:);

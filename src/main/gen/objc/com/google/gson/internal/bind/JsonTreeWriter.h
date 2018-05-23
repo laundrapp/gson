@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonInternalBindJsonTreeWriter
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonInternalBindJsonTreeWriter_) && (INCLUDE_ALL_ComGoogleGsonInternalBindJsonTreeWriter || defined(INCLUDE_ComGoogleGsonInternalBindJsonTreeWriter))
 #define ComGoogleGsonInternalBindJsonTreeWriter_
 
@@ -35,7 +30,7 @@
 
 #pragma mark Public
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (ComGoogleGsonStreamJsonWriter *)beginArray;
 
@@ -70,7 +65,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype __nonnull)initWithJavaIoWriter:(JavaIoWriter *)arg0 NS_UNAVAILABLE;
+- (instancetype)initWithJavaIoWriter:(JavaIoWriter *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -86,8 +81,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindJsonTreeWriter)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonInternalBindJsonTreeWriter")

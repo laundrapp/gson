@@ -23,7 +23,7 @@
 
 @interface ComGoogleGsonInternalPrimitives ()
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 + (void)addWithJavaUtilMap:(id<JavaUtilMap>)forward
            withJavaUtilMap:(id<JavaUtilMap>)backward
@@ -59,7 +59,7 @@ J2OBJC_INITIALIZED_DEFN(ComGoogleGsonInternalPrimitives)
 @implementation ComGoogleGsonInternalPrimitives
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalPrimitives_init(self);
   return self;
 }
@@ -99,7 +99,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(addWithJavaUtilMap:withJavaUtilMap:withIOSClass:withIOSClass:);
   methods[2].selector = @selector(isPrimitiveWithJavaLangReflectType:);

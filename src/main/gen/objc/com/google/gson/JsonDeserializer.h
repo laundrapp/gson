@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonJsonDeserializer
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonJsonDeserializer_) && (INCLUDE_ALL_ComGoogleGsonJsonDeserializer || defined(INCLUDE_ComGoogleGsonJsonDeserializer))
 #define ComGoogleGsonJsonDeserializer_
 
@@ -106,8 +101,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonDeserializer)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonJsonDeserializer")

@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonTypeAdapter
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonTypeAdapter_) && (INCLUDE_ALL_ComGoogleGsonTypeAdapter || defined(INCLUDE_ComGoogleGsonTypeAdapter))
 #define ComGoogleGsonTypeAdapter_
 
@@ -93,7 +88,7 @@
 
 #pragma mark Public
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 /*!
  @brief Converts the JSON document in <code>in</code> to a Java object.Unlike Gson's
@@ -225,8 +220,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonTypeAdapter)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonTypeAdapter")

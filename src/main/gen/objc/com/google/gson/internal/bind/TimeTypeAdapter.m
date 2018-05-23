@@ -33,7 +33,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonInternalBindTimeTypeAdapter, format_, JavaTextD
 
 @interface ComGoogleGsonInternalBindTimeTypeAdapter_1 : NSObject < ComGoogleGsonTypeAdapterFactory >
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
 - (ComGoogleGsonTypeAdapter *)createWithComGoogleGsonGson:(ComGoogleGsonGson *)gson
                         withComGoogleGsonReflectTypeToken:(ComGoogleGsonReflectTypeToken *)typeToken;
@@ -55,7 +55,7 @@ id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTimeTypeAdapter_FAC
 @implementation ComGoogleGsonInternalBindTimeTypeAdapter
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalBindTimeTypeAdapter_init(self);
   return self;
 }
@@ -97,7 +97,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(readWithComGoogleGsonStreamJsonReader:);
   methods[2].selector = @selector(writeWithComGoogleGsonStreamJsonWriter:withId:);
@@ -138,7 +137,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalBindTimeTypeAdapter)
 @implementation ComGoogleGsonInternalBindTimeTypeAdapter_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype __nonnull)init {
+- (instancetype)init {
   ComGoogleGsonInternalBindTimeTypeAdapter_1_init(self);
   return self;
 }
@@ -156,7 +155,6 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
-  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(createWithComGoogleGsonGson:withComGoogleGsonReflectTypeToken:);
   #pragma clang diagnostic pop

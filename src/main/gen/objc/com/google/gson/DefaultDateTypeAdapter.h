@@ -13,11 +13,6 @@
 #endif
 #undef RESTRICT_ComGoogleGsonDefaultDateTypeAdapter
 
-#if __has_feature(nullability)
-#pragma clang diagnostic push
-#pragma GCC diagnostic ignored "-Wnullability-completeness"
-#endif
-
 #if !defined (ComGoogleGsonDefaultDateTypeAdapter_) && (INCLUDE_ALL_ComGoogleGsonDefaultDateTypeAdapter || defined(INCLUDE_ComGoogleGsonDefaultDateTypeAdapter))
 #define ComGoogleGsonDefaultDateTypeAdapter_
 
@@ -46,8 +41,8 @@
 
 #pragma mark Public
 
-- (instancetype __nonnull)initWithInt:(jint)dateStyle
-                              withInt:(jint)timeStyle;
+- (instancetype)initWithInt:(jint)dateStyle
+                    withInt:(jint)timeStyle;
 
 - (JavaUtilDate *)deserializeWithComGoogleGsonJsonElement:(ComGoogleGsonJsonElement *)json
                                   withJavaLangReflectType:(id<JavaLangReflectType>)typeOfT
@@ -61,14 +56,14 @@
 
 #pragma mark Package-Private
 
-- (instancetype __nonnull)init;
+- (instancetype)init;
 
-- (instancetype __nonnull)initWithJavaTextDateFormat:(JavaTextDateFormat *)enUsFormat
-                              withJavaTextDateFormat:(JavaTextDateFormat *)localFormat;
+- (instancetype)initWithJavaTextDateFormat:(JavaTextDateFormat *)enUsFormat
+                    withJavaTextDateFormat:(JavaTextDateFormat *)localFormat;
 
-- (instancetype __nonnull)initWithInt:(jint)style;
+- (instancetype)initWithInt:(jint)style;
 
-- (instancetype __nonnull)initWithNSString:(NSString *)datePattern;
+- (instancetype)initWithNSString:(NSString *)datePattern;
 
 @end
 
@@ -108,8 +103,4 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonDefaultDateTypeAdapter)
 
 #endif
 
-
-#if __has_feature(nullability)
-#pragma clang diagnostic pop
-#endif
 #pragma pop_macro("INCLUDE_ALL_ComGoogleGsonDefaultDateTypeAdapter")
